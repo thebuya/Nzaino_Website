@@ -1,0 +1,164 @@
+.blogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blogo .BackBlog {
+    width: 100vw;
+    position: absolute;
+    z-index: -2;
+}
+
+.blogs-on-homepage {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+
+.bloghighlights {
+    display: flex;
+    margin: 2rem;
+}
+
+.bloghighlight-card {
+    width: 300px;
+    height: 375px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    transition: all ease-in-out 500ms;
+    box-sizing: border-box;
+}
+
+.bloghighlight-card:hover {
+    border: 1px solid rgba(18, 169, 1, 0.731);
+    transform: scale(1.02);
+}
+
+.bloghighlight-card .bloghighlight-image {
+    width: -webkit-fill-available;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.bloghighlight-card img {
+    width: inherit;
+    height: 210px;
+}
+
+.bloghighlight-card .label {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.25rem;
+}
+
+.bloghighlight-card .main-highlighttext {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 1rem;
+    
+
+}
+
+.bloghighlight-card .main-highlighttext .highlight-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 110%;
+    margin-bottom: 0.25rem;
+}
+
+.bloghighlight-card .main-highlighttext .highlight-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 145%;
+    color: var(--greengrayhue-2);
+    padding-right: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: justify;
+}
+
+.bloghighlight-card .main-highlighttext p {
+    max-height: 75px;
+    /* set the maximum height you want */
+    overflow: hidden;
+    /* hide any overflowing text */
+    position: relative;
+    /* set position relative for pseudo-element */
+
+}
+
+.bloghighlight-card .main-highlighttext p::after {
+    content: '...';
+    /* display the ellipsis */
+    position: absolute;
+    /* set position absolute */
+    bottom: 0;
+    /* position at the bottom of the paragraph */
+    right: 0;
+    /* position at the right of the paragraph */
+    padding-right: 1rem;
+    /* add some padding to separate from paragraph text */
+}
+
+.bloghighlight-card .call-to-actions {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bloghighlight-card .call-to-actions button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: right;
+    color: var(--green-A01);
+    background: none;
+    transition: all ease-in-out 500ms;
+}
+
+.bloghighlight-card .call-to-actions .booktrip {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--green-B03);
+}
+
+
+.bloghighlight-card .call-to-actions .booktrip:hover {
+    transform: translateX(3px);
+    color: var(--green-B04);
+}
+
+.bloghighlight-card .call-to-actions .readblog:hover {
+
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 550px){
+    .blogo {
+       overflow: hidden;
+       position: relative;
+    }
+    
+    .blogo .BackBlog {
+        width: auto;
+        height: -webkit-fill-available;
+    }
+}

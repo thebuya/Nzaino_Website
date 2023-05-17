@@ -1,0 +1,104 @@
+.NewsLetter{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    overflow-x: clip;
+}
+.NewsLetter .subscribing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.NewsLetter .subscribing input{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 9px;
+    margin-right: 1.5rem;
+
+    letter-spacing: 0.012rem;
+    width: 300px;
+    height: 44px;
+    border: 1.25px solid var(--greengrayhue-3);
+    border-radius: 30px;
+    background: #F4F7F4;
+    box-shadow: inset 5px 5px 14px #d9dcd9, inset -5px -5px 14px #ffffff;
+}
+.NewsLetter .title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    color: var(--green-003);
+    
+}
+.NewsLetter .subscribing input::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(  --greengrayhue-2);
+    margin-left: 0.25rem;
+    
+}
+.NewsLetter .subscribing button{
+    margin-left: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 18px;
+    width: 190px;
+    height: 41px;
+    background: var(--green-B03);
+    box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    transition: all ease 500ms;
+    text-align: justify;
+    color: var(--green-B07);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 150%;}
+.NewsLetter .subscribing button:hover{
+    background: var(--green-B04);
+}
+.NewsLetter .subscribeback{
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    margin-top: 5rem;
+    opacity: 0.75;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .NewsLetter .subscribing{
+        flex-direction: column;
+    }
+    .NewsLetter .subscribing input{
+        margin-right: 0;
+        border-radius: 30px;
+    }
+    .NewsLetter .subscribing button{
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-left: 0;
+        border-radius: 30px;
+    }
+    .NewsLetter .subscribeback{
+        margin-bottom: 1rem;
+        transform: scale(3);
+        opacity: 1;
+    }
+}

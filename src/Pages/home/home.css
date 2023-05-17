@@ -1,0 +1,209 @@
+.content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.firstbutton{
+  position: absolute;
+  bottom: 50%; /* Place the button at the vertical center */
+  transform: translateY(50%); /* Adjust for button height */
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  overflow: hidden;
+  padding: 10px 18px;
+  width: 150px;
+  height: 44px;
+  color: var(--green-A01);
+    bottom: 12rem;
+    
+    background: var(--green-B07);
+  box-shadow: 0px 1px 30px 1px rgba(194, 232, 251, 0.28);
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.spacex-btn {
+  background: var(--green-B03);
+}
+.home-heading{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 12rem;
+    width: -webkit-fill-available;
+    color: var(--green-B07) ;
+    padding: 3rem;
+    
+    }
+    
+    .home-heading span{
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 140%;
+   /** color: #FED4A3 ;*/
+    color: #FFA500;
+    
+    }
+    .home-page .swiper-wrapper{
+        margin-top: 2.2rem;
+        height: 90vh;
+    }  
+    .home-page .swiper {
+        width: 100%;
+        height: 90vh;
+      }
+    .home-page .blogs-on-homepage {
+      height: auto;
+      width: auto;
+      }
+      .home-page .blogs-on-homepage .swiper-wrapper{
+        height: auto;
+        padding-bottom: 0.25rem;
+      }
+      .home-page .reviewsslide .swiper-wrapper{
+
+        padding-bottom: 2rem;
+      }
+  
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+      
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        transition: transform 6000ms ease-out;
+      }
+      .swiper-slide-active img {
+        transform: scale(1.2);
+  transition: transform 6000ms ease;
+    }
+      
+      .autoplay-progress {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        z-index: 10;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*font-weight: bold;*/
+        color: var(--green-B07);
+        display: none ;
+      }
+      
+      .autoplay-progress svg {
+        display: none ;
+        --progress: 0;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        stroke-width: 2px;
+        stroke: var(--green-B07);
+        fill: none;
+        stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+        stroke-dasharray: 125.6;
+        transform: rotate(-90deg);
+      }
+    
+    .swiper-slide{
+        background: rgb(0 0 0);
+    }
+    .swiper-pagination {
+        color: #FED4A3;
+      }
+      
+      .swiper-pagination-bullet-active {
+        background-color: var(--green-B07);
+      }
+      .home-page .swiper-button-next, .home-page .swiper-button-prev{
+        font-size: 13px;
+        color: var(--green-B07);
+        display: none;
+      }
+      .swiper-button-next, .swiper-button-prev{
+        font-size: 13px;
+        color: var(--green-B07);
+      }
+      .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+      .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+        font-size: 2rem;
+      }
+      .home-page .blogs-on-homepage .swiper-button-next, 
+       .home-page .blogs-on-homepage .swiper-button-prev{
+        display: block;
+        right: 0rem;
+      }
+      .blogs-on-homepage .swiper-button-prev:after,
+      .blogs-on-homepage .swiper-rtl .swiper-button-next:after,
+      .blogs-on-homepage .swiper-button-next:after, 
+      .blogs-on-homepage .swiper-rtl .swiper-button-prev:after {
+          font-size: 1.25rem;
+          font-weight: 900;
+          color: var(--green-A01);
+      }
+      .blogs-on-homepage .swiper-horizontal>.swiper-pagination-bullets,
+      .blogs-on-homepage .swiper-pagination-bullets.swiper-pagination-horizontal, 
+      .blogs-on-homepage .swiper-pagination-custom,
+      .blogs-on-homepage  .swiper-pagination-fraction{
+        margin-bottom: -0.5rem;
+      }
+    
+    
+    
+    
+    
+    
+      @media screen and (max-width: 900px) {
+        .home-heading {
+            font-size: 28px;
+            line-height: 150%;
+            padding: 3rem;
+        }
+        .home-heading span {
+            font-size: 30px;
+            line-height: 160%;
+        }
+
+      }
+    
+      @media screen and (max-width: 450px) {
+        .home-heading {
+            font-size: 22px;
+            line-height: 170%;
+            padding: 3rem;
+        }
+        .home-heading span {
+            font-size: 24px;
+            line-height: 160%;
+        }
+      }
+
+
+     

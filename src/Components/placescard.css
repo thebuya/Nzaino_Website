@@ -1,0 +1,147 @@
+.cardWButton{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.cardWButton .placesCard{
+    width: 300px;
+height: 375px;
+box-sizing: border-box;
+border: 1px solid rgba(0, 100, 0, 0.4);
+box-shadow: 0px 0px 73px rgba(0, 40, 0, 0.13);
+border-radius: 10px;
+overflow: hidden;
+}
+.cardWButton .placesCard .placeImg{
+    width: auto;
+    height: 100%;
+}
+.cardWButton .placesCard .placeInformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6px 9px;
+    position: absolute;
+    width: 100%;
+    height: 105px;
+    left: 0px;
+    top: 269px;
+    border-radius: 0px 0px 10px 10px;
+    background: #d3d3d3bf;
+    box-shadow: 0px -5px 12px rgba(0, 0, 0, 0.07);
+}
+.cardWButton .placesCard .placeInformation .placeName{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 140%;
+    
+    color: #1E1E1E;
+}
+.cardWButton .placesCard .placeInformation .placeActivities{
+    position: relative;
+}
+.cardWButton .placesCard .placeInformation .placeActivities .placeActivity{
+    font-weight: 300;
+    text-align: left;
+    font-size: 12px;
+    line-height: 140%;
+    list-style: inside;
+}
+
+
+
+
+
+
+
+.cardWButton .buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    align-items: center;
+}
+.cardWButton .buttons button{
+    margin-right: 1rem;
+    
+    background: none;
+}
+.cardWButton .buttons .bookAPlace{
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: right;
+    color: var(--green-B03);
+    justify-content: center;
+    align-items: center;
+    transition: all ease 500ms;
+}
+.cardWButton .buttons .bookAPlace svg{
+    transform: translateX(0.12rem);
+}
+.cardWButton .buttons .bookAPlace:hover svg{
+    transform: translateX(0.25rem);
+}
+.cardWButton .buttons .bookAPlace:active svg{
+    transform: translateX(0.4rem);
+}
+.cardWButton .buttons .readAPlace{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    color: var(--green-003);
+    cursor: pointer;
+}
+
+
+
+.moredestinations{
+   box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px 18px;
+width: fit-content;
+    margin: auto;
+    margin-top: 0.5rem;
+height: 44px;
+left: 760px;
+top: 2299px;
+
+background: var(--green-B03);
+transition: all ease 500ms;
+box-shadow: 0px 1px 30px 1px rgba(194, 232, 251, 0.28);
+border-radius: 30px;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: var(--green-B07);
+}
+.moredestinations:hover{
+    background: var(--green-B04);
+}
+.moredestinations .linkbutton{
+    color: var(--green-B07);
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .destinBack{
+        height: 180%;
+    }
+}

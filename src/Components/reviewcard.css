@@ -1,0 +1,56 @@
+.quoteCard{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+.quoteCard svg{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 85px;
+    text-align: justify;
+    color: var(--green-A01);
+}
+
+.quoteCard .quoteWClient{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quoteCard .quoteWClient .quote{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: var(--greengrayhue-2);
+}
+.quoteCard .quoteWClient .client{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 110%;
+    color: var(--green-A01);
+    margin-top: 1rem;
+}
+.highlight {
+    background-color: var(--green-B06);
+  }
+
+
+
+
+
+
+
+  @media screen and (max-width: 750px) {
+    .quoteCard .quoteWClient .quote {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 160%;
+      text-align: left;
+  }
+    }

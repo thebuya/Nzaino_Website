@@ -1,0 +1,476 @@
+
+.firstpart{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    overflow-x: clip;
+}
+.firstpart .showff{
+    width: 80%;
+    position: absolute;
+    z-index: 2;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.firstpart .ontop{
+    height: 240px;
+    width: 100%;
+    background: var(--green-002);
+    position: relative;
+    box-shadow: 0px 0px 73px rgba(0, 40, 0, 0.13);
+    border-radius: 3px;
+}
+.firstpart .partners {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: var(--green-003);
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.firstpart .behind{
+    display: flex;
+    flex-direction: column;
+}
+.firstpart .main-image {
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.firstpart .main-image img{
+    margin-top: -5.7rem;
+}
+.firstpart .behind .headerWords{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+}
+.firstpart .behind .headerWords .mainwording{
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 10rem;
+    font-size: 42px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--green-002);
+    position: absolute;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.firstpart .behind .headerWords .mainwording span{
+    font-weight: 700;
+    line-height: 140%;
+    color: var(--green-002);
+}
+.firstpart .behind .logos {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    background: linear-gradient(0deg, #F4F7F4, #F4F7F4), #F8F8F8;
+    border: 1px solid rgba(0, 0, 0, 0.33);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .firstpart .behind .logos .logoscroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 400%; /* Adjust the width to accommodate duplicated images */
+  animation: scroll-left 1800s linear infinite; /* Change the animation duration here */
+    margin-top: 7rem;
+    white-space: nowrap;
+  }@keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-400%); /* Adjust the translateX value to match the width of the logoscroll */
+    }
+  }
+  
+  .firstpart .behind .logos .logoscroll img {
+    position: relative;
+    width: 150px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secondpart{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.secondpart .who{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.secondpart .who .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the left */
+    width: 50%; /* Adjust the width as needed */
+    margin-right: 7rem; /* Add margin for spacing */
+  }
+.secondpart .who .left .whotext
+, .paragraphs{
+    text-align: left;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    line-height: 160%;
+    width: fit-content;
+    max-width: 600px;
+    min-width: 250px;
+font-weight: 400;
+font-size: 16px;
+}
+.secondpart .who .imagewho{
+    
+    height: 270px;
+  flex: 1; /* Allow the image to expand to fill remaining space */
+}
+.secondpart .who .imagewho img{
+    width: 100%;
+    mix-blend-mode: darken;
+    height: 100%; /* Make the image fill its container */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    margin-top: 5rem;
+    transform: scale(1.5);
+}
+.secondpart .team{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+}
+.secondpart .team .teamtitle{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 54px;
+    color: var(--green-A01);
+    margin-bottom: 1.5rem;
+}
+.secondpart .team .teamswiper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.secondpart .team .caption{
+    font-weight: 400;
+font-size: 15px;
+max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+padding-right: 1rem;
+padding-left: 1rem;
+line-height: 22px;
+text-align: center;
+}
+
+.teamswiper .swiper-wrapper{
+    padding-bottom: 3rem;
+    justify-content: end;
+    width: fit-content;
+  
+}
+.teamswiper .swiper-pagination{
+    top: 17rem;
+}
+.teamswiper .swiper, .teamswiper .swiper-container {
+    overflow: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.servicessection {
+    align-items: flex-start;
+    background: #e5efe5;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    overflow: hidden;
+}
+
+.missionsec{
+    background: transparent;
+}
+.servicessection .who{
+    justify-content: flex-start;
+}
+.servicessection .fadingTitle {
+    color: #d9e1d9;
+}
+.servicessection .contact{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.servicessection .servicegrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: -webkit-fill-available;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.servicessection .servicegrid .serve{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+height: 151px;
+margin: auto;
+}
+.servicessection .servicegrid .serve img{
+
+    width: 180px;
+}
+.servicessection .servicegrid .serve p{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    width: max-content;
+    
+    text-align: center;
+    
+    color: #002800;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .secondpart .who .left {
+        width: 40%;
+        margin-right: 7rem;
+    }
+    .servicessection .who .left {
+        width: auto;
+        margin-right: 0;
+    }
+    .secondpart .who .left .whotext {
+        font-size: 15px;
+    }
+    .servicessection .servicegrid .serve p{
+        width: fit-content;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 900px) {
+
+    .firstpart .behind .headerWords .mainwording {
+        margin-top: 0rem;
+        font-size: 33px;
+       
+    }
+
+
+    .servicessection .servicegrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 0;
+    }
+    .servicessection .servicegrid .serve {
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .firstpart{
+        padding-top: 2rem;
+    }
+    .firstpart .behind .headerWords .mainwording span{
+       
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    }
+    .firstpart .main-image img {
+        margin-top: 0;
+        width: inherit;
+    }
+    .secondpart .who{
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+    }
+    .secondpart .who .left .whotext
+    , .paragraphs {
+        font-size: 14px;
+        margin-top: 3rem;
+    }
+    .servicessection .contact{
+        display: block;
+    }
+    .secondpart .who .left {
+        width: 100%;
+        margin-right: auto;
+    margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .secondpart .who .imagewho img {
+        width: 100%;
+        mix-blend-mode: darken;
+        height: fit-content;
+        /* object-fit: none; */
+        margin-top: -4rem;
+        transform: scale(.85);
+    }
+    .secondpart .who .imagewho {
+        flex: 1 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .secondpart .team {
+        margin-top: 0;
+    }
+    .secondpart .team .caption{
+    font-size: 14px;
+    line-height: 140%;
+    }
+    .teamswiper .swiper-wrapper {
+        padding-bottom: 2rem;
+    }
+    .servicessection .who .left .whotext {
+    text-align: left;
+    margin-left: initial;
+}
+}
+@media screen and (max-width: 750px) {
+    .firstpart .main-image img {
+        height: 100%;
+        width:auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .firstpart .behind .headerWords .mainwording {
+        font-size: 24px;
+    }
+    .secondpart .who .left .whotext
+    , .paragraphs {
+        line-height: 170%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+    .secondpart .who .imagewho img {
+        margin-top: 0rem;
+        transform: scale(1.15);
+    }
+}

@@ -1,0 +1,51 @@
+.mainFade{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 4rem;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
+}
+
+
+.fadingTitle{
+    font-size: 85px;
+    color:#F0F2F0;
+}
+.belowFade{
+    color: var(--green-A01);
+    font-size: 24px;
+    position: relative;
+    bottom: 4.5rem;
+    left: 3px;
+}
+
+
+
+  @media screen and (max-width: 900px) {
+    .fadingTitle{
+        font-size: 60px;
+    }
+    .belowFade{
+        
+        bottom: 3rem;
+    }
+    .mainFade{
+        height: 90px;
+        top: 4rem;
+    }
+}
+  @media screen and (max-width: 600px) {
+    .mainFade{
+        align-items: center;
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+.fadingTitle {
+    font-size: 46px;
+    margin-bottom: 0.5rem;
+}
+}

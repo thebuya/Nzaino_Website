@@ -1,0 +1,292 @@
+.bookingSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+    transition: all ease-in-out 600ms;
+}
+
+.bookingSection h1 {
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 210px;
+    /* identical to box height */
+    color: var(--green-B03);
+    text-align: center;
+}
+
+.bookingSection h1 span {
+    color: var(--green-002);
+    -webkit-text-stroke: 1px var(--green-B03);
+    /* Set the stroke width and color for WebKit-based browsers */
+
+}
+
+.bookingForm {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 600px;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    margin-bottom: -4.5rem;
+
+    box-sizing: border-box;
+    background: var(--green-002);
+    border: 0.9px solid var(--green-002);
+    box-shadow: 0px 15px 162px rgba(30, 30, 30, 0.12);
+    border-radius: 10px;
+}
+
+.bookingTitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 60px;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    /* identical to box height */
+    text-align: center;
+    color: var(--greengrayhue-2);
+}
+
+.bookingForm label {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 660;
+    font-size: 13px;
+    line-height: 140%;
+    margin-bottom: 0.75rem;
+
+    /* or 22px */
+
+    text-align: justify;
+
+    color: var(--greengrayhue-1);
+    transition: all ease-in-out 600ms;
+
+}
+
+.bookingForm label .errorMessage {
+    font-size: 13px;
+    color: red;
+    font-weight: 300;
+    transition: all ease-in-out 600ms;
+}
+
+.bookingForm .specialRequests label {
+    width: inherit;
+}
+
+.bookingForm .specialRequests textarea {
+    width: -webkit-fill-available;
+    height: 80px;
+    cursor: text;
+    font-family: 'Poppins', sans-serif;
+    padding: 3px 6px;
+
+    font-weight: 400;
+    background: transparent;
+    font-size: 13px;
+    line-height: 140%;
+    color: var(--greengrayhue-3);
+    resize: vertical;
+    /* Allow vertical resizing */
+    min-width: 0;
+    /* Prevent horizontal resizing */
+
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--greengrayhue-4);
+    border-radius: 3px;
+}
+
+.bookingForm .specialRequests {
+    width: -webkit-fill-available;
+}
+
+.bookingForm .pickPeople input {
+    width: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.bookingForm .pickLocation input {
+    border: 1px solid #006400;
+}
+
+.bookingForm .pickPeople label {
+    justify-content: center;
+    align-items: center;
+}
+
+.bookingForm .pickPeople {
+    justify-content: start;
+}
+
+.bookingForm .pickPeople .children {
+    margin-left: 1rem;
+}
+
+.bookingForm input {
+    display: flex;
+    cursor: text;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 6px;
+    width: 210px;
+    font-family: poppins;
+    color: var(--greengrayhue-3);
+    background: transparent;
+    height: 36px;
+    border: 1px solid var(--greengrayhue-4);
+    border-radius: 3px;
+    transition: all ease-in-out 600ms;
+}
+
+.bookingForm input::placeholder {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    color: var(--greengrayhue-3);
+    /* or 22px */
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.bookingForm .error {
+    border: 1px solid red;
+    transition: all ease-in-out 600ms;
+}
+
+.bookingForm div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bookingForm .submitBooking {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bookingForm .submitBooking button {
+    display: flex;
+    justify-content: center;
+
+    padding: 15px;
+    background: var(--green-A01);
+    box-shadow: 0px 0px 50px rgba(0, 40, 0, 0.35);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--greengrayhue-4);
+    transition: all ease-in-out 600ms;
+    border: 1px solid var(--greengrayhue-4);
+}
+
+.bookingForm .submitBooking button:hover {
+    background: var(--green-B03);
+    color: #fff;
+    border: 1px solid var(--green-B03);
+
+}
+
+.bookingForm .submitBooking button:active {
+    box-shadow: inset 7px 7px 14px #0a700a,
+        inset -7px -7px 14px #10c010;
+}
+
+.bookingForm .belowBook {
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: var(--greengrayhue-4);
+}
+
+.bookingSection .imageBehindCard {
+    width: -webkit-fill-available;
+    position: absolute;
+    z-index: -1;
+    margin-bottom: -4rem;
+    bottom: 0;
+    mix-blend-mode: darken;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .bookingSection h1 {
+        font-size: 75px;
+    }
+
+    .booking-form div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .booking-form .pickpeople {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .bookingSection .bookTrip {
+        font-size: 42px;
+        line-height: 240%;
+    }
+
+    .bookingTitle {
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 2rem;
+        width: max-content;
+        margin-top: 1.5rem;
+        color: var(--greengrayhue-3);
+    }
+
+    .bookingForm input {
+        width: auto;
+    }
+
+    .bookingForm .pickPeople {
+        flex-direction: row;
+    }
+
+    .bookingForm div {
+        flex-direction: column;
+    }
+
+    .bookingForm {
+        width: 100%;
+        margin-bottom: -3rem;
+        border: none;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+
+    .bookingForm .belowBook {
+        font-weight: 300;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 1rem;
+        
+        margin-bottom: 2rem;
+    }
+    .bookingForm .submitBooking button {
+        border-radius: 30px;
+    }
+}
