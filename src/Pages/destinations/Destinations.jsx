@@ -25,7 +25,7 @@ const Destinations = () => {
   return (
     <>
       <div className="main-image">
-        <img src={SlideImage4} alt="" srcset="" />
+        <img src={SlideImage4} alt="" />
       </div>
 
       <h5 className='below-main'><span>Discover</span> East Africas Hidden Gems.</h5>

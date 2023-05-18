@@ -51,8 +51,11 @@ const Navbar = () => {
         <div className="container nav__container">
         <Link to="/" className='logo' onClick={() => setIsNavShowing(false)}>
                 <img src={Logo} alt="Nzaino Travel Africa Logo"/>
-            </Link>
-            <ul className={`nav__links ${isNavShowing ? 'show__nav' :'hide__nav'}`}>
+        </Link>
+        <Link to="/aboutus" className='logo logo2' onClick={() => setIsNavShowing(false)}>
+                <img src={Logo} alt="Nzaino Travel Africa Logo"/>
+        </Link>
+        <ul className={`nav__links ${isNavShowing ? 'show__nav' :'hide__nav'}`}>
                 {
                     links.map(({name, path}, index) =>{
                         return(

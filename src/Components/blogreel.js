@@ -127,18 +127,19 @@ export const reviews= [
     },
     {
         id:"2",
-        quote: "We had an amazing time with Nzaino on our Uganda tour. The itinerary was well-planned, the guides were knowledgeable and friendly, and the accommodation was comfortable and clean. We saw so many beautiful places and animals, and learned a lot about the culture and history of Uganda. We highly recommend Nzaino to anyone looking for a memorable and affordable travel experience in East Africa.",
-        client: "First Name ",
+        quote: "We had an amazing time with Nzaino on our Uganda tour. The itinerary was well-planned, the guides were knowledgeable and friendly, and the accommodation was comfortable and clean. We saw so many beautiful places and animals, and learned a lot about the culture and history of Uganda."+
+        "<span class='highlight'>We highly recommend Nzaino to anyone looking for a memorable and affordable travel experience in East Africa.</span> ",
+        client: "Persons Name ",
     },
     {
         id:"3",
         quote: "Nzaino is the best travel agency we have ever used. They arranged everything for us, from flights and visas to hotels and activities. They were always available to answer our questions and give us tips before and during our trip. They made us feel like VIPs with their personalized service and attention to detail. We loved our trip to Uganda and can’t wait to book another one with Nzaino.",
-        client: "Middle Name",
+        client: "Persons Name",
     },
     {
         id:"4",
         quote: "Thank you Nzaino for making our dream trip come true. We enjoyed every moment of our Uganda tour, from the stunning scenery and wildlife to the delicious food and friendly people. You took care of all the logistics and made sure we had a smooth and hassle-free trip. You also gave us some great suggestions for optional activities that added to our fun and adventure. We will definitely travel with Nzaino again.",
-        client: "Last Name",
+        client: "Persons Name",
     },
 ]
 
@@ -147,7 +148,7 @@ export const team= [
     {
         id:"1",
         name:"Daniel Batekereza",
-        job: "CEO",
+        job: "Chief Executive Officer",
     },
     {
         id:"2",
@@ -156,22 +157,22 @@ export const team= [
     },
     {
         id:"3",
-        name:"John Someone",
-        job: "Tour Guide",
+        name:"Name",
+        job: "Head of Marketing",
     },
     {
         id:"4",
-        name:"John Someone",
-        job: "Head of Transport",
+        name:"Name",
+        job: "Job Title",
     },
     {
         id:"5",
-        name:"Jane Someone",
-        job: "CTO",
+        name:"Name",
+        job: "Job Title",
     },
     {
         id:"6",
-        name:"Jane Someone",
-        job: "Chief of Marketing",
+        name:"Name",
+        job: "Job Title",
     },
 ]

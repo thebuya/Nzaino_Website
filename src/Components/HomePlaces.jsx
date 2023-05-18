@@ -51,7 +51,7 @@ const HomePlaces = () => {
             slidesPerView={2}
             spaceBetween={30}
             loop={true}
-            loopAdditionalSlides={1}
+            loopadditionalslides={1}
             pagination={{
               clickable: true,
             }}
@@ -86,7 +86,7 @@ const HomePlaces = () => {
 
 
             </Swiper>
-            <img src={BackgroundBlog} className="BackBlog destinback" alt="" srcset="" />
+            <img src={BackgroundBlog} className="BackBlog destinback" alt="" />
       </div>
       <button className="moredestinations">
       <Link to="/destinations" className='linkbutton'> Explore All Destinations</Link>

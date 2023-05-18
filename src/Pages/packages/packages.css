@@ -47,6 +47,11 @@
     margin-top: 1.25rem;
     margin-bottom: 2rem;
   }
+  .upper{
+    margin-top: 6rem;
+    margin-bottom: 0;
+
+}
   
   .packagesPagination button {
     padding: 8px 16px;
@@ -65,7 +70,9 @@
   }
  
   
-  
+ .Packages .paragraphs {
+    margin-top: 0;
+} 
   
   
   
@@ -99,6 +106,10 @@
 .Packages .mainFade{
     top: 0.5rem;
     margin-bottom: 1rem;
+}
+.upper{
+    display: none;
+
 }
 
 }

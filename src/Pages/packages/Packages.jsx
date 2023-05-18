@@ -1,5 +1,6 @@
 import React, { useState, useEffect  }  from 'react'
 import './packages.css'
+import { motion } from 'framer-motion';
 
 import headerimage from '../../Images/packagesHeader.jpg';
 import FadingHeader from '../../Components/FadingHeader';
@@ -24,7 +25,7 @@ const Packages = () => {
   // Calculate number of cards per page based on screen width
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 500) {
+      if (window.innerWidth <= 650) {
         setCardsPerPage(3);
       } else {
         setCardsPerPage(6);
@@ -58,9 +59,29 @@ const Packages = () => {
                           explore the rich and diverse cultures of Africa. Whether you want
                            to experience the wildlife, the landscapes, or the people,
                             we are here to help you discover the beauty of this continent.
-                        </p>
-              <div className="packagesContainer">
+        </p>
+
+              {/* Pagination */}
+              <div className="packagesPagination upper">
+                {Array.from({ length: Math.ceil(packages.length / cardsPerPage) }, (_, index) => (
+                  <button
+                    key={index}
+                    className={currentPage === index + 1 ? 'active' : ''}
+                    onClick={() => paginate(index + 1)}
+                  >
+                    {index + 1}
+                  </button>
+                ))}
+              </div>
+
+              <motion.div 
+              className="packagesContainer"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              >
                   {currentCards.map(pack => (
+
                     <PackagesCard
                       key={pack.id}
                       image={pack.image}
@@ -74,8 +95,8 @@ const Packages = () => {
                       highlights={pack.highlights}
                     />
                   ))}
-                  <img src={BackgroundBlog} className="BackBlog packageback " alt="" srcset="" />
-              </div>
+                  <img src={BackgroundBlog} className="BackBlog packageback " alt="" />
+              </motion.div>
 
               {/* Pagination */}
               <div className="packagesPagination">
@@ -92,7 +113,11 @@ const Packages = () => {
 
               <FadeHeader className="FAQsHeader"
         fadingtitle = "FAQS"
-        cleartitle = "Frequently Asked Questions" /> 
+        cleartitle = "Frequently Asked Questions" 
+        /> 
+         <p className="whotext paragraphs">
+         We know that planning a trip can be challenging and exciting. That’s why we have compiled a list of frequently asked questions to help you prepare for your adventure. Whether you need information about visas, vaccinations, luggage, or payments, we have the answers for you. If you have any other questions or concerns, please feel free to contact us anytime.
+                        </p>
             <div className="questionsContainer" id='FAQS'>
                     <div className="questionsmapped">
                       {faqs.map((faq, index) => {

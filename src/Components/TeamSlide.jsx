@@ -51,7 +51,7 @@ const TeamSlide = () => {
             slidesPerView={2}
             spaceBetween={30}
             loop={true}
-            loopAdditionalSlides={1}
+            loopadditionalslides={1}
             pagination={{
               clickable: true,
             }}
@@ -86,7 +86,7 @@ const TeamSlide = () => {
             </Swiper>
 
             
-          {/** <img src={BackgroundBlog} className="BackBlog " alt="" srcset="" /> */}  
+          {/** <img src={BackgroundBlog} className="BackBlog " alt="" /> */}  
       </div>
     </>
   )

@@ -57,6 +57,7 @@ padding-right: 2rem;
     text-align: left;
     font-size: 15px;
     padding-top: 0.125rem;
+    color: var(--greengrayhue-1);
 }
 .upperpart .rightpart .maintext{
 display: flex;
@@ -67,6 +68,7 @@ align-items: flex-start;
     font-weight: bolder;
     font-size: 21px;
     line-height: 36px;
+    color: var(--green-003);
     text-align: justify;
 
 }
@@ -75,8 +77,14 @@ align-items: flex-start;
     font-weight: 400;
     font-size: 16px;
     line-height: 27px;
-    color: var( --greengrayhue-);
+    color: var(--greengrayhue-1);
     text-align: justify;
+}
+.upperpart .rightpart .maintext h2, .upperpart .subheading{
+    color: var(--greengrayhue-1);
+}
+.mini-leftpart a{
+    color: var(--green-003);
 }
 .upperpart .rightpart .secondary-info{
     display: flex;
@@ -132,6 +140,7 @@ svg{
 .upperpart .description-fact{
     text-align: center;
     font-size: 13px;
+    color: var(--greengrayhue-1);
 
 }
 

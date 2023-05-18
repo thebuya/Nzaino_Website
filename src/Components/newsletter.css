@@ -17,6 +17,36 @@
     justify-content: center;
     align-items: center;
 }
+.NewsLetter .subscribing form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: auto;
+}
+.NewsLetter .subscribing .inputWerror{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+    
+}
+.NewsLetter .subscribing .inputWerror .error{
+    font-size: 13px;
+    color: red;
+    line-height: 150%;
+    width: 300px;
+    text-align: -webkit-center;
+}
+.NewsLetter .subscribing  .success{
+    font-size: 13px;
+    color: green;
+    margin-top: 5px;
+    font-weight: bolder;
+    line-height: 150%;
+    width: 300px;
+    text-align: -webkit-center;
+}
 .NewsLetter .subscribing input{
     box-sizing: border-box;
     display: flex;
@@ -24,8 +54,9 @@
     justify-content: center;
     align-items: center;
     padding: 12px 9px;
-    margin-right: 1.5rem;
-
+    font-size: 14px;
+line-height: 150%;
+    color: var(--greengrayhue-1);
     letter-spacing: 0.012rem;
     width: 300px;
     height: 44px;
@@ -83,7 +114,7 @@
 
 
 @media screen and (max-width: 600px) {
-    .NewsLetter .subscribing{
+    .NewsLetter .subscribing,  .NewsLetter .subscribing form{
         flex-direction: column;
     }
     .NewsLetter .subscribing input{
@@ -101,4 +132,7 @@
         transform: scale(3);
         opacity: 1;
     }
+    .NewsLetter .subscribing .inputWerror {
+        margin-right: 0rem;
+        }
 }

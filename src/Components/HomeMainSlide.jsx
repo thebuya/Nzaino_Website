@@ -72,38 +72,38 @@ const HomeMainSlide = () => {
 
         
         <SwiperSlide>
-        <img className='SlideImage6' src={SlideImage10} alt="" srcset="" />
+        <img className='SlideImage6' src={SlideImage10} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className='SlideImage4' src={SlideImage2} alt="" srcset="" />
+        <img className='SlideImage4' src={SlideImage2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className='SlideImage5' src={SlideImage3} alt="" srcset="" />
+        <img className='SlideImage5' src={SlideImage3} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className='SlideImage3' src={SlideImage9} alt="" srcset="" />
+        <img className='SlideImage3' src={SlideImage9} alt="" />
         </SwiperSlide> 
         
         
         
         <SwiperSlide>
-        <img className='SlideImage1' src={SlideImage} alt="" srcset="" />
+        <img className='SlideImage1' src={SlideImage} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className='SlideImage7' src={SlideImage4} alt="" srcset="" />
+        <img className='SlideImage7' src={SlideImage4} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='SlideImage8' src={SlideImage5} alt="" srcset="" />
+          <img className='SlideImage8' src={SlideImage5} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='SlideImage9' src={SlideImage6} alt="" srcset="" />
+          <img className='SlideImage9' src={SlideImage6} alt="" />
         </SwiperSlide>
         
         <SwiperSlide>
-          <img className='SlideImage2' src={SlideImage8} alt="" srcset="" />
+          <img className='SlideImage2' src={SlideImage8} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='SlideImage10' src={SlideImage7} alt="" srcset="" />
+          <img className='SlideImage10' src={SlideImage7} alt="" />
         </SwiperSlide>
        
         
@@ -116,7 +116,7 @@ const HomeMainSlide = () => {
       </Swiper>
       <button className="firstbutton" onClick={scrollToSection}>
       <span>Book a Trip</span>
-       <div class="btn-bg"></div>
+       <div className="btn-bg"></div>
       </button>
     </div>
   )

@@ -2,7 +2,17 @@ import React, { useEffect, useState } from 'react'
 import './about.css'
 import headerimage from '../../Images/discoveruganda.jpg';
 import who from '../../Images/van.jpg';
+
 import service from '../../Images/service1.png';
+import service2 from '../../Images/guide.png';
+import service3 from '../../Images/tripplan.png';
+import service4 from '../../Images/hotel2.png';
+
+import service5 from '../../Images/passport.png';
+import service6 from '../../Images/crosssborder.png';
+
+import Backgroundserve from '../../Images/backgroundservices.jpg';
+//
 import FadingHeader from '../../Components/FadingHeader'
 import FadeHeader from '../../UI/FadeHeader';
 
@@ -47,7 +57,7 @@ const About = () => {
 
 
   return (
-    <section classname="aboutPage">
+    <section className="aboutPage">
       <div className="firstpart">
             <div className="behind">
                 <div className="headerWords">
@@ -63,53 +73,53 @@ const About = () => {
 
                 <div className="logos">
                 <div className="logoscroll" style={{ animationPlayState: animationPaused ? 'paused' : 'running' }}>
-                       <img src={logo} alt="" srcset="" />
-                      <img src={logo2} alt="" srcset="" />
-                      <img src={logo3} alt="" srcset="" />
-                      <img src={logo4} alt="" srcset="" />
-                      <img src={logo5} alt="" srcset="" />
-                      <img src={logo6} alt="" srcset="" />
-                      <img src={logo7} alt="" srcset="" />
+                       <img src={logo} alt="" />
+                      <img src={logo2} alt="" />
+                      <img src={logo3} alt="" />
+                      <img src={logo4} alt="" />
+                      <img src={logo5} alt="" />
+                      <img src={logo6} alt="" />
+                      <img src={logo7} alt="" />
                        {/* Duplicate the images here */}
-                      <img src={logo} alt="" srcSet="" />
-                      <img src={logo2} alt="" srcSet="" />
-                      <img src={logo3} alt="" srcSet="" />
-                      <img src={logo4} alt="" srcSet="" />
-                      <img src={logo5} alt="" srcSet="" />
-                      <img src={logo6} alt="" srcSet="" />
-                      <img src={logo7} alt="" srcSet="" />
+                      <img src={logo} alt="" />
+                      <img src={logo2} alt="" />
+                      <img src={logo3} alt="" />
+                      <img src={logo4} alt="" />
+                      <img src={logo5} alt="" />
+                      <img src={logo6} alt="" />
+                      <img src={logo7} alt="" />
                        {/* Duplicate the images here */}
-                      <img src={logo} alt="" srcSet="" />
-                      <img src={logo2} alt="" srcSet="" />
-                      <img src={logo3} alt="" srcSet="" />
-                      <img src={logo4} alt="" srcSet="" />
-                      <img src={logo5} alt="" srcSet="" />
-                      <img src={logo6} alt="" srcSet="" />
-                      <img src={logo7} alt="" srcSet="" />
+                      <img src={logo} alt="" />
+                      <img src={logo2} alt="" />
+                      <img src={logo3} alt="" />
+                      <img src={logo4} alt="" />
+                      <img src={logo5} alt="" />
+                      <img src={logo6} alt="" />
+                      <img src={logo7} alt="" />
                        {/* Duplicate the images here */}
-                      <img src={logo} alt="" srcSet="" />
-                      <img src={logo2} alt="" srcSet="" />
-                      <img src={logo3} alt="" srcSet="" />
-                      <img src={logo4} alt="" srcSet="" />
-                      <img src={logo5} alt="" srcSet="" />
-                      <img src={logo6} alt="" srcSet="" />
-                      <img src={logo7} alt="" srcSet="" />
+                      <img src={logo} alt="" />
+                      <img src={logo2} alt="" />
+                      <img src={logo3} alt="" />
+                      <img src={logo4} alt="" />
+                      <img src={logo5} alt="" />
+                      <img src={logo6} alt="" />
+                      <img src={logo7} alt="" />
                        {/* Duplicate the images here */}
-                      <img src={logo} alt="" srcSet="" />
-                      <img src={logo2} alt="" srcSet="" />
-                      <img src={logo3} alt="" srcSet="" />
-                      <img src={logo4} alt="" srcSet="" />
-                      <img src={logo5} alt="" srcSet="" />
-                      <img src={logo6} alt="" srcSet="" />
-                      <img src={logo7} alt="" srcSet="" />
+                      <img src={logo} alt="" />
+                      <img src={logo2} alt="" />
+                      <img src={logo3} alt="" />
+                      <img src={logo4} alt="" />
+                      <img src={logo5} alt="" />
+                      <img src={logo6} alt="" />
+                      <img src={logo7} alt="" />
                        {/* Duplicate the images here */}
-                      <img src={logo} alt="" srcSet="" />
-                      <img src={logo2} alt="" srcSet="" />
-                      <img src={logo3} alt="" srcSet="" />
-                      <img src={logo4} alt="" srcSet="" />
-                      <img src={logo5} alt="" srcSet="" />
-                      <img src={logo6} alt="" srcSet="" />
-                      <img src={logo7} alt="" srcSet="" />
+                      <img src={logo} alt="" />
+                      <img src={logo2} alt="" />
+                      <img src={logo3} alt="" />
+                      <img src={logo4} alt="" />
+                      <img src={logo5} alt="" />
+                      <img src={logo6} alt="" />
+                      <img src={logo7} alt="" />
                   </div>
                 </div>
             </div>
@@ -188,22 +198,29 @@ const About = () => {
                 <p className="service">Car-Rentals and Chauffering</p>
               </div>
               <div className="serve">
-                <img src={service} alt="" />
+                <img src={service3} alt="" />
                 <p className="service">Trip Planning</p>
               </div>
               <div className="serve">
-                <img src={service} alt="" />
-                <p className="service">Accommodation Booking</p>
+                <img src={service5} alt="" />
+                <p className="service">Document Processing</p>
               </div>
               <div className="serve">
-                <img src={service} alt="" />
+                <img src={service2} alt="" />
                 <p className="service">Tour Guides</p>
               </div>
+              <div className="serve">
+                <img src={service4} alt="" />
+                <p className="service">Accommodation Booking</p>
+              </div>
+              
 
           </div>
 
 
           <button className="nav-button contact">Contact us  </button>
+
+          <img src={Backgroundserve} className="BackBlog packageback serveback " alt="" />
       </div>
 
       <HomeReviewSlide/>
@@ -213,7 +230,7 @@ const About = () => {
                     <div className="left">
                           <FadeHeader className="whoHeader"
                           fadingtitle = "Our Mission"
-                          cleartitle = "Why Should Travel With Nzaino"
+                          cleartitle = "Why You Should Travel With Nzaino"
                           />
                         <p className="whotext">
                         We are passionate about connecting
@@ -228,6 +245,7 @@ const About = () => {
           </div>
 
           <div className="servicegrid">
+              
               <div className="serve">
                 <img src={service} alt="" />
                 <p className="service">Local Knowledge</p>
@@ -245,11 +263,11 @@ const About = () => {
                 <p className="service">Experienced and Professional Staff</p>
               </div>
               <div className="serve">
-                <img src={service} alt="" />
+                <img src={service6} alt="" />
                 <p className="service">Cross-Border Experience</p>
               </div>
               <div className="serve">
-                <img src={service} alt="" />
+                <img src={service4} alt="" />
                 <p className="service">Recommended Accommodation</p>
               </div>
 

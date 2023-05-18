@@ -19,7 +19,7 @@ function PackagesCard(props) {
     return (
         <div className='packagesCard' key={props.id}>
             <div className="imageCaption">
-                <img src={props.image} alt="destination" className='packagesImage' srcset="" />
+                <img src={props.image} alt="destination" className='packagesImage' />
                 <p className="caption">{props.caption}</p>
             </div>
 

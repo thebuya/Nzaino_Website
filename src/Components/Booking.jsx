@@ -281,7 +281,7 @@ const handleFormSubmit = (e) => {
     
     
     </form>
-    <img className='imageBehindCard' src={BackgroundImage1} alt="" srcset="" />
+    <img className='imageBehindCard' src={BackgroundImage1} alt="" />
     </section>
     
   );

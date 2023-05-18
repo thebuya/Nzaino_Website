@@ -27,10 +27,10 @@
 }
 .firstpart .partners {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 140%;
     color: var(--green-003);
-    margin-top: 1rem;
+    margin-top: auto;
 }
 
 
@@ -103,7 +103,8 @@
     align-items: center;
     width: 400%; /* Adjust the width to accommodate duplicated images */
   animation: scroll-left 1800s linear infinite; /* Change the animation duration here */
-    margin-top: 7rem;
+   /** margin-top: 7rem;*/
+    margin-top: auto;
     white-space: nowrap;
   }@keyframes scroll-left {
     0% {
@@ -195,6 +196,7 @@
     line-height: 160%;
     width: fit-content;
     max-width: 600px;
+    color: var(--greengrayhue-1);
     min-width: 250px;
 font-weight: 400;
 font-size: 16px;
@@ -290,15 +292,19 @@ text-align: center;
 
 .servicessection {
     align-items: flex-start;
-    background: #e5efe5;
+    background: transparent;
     margin-top: 3rem;
-    margin-bottom: 3rem;
-
+    margin-bottom: -1rem;
+    padding-left: inherit;
+    padding-right: inherit;
     overflow: hidden;
 }
 
 .missionsec{
-    background: transparent;
+    background: #f6fff6;
+    margin-bottom: 0;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #e3e3e3;
 }
 .servicessection .who{
     justify-content: flex-start;
@@ -345,7 +351,13 @@ margin: auto;
     
     color: #002800;
 }
-
+.serveback{
+    position: absolute;
+    /* mix-blend-mode: darken; */
+    z-index: -1;
+    width: inherit;
+    opacity: 0.65;
+}
 
 
 
@@ -375,13 +387,21 @@ margin: auto;
         font-size: 33px;
        
     }
+    .serveback {
+        transform: scale(2);
+    }
 
 
     .servicessection .servicegrid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin-top: 0;
+        margin-bottom: 0rem;
     }
+    .missionsec .servicegrid {
+        margin-bottom: 5rem;
+    }
+  
     .servicessection .servicegrid .serve {
         margin-bottom: 0.5rem;
         margin-top: 0.5rem;
@@ -424,7 +444,7 @@ margin: auto;
         width: 100%;
         mix-blend-mode: darken;
         height: fit-content;
-        /* object-fit: none; */
+        object-fit: contain;
         margin-top: -4rem;
         transform: scale(.85);
     }
@@ -450,6 +470,16 @@ margin: auto;
     text-align: left;
     margin-left: initial;
 }
+.servicessection {
+    margin-top: 1rem;
+     margin-bottom: 0rem; 
+}
+.missionsec{
+    background: #f6fff6;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e3e3e387;
+}
 }
 @media screen and (max-width: 750px) {
     .firstpart .main-image img {
@@ -472,5 +502,10 @@ margin: auto;
     .secondpart .who .imagewho img {
         margin-top: 0rem;
         transform: scale(1.15);
+    }
+}
+@media screen and (max-width: 475px) {
+    .servicessection .servicegrid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

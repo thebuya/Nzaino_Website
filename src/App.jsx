@@ -11,6 +11,8 @@ import Navbar from './Components/Navbar';
 import Packages from './Pages/packages/Packages';
 import Blog from './Pages/blog/Blog';
 import Footer from './Components/Footer';
+import BackToTopButton from './Components/BackToTopButton';
+import WhatsAppButton from './Components/WhatsappButton';
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
           <Route path='blog' element={<Blog/>}/>
         </Routes>
       <Footer/>
+    
+      <WhatsAppButton/>
+      <BackToTopButton/>
     </BrowserRouter>
   );
 }

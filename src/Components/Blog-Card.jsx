@@ -12,7 +12,7 @@ function BlogCard(props) {
     <div className='bloghighlights'>
         <div className="bloghighlight-card" key={props.id}>
           <div className="bloghighlight-image">
-          <img src={props.image} alt="destination" className='b-image' srcset="" />
+          <img src={props.image} alt="destination" className='b-image' />
           </div>
             
             <p className="label">{props.location}</p>

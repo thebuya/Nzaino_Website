@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 //import { useState } from 'react'
 import {Link, NavLink} from 'react-router-dom'
 import Logo from '../Images/logo.png'
@@ -12,7 +12,28 @@ import { BsGeoAltFill, BsTelephone,  BsGeo, BsSignpost } from "react-icons/bs";
 import './footer.css'
 
 const Footer = () => {
-     
+    const [showSwipeUp, setShowSwipeUp] = useState(false);
+  const [swipeUpContent, setSwipeUpContent] = useState('');
+  
+  useEffect(() => {
+    // Function to hide the swipe-up message after 3 seconds
+    const timer = setTimeout(() => {
+      setShowSwipeUp(false);
+    }, 3000);
+    
+    // Clear the timer when the component unmounts
+    return () => clearTimeout(timer);
+  }, [showSwipeUp]);
+  
+  // Function to handle NavLink click and display the swipe-up message
+  const handleNavLinkClick = (content) => {
+    setSwipeUpContent(content);
+    setShowSwipeUp(true);
+  
+    setTimeout(() => {
+      setShowSwipeUp(false);
+    }, 3000); // Adjust the duration (in milliseconds) to your desired value
+  };
 
 
 
@@ -77,12 +98,12 @@ const Footer = () => {
             <div className="link_container quick-links">
             <h2>Quick Links</h2>
                 <ul>
-                    <li><NavLink to="/aboutus"> <TiArrowRight/>About Nzaino</NavLink> </li>  
-                    <li> <NavLink to="/#Testimonials"><TiArrowRight/>Client Testimonials </NavLink></li>
-                    <li> <NavLink to="/packages#FAQS"><TiArrowRight/>Client Questions</NavLink></li>
-                    <li> <NavLink to="/aboutus#Services"><TiArrowRight/>Our Services </NavLink></li>
-                    <li><NavLink to="/packages"> <TiArrowRight/>Our Travel Packages </NavLink></li>
-                    <li> <NavLink to="/destinations"><TiArrowRight/>Popular Destinations</NavLink>  </li>
+                    <li><NavLink to="/aboutus" onClick={() => handleNavLinkClick('about us info.')}> <TiArrowRight/>About Nzaino</NavLink> </li>  
+                    <li> <NavLink to="/#Testimonials"onClick={() => handleNavLinkClick('our client reviews.')}><TiArrowRight/>Client Testimonials </NavLink></li>
+                    <li> <NavLink to="/packages#FAQS"onClick={() => handleNavLinkClick('frequently asked questions.')}><TiArrowRight/>Client Questions</NavLink></li>
+                    <li> <NavLink to="/aboutus#Services"onClick={() => handleNavLinkClick('our services.')}><TiArrowRight/>Our Services </NavLink></li>
+                    <li><NavLink to="/packages"onClick={() => handleNavLinkClick('packages on offer.')}> <TiArrowRight/>Our Travel Packages </NavLink></li>
+                    <li> <NavLink to="/destinations"onClick={() => handleNavLinkClick('the popular destinations.')}><TiArrowRight/>Popular Destinations</NavLink>  </li>
                     
                     
                 </ul>
@@ -91,12 +112,12 @@ const Footer = () => {
             <div className="link_container resources">
             <h2>Resources</h2>
                 <ul>
-                    <li> <NavLink to="/blog"><TiArrowRight/>Travel Blog</NavLink></li>
+                    <li> <NavLink to="/blog" onClick={() => handleNavLinkClick('travel blogs')}><TiArrowRight/>Travel Blog</NavLink></li>
                     <li> <a href='https://opencorporates.com/companies/ug/80020002502844' target="_blank" rel='noreferrer'> <TiArrowRight />Registration Status </a> </li>
                     
-                    <li> <NavLink to="/aboutus"><TiArrowRight/>Terms and Conditions</NavLink></li>
-                    <li> <NavLink to="/aboutus"><TiArrowRight/>Insurance Policy </NavLink></li>
-                    <li> <NavLink to="/aboutus"><TiArrowRight/>Job opportunities </NavLink></li>
+                    <li> <NavLink to="/aboutus" onClick={() => handleNavLinkClick('our terms and conditions.')}><TiArrowRight/>Terms and Conditions</NavLink></li>
+                    <li> <NavLink to="/aboutus" onClick={() => handleNavLinkClick('insurance policy.')}><TiArrowRight/>Insurance Policy </NavLink></li>
+                    <li> <NavLink to="/aboutus" onClick={() => handleNavLinkClick('job opportunities')}><TiArrowRight/>Job opportunities </NavLink></li>
                 </ul>
             </div>
 
@@ -113,8 +134,12 @@ const Footer = () => {
                 </span>
                 </p>
         </div>
+        {showSwipeUp && (
+            <div className="swipe-up-message">
+            <p>{`Swipe up to view ${swipeUpContent}`}</p>
+            </div>
+        )}
     </footer>
   )
 }
-
 export default Footer
