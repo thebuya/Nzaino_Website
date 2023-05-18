@@ -182,7 +182,40 @@
       }
     
     
+   
+.packagehomeslide{
+  margin-bottom: 1rem;
+}
+.packagehomeslide .blogs-on-homepage .swiper-pagination,
+.packagehomeslide .blogs-on-homepage .swiper-pagination-clickable,
+.packagehomeslide .blogs-on-homepage .swiper-pagination-bullets,
+.packagehomeslide .blogs-on-homepage .swiper-pagination-horizontal{
+  margin-bottom: -0.5rem;
+}
+
+
+.packagehomeslide  .blogs-on-homepage .swiper-wrapper {
+ 
+  padding-bottom: 3rem;
+} 
+
+.packagehomeslide  .mySwiper{
+  position: relative;
+} 
+.fade{
+  top: 2rem;
+} 
+.packagehomefade{
+  top: 1.2rem;
+} 
     
+.packagehomeslide  .BackBlog {
+  opacity: 1;
+  padding-bottom: 3rem;
+} 
+.paratext {
+margin-top: -0.5rem;
+}
     
     
     
@@ -196,6 +229,26 @@
             font-size: 30px;
             line-height: 160%;
         }
+        .packagehomeslide  .blogs-on-homepage .swiper-wrapper {
+ 
+          padding-bottom: 2rem;
+        } 
+        .packagehomefade {
+          top: 3.2rem;
+      }
+      .packagehomeslide .BackBlog {
+        opacity: 1;
+    }
+
+      .fade {
+        top: 5rem;
+    }
+      .destinfade{
+        top: 3.5rem;
+    }
+    .moredestinations{
+      margin-bottom: 1.5rem;
+    }
 
       }
     
@@ -209,6 +262,14 @@
             font-size: 24px;
             line-height: 160%;
         }
+        .packagehomefade {
+          top: 6.2rem;
+      }
+      .fadingTitle {
+        font-size: 46px;
+        margin-bottom: 0.5rem;
+        color: #00280017;
+    }
       }
 
 

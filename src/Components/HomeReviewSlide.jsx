@@ -41,6 +41,7 @@ const HomeReviewSlide = () => {
     <FadeHeader
         fadingtitle = "Reviews"
         cleartitle = "What Our Clients Say"
+        className="fade"
       /> 
         
       <div className="blogo" id='Testimonials'>

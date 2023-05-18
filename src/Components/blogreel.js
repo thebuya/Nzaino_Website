@@ -120,25 +120,31 @@ export const reviews= [
         " were outstanding, and went above and beyond to make sure we"+
         " were happy. They even stopped in avillage to buy us Jackfruit."+
         " They even helped us settle bills at restaurants,"+
-        " they are the real deal. And oh yeah!, they know"+
-        " every animal and bird in the country. "+
+        " they are the real deal. And oh yeah!,help you get insurance."+
         "",
         client: "Henri Cartier-Bresson",
     },
     {
         id:"2",
-        quote: "We had an amazing time with Nzaino on our Uganda tour. The itinerary was well-planned, the guides were knowledgeable and friendly, and the accommodation was comfortable and clean. We saw so many beautiful places and animals, and learned a lot about the culture and history of Uganda."+
+        quote: "We had an amazing time with Nzaino on our Uganda tour. The itinerary was well-planned,"+
+        " the guides were knowledgeable and friendly, and the accommodation was comfortable and clean. "+
+        "We saw so many beautiful places and animals, and learned a lot about the culture and history of Uganda."+
         "<span class='highlight'>We highly recommend Nzaino to anyone looking for a memorable and affordable travel experience in East Africa.</span> ",
         client: "Persons Name ",
     },
     {
         id:"3",
-        quote: "Nzaino is the best travel agency we have ever used. They arranged everything for us, from flights and visas to hotels and activities. They were always available to answer our questions and give us tips before and during our trip. They made us feel like VIPs with their personalized service and attention to detail. We loved our trip to Uganda and can’t wait to book another one with Nzaino.",
+        quote: "Nzaino is the best travel agency we have ever used."+
+        " They arranged everything for us, from flights and visas to hotels and activities"+
+        ". <span class='highlight'>They were always available to answer our questions and"+
+        " give us tips before and during our trip</span>. They made us feel like VIPs with their personalized service and attention to detail. We loved our trip to Uganda and can’t wait to book another one with Nzaino.",
         client: "Persons Name",
     },
     {
         id:"4",
-        quote: "Thank you Nzaino for making our dream trip come true. We enjoyed every moment of our Uganda tour, from the stunning scenery and wildlife to the delicious food and friendly people. You took care of all the logistics and made sure we had a smooth and hassle-free trip. You also gave us some great suggestions for optional activities that added to our fun and adventure. We will definitely travel with Nzaino again.",
+        quote: "Thank you Nzaino for making our dream trip come true. "+
+        "<span class='highlight'>We enjoyed every moment of our Uganda tour</span>,"+
+        " from the stunning scenery and wildlife to the delicious food and friendly people. You took care of all the logistics and made sure we had a smooth and hassle-free trip. You also gave us some great suggestions for optional activities that added to our fun and adventure. We will definitely travel with Nzaino again.",
         client: "Persons Name",
     },
 ]

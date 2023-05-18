@@ -1,6 +1,6 @@
 import React from 'react'
 import { TiArrowRight } from "react-icons/ti";
-import {Link} from 'react-router-dom'
+//import {Link} from 'react-router-dom'
 import './placescard.css'
 
 
@@ -26,7 +26,7 @@ function PlacesCard(props)  {
 
             <div className="buttons">
                 <button onClick={scrollToSection} className="bookAPlace"> Book Trip <TiArrowRight/>  </button>
-                <Link to="/destinations" className="readAPlace"> View Details...</Link>
+             { /*<Link to="/destinations" className="readAPlace"> View Details...</Link>*/}
             {/**     <button className="readAPlace"> View Details...</button> */}
             </div>
     </div>

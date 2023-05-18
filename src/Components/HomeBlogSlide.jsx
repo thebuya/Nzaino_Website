@@ -42,6 +42,7 @@ const HomeBlogSlide = () => {
     <FadeHeader
         fadingtitle = "Blog"
         cleartitle = "Travellers Blog"
+        className="fade"
       /> 
         
       <div className="blogo">

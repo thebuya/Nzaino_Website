@@ -1,6 +1,5 @@
 import React, { useState, useEffect  }  from 'react'
 import './packages.css'
-import { motion } from 'framer-motion';
 
 import headerimage from '../../Images/packagesHeader.jpg';
 import FadingHeader from '../../Components/FadingHeader';
@@ -16,7 +15,9 @@ import BackgroundBlog from '../../Images/fadingpackage2.jpg';
 const Packages = () => {
 
 
-  const description = 'Volacanoes National Park Lodges, Rwanda '; // Replace with your description
+  const [selectedFilter, setSelectedFilter] = useState(null);
+
+  const description = 'Volcanoes National Park Lodges, Rwanda'; // Replace with your description
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
@@ -38,13 +39,28 @@ const Packages = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Calculate indexes for current page
+  // Calculate indexes for current page and selected filter
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
-  const currentCards = packages.slice(indexOfFirstCard, indexOfLastCard);
+
+  /// Filter packages based on selected filter
+  const filteredPackages = selectedFilter
+    ? packages.filter((packageItem) => parseInt(packageItem.price.slice(1)) <= selectedFilter)
+    : packages;
+
+  // Get the packages for the current page
+  const currentCards = filteredPackages.slice(indexOfFirstCard, indexOfLastCard);
 
   // Change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  // Reset filter and current page when the selected filter changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedFilter]);
+
   return (
     <div className='Packages'>
         <FadingHeader image={headerimage} description={description}/>
@@ -63,53 +79,70 @@ const Packages = () => {
 
               {/* Pagination */}
               <div className="packagesPagination upper">
-                {Array.from({ length: Math.ceil(packages.length / cardsPerPage) }, (_, index) => (
-                  <button
-                    key={index}
-                    className={currentPage === index + 1 ? 'active' : ''}
-                    onClick={() => paginate(index + 1)}
-                  >
-                    {index + 1}
-                  </button>
-                ))}
+              <button
+  className={selectedFilter === null ? 'active' : ''}
+  onClick={() => setSelectedFilter(null)}
+>
+  All
+</button>
+<button
+  className={selectedFilter === 300 ? 'active' : ''}
+  onClick={() => setSelectedFilter(300)}
+>
+  &lt; $300
+</button>
+<button
+  className={selectedFilter === 700 ? 'active' : ''}
+  onClick={() => setSelectedFilter(700)}
+>
+  &lt; $700
+</button>
+<button
+  className={selectedFilter === 1000 ? 'active' : ''}
+  onClick={() => setSelectedFilter(1000)}
+>
+  &lt; $1000
+</button>
+<button
+  className={selectedFilter === 2000 ? 'active' : ''}
+  onClick={() => setSelectedFilter(2000)}
+>
+  &lt; $2000
+</button>
               </div>
 
-              <motion.div 
-              className="packagesContainer"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              >
-                  {currentCards.map(pack => (
+              <div className="packagesContainer" >
+                  {currentCards.map(packageItem => (
 
                     <PackagesCard
-                      key={pack.id}
-                      image={pack.image}
-                      caption={pack.caption}
-                      title={pack.title}
-                      activities={pack.activities}
-                      price={pack.price}
-                      people={pack.people}
-                      duration={pack.duration}
-                      availability={pack.availability}
-                      highlights={pack.highlights}
+                    key={packageItem.id}
+                    //image={packageItem.image}
+                      images={packageItem.images} 
+                      caption={packageItem.caption}
+                      title={packageItem.title}
+                      activities={packageItem.activities}
+                      price={packageItem.price}
+                      people={packageItem.people}
+                      duration={packageItem.duration}
+                      availability={packageItem.availability}
+                      highlights={packageItem.highlights}
                     />
                   ))}
                   <img src={BackgroundBlog} className="BackBlog packageback " alt="" />
-              </motion.div>
-
-              {/* Pagination */}
-              <div className="packagesPagination">
-                {Array.from({ length: Math.ceil(packages.length / cardsPerPage) }, (_, index) => (
-                  <button
-                    key={index}
-                    className={currentPage === index + 1 ? 'active' : ''}
-                    onClick={() => paginate(index + 1)}
-                  >
-                    {index + 1}
-                  </button>
-                ))}
               </div>
+
+             {/* Pagination */}
+      <div className="packagesPagination">
+        {Array.from({ length: Math.ceil(filteredPackages.length / cardsPerPage) }, (_, index) => (
+          <button
+            key={index}
+            className={currentPage === index + 1 ? 'active' : ''}
+            onClick={() => paginate(index + 1)}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
 
               <FadeHeader className="FAQsHeader"
         fadingtitle = "FAQS"

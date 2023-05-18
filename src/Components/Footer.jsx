@@ -48,6 +48,9 @@ const Footer = () => {
                 <Link to="/" className='logo footer-logo'>
                     <img src={Logo} alt="Nzaino Travel Africa Logo"/>
                 </Link>
+                <Link to="/" className='logo2 footer-logo'>
+                    <img src={Logo} alt="Nzaino Travel Africa Logo"/>
+                </Link>
                 <p>
                     <BsGeoAltFill/>Behind Nakawa PostOffice <br className='off-phone' /> 
                     <BsGeo className='off-phone'/> Next to MUBS. <br />
@@ -63,7 +66,7 @@ const Footer = () => {
                     <FaWhatsapp/>
                         </a>
                     </li>
-                    <li><a  rel='noreferrer' href="https://wa.me/256704530502" target="_blank" >
+                    <li><a  rel='noreferrer' href="https://facebook.com" target="_blank" >
                     <TfiFacebook/>
                         </a>
                     </li>

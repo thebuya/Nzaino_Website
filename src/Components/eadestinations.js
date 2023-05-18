@@ -387,6 +387,14 @@ export const packages = [
     {
         id: "1",
         image: serengeti5,
+        images : [
+            serengeti5,
+            serengeti,
+            serengeti2,
+            serengeti3,
+            serengeti4,
+            
+          ],
         caption: "Serengeti Park, Kenya",
         title: "Witness the Great Migration",
         activities: "Hot Air Balloon Safaris / Game Drives / Masai Village Visit / Safari Tours",
@@ -408,6 +416,14 @@ export const packages = [
     {
         id: "2",
         image: Rwenzori,
+        images : [
+            Rwenzori,
+            Climbing2,
+            Climbingsnow,
+            Lions,
+            Lions2
+            
+          ],
         caption: "Mt Rwenzori, Uganda",
         title: "Mountains of the Moon",
         activities: "Mountain Climbing / Hiking / Bird watching / Cultural encounters / Scenic photography",
@@ -426,6 +442,14 @@ export const packages = [
     {
         id: "3",
         image: zanzibar1,
+        images : [
+            zanzibar1,
+            zanzibar2,
+            zanzibar3,
+            zanzibar4,
+            zanzibar5,
+            
+          ],
         caption: "Zanzibar",
         title: "Zanzibar: A Beach Affair",
         activities: "Scuba Diving / Spice Tours / Stone Town Tour / Dhow Cruise / Prison Island Tour ",
@@ -445,6 +469,14 @@ export const packages = [
     {
         id: "4",
         image: kilimanjaro4,
+        images : [
+            kilimanjaro1,
+            kilimanjaro2,
+            kilimanjaro3,
+            kilimanjaro4,
+            kilimanjaro5,
+            
+          ],
         caption: "Mt Kilimanjaro, Tanzania",
         title: "Mountain Climbing",
         activities: "Hiking / Cultural Immersion / Safari Tours",
@@ -463,6 +495,14 @@ export const packages = [
     {
         id: "5",
         image: hellsgate2,
+        images : [
+            hellsgate2,
+            hellsgate3,
+            hellsgate4,
+            hellsgate5,
+            hellsgate,
+            
+          ],
         caption: "HellsGate Park, Kenya",
         title: "Hell’s Gate: Hakuna Matata!",
         activities: "Hiking / RockClimbing / Cycling / WildLife Viewing / Camping",
@@ -482,6 +522,14 @@ export const packages = [
     {
         id: "6",
         image: Gorillatrekking,
+        images : [
+            Gorillatrekking,
+            bwindi4,
+            Bwindi,
+            Bwindi2,
+            Bwindi3,
+            
+          ],
         caption: "Bwindi Impenetrable Forest, Uganda",
         title: "Gorilla Trekking",
         activities: "Hiking / WildLife-Photography / Batwa Forest Experience / BirdWatching / Safari Tours",
@@ -504,6 +552,14 @@ export const packages = [
     {
         id: "7",
         image: vnp,
+        images : [
+            vnp,
+            vnp2,
+            vnp3,
+            vnp4,
+            vnp5,
+            
+          ],
         caption: "Virunga Park, Rwanda",
         title: "Volcanoes & Gorillas",
         activities: "Gorilla Trekking / Volcano Hiking / Tongo Forest Walk / Safari Tours",

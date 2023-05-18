@@ -1,26 +1,43 @@
-import React from 'react'
-import './PackagesCard.css'
-import { TiArrowRight } from "react-icons/ti";
+import React, { useState } from 'react';
+import './PackagesCard.css';
+import { TiArrowRight, TiArrowLeft } from "react-icons/ti";
 import { CiCalendarDate, CiClock1 } from "react-icons/ci";
 
-
 function PackagesCard(props) {
-    const scrollToSection = (caption) => {
-        const section = document.getElementById('bookingSection');
-        section.scrollIntoView({ behavior: 'smooth' });
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const handleSwipeLeft = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? props.images.length - 1 : prevIndex - 1
+    );
+  };
 
-      };
-    
+  const handleSwipeRight = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === props.images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
-      const highlights = props.highlights.map((highlight, index) => (
-        <li key={index}>{highlight}</li>
-    ));
-  
+  const scrollToSection = () => {
+    const section = document.getElementById('bookingSection');
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const highlights = props.highlights.map((highlight, index) => (
+    <li key={index}>{highlight}</li>
+  ));
+
     return (
         <div className='packagesCard' key={props.id}>
             <div className="imageCaption">
-                <img src={props.image} alt="destination" className='packagesImage' />
-                <p className="caption">{props.caption}</p>
+              {/**  <img src={props.image} alt="destination" className='packagesImage' />*/}
+              <img
+          src={props.images[currentImageIndex]}
+          alt="destination"
+          className='packagesImage'
+        />
+        <button className="prevButton" onClick={handleSwipeLeft}><TiArrowLeft /></button>
+        <button className="nextButton" onClick={handleSwipeRight}><TiArrowRight /></button>
+        <p className="caption">{props.caption}</p>
             </div>
 
 

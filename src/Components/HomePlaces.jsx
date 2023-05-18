@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react'
 
 import { places } from './blogreel';
 import PlacesCard from './PlacesCard';
-import BackgroundBlog from '../Images/fadingelephants.jpg' ;
+import BackgroundBlog from '../Images/fadedestiny.jpg';
 
 import FadeHeader from '../UI/FadeHeader';
 import {Link} from 'react-router-dom'
@@ -41,6 +41,7 @@ const HomePlaces = () => {
     <FadeHeader
         fadingtitle = "Destinations"
         cleartitle = "Places To Visit"
+        className="fade destinfade"
       /> 
         
       <div className="blogo">
@@ -89,7 +90,7 @@ const HomePlaces = () => {
             <img src={BackgroundBlog} className="BackBlog destinback" alt="" />
       </div>
       <button className="moredestinations">
-      <Link to="/destinations" className='linkbutton'> Explore All Destinations</Link>
+      <Link to="/destinations" className='linkbutton'> View All Destinations</Link>
       </button>
 
       

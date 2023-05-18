@@ -9,6 +9,7 @@ import HomePlaces from '../../Components/HomePlaces';
 
 import './home.css';
 import HomeReviewSlide from '../../Components/HomeReviewSlide';
+import HomePackageSlide from '../../Components/HomePackageSlide';
 
 
 
@@ -25,6 +26,7 @@ const Home = () => {
   return (
     <div className='home-page'>
         <HomeMainSlide/>
+        <HomePackageSlide/>
         <HomePlaces /> {/** Destinations */}
         <HomeReviewSlide />
         <HomeBlogSlide/>
