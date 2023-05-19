@@ -2,12 +2,17 @@ import React from 'react'
 import './about.css'
 
 import service from '../../Images/service1.png';
-import service2 from '../../Images/guide.png';
+import service2 from '../../Images/guides2.png';
 import service3 from '../../Images/tripplan.png';
-import service4 from '../../Images/hotel2.png';
+import service4 from '../../Images/hotel3.png';
 
 import service5 from '../../Images/passport.png';
 import service6 from '../../Images/crosssborder.png';
+
+import staff from '../../Images/staff.png';
+import airportpick from '../../Images/airportpick.png';
+import local from '../../Images/lk.png';
+
 
 import Backgroundserve from '../../Images/backgroundservices.jpg';
 //
@@ -58,10 +63,7 @@ const About = () => {
                 <img src={service3} alt="" />
                 <p className="service">Trip Planning</p>
               </div>
-              <div className="serve">
-                <img src={service5} alt="" />
-                <p className="service">Document Processing</p>
-              </div>
+              
               <div className="serve">
                 <img src={service2} alt="" />
                 <p className="service">Tour Guides</p>
@@ -69,6 +71,10 @@ const About = () => {
               <div className="serve">
                 <img src={service4} alt="" />
                 <p className="service">Accommodation Booking</p>
+              </div>
+              <div className="serve">
+                <img src={service5} alt="" />
+                <p className="service">Assistance In Document Processing</p>
               </div>
               
 
@@ -104,28 +110,30 @@ const About = () => {
           <div className="servicegrid">
               
               <div className="serve">
-                <img src={service} alt="" />
+                <img src={local} alt="" />
                 <p className="service">Local Knowledge</p>
               </div>
               <div className="serve">
-                <img src={service} alt="" />
-                <p className="service">VIP Airport Assistant</p>
+                <img src={airportpick} alt="" />
+                <p className="service">Airport Transfer &amp; Chauffering</p>
+              </div>
+             
+              <div className="serve">
+                <img src={staff} alt="" />
+                <p className="service">Experienced &amp; Professional Staff</p>
+              </div>
+
+              <div className="serve">
+                <img src={service4} alt="" />
+                <p className="service">Recommended Accommodation</p>
               </div>
               <div className="serve">
                 <img src={service} alt="" />
-                <p className="service">Super Vehicles For Comfort and Safety</p>
-              </div>
-              <div className="serve">
-                <img src={service} alt="" />
-                <p className="service">Experienced and Professional Staff</p>
+                <p className="service">Super Vehicles For Comfort &amp; Safety</p>
               </div>
               <div className="serve">
                 <img src={service6} alt="" />
                 <p className="service">Cross-Border Experience</p>
-              </div>
-              <div className="serve">
-                <img src={service4} alt="" />
-                <p className="service">Recommended Accommodation</p>
               </div>
 
           </div>

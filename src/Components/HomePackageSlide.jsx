@@ -44,7 +44,7 @@ const HomePackageSlide = () => {
     <>
       <FadeHeader
         fadingtitle = "Packages"
-        cleartitle = "Travel More, Spend Less"
+        cleartitle = "Travel More, Live More"
         className="packagehomefade"
       /> 
        <p className="whotext paragraphs paratext">
@@ -53,7 +53,8 @@ const HomePackageSlide = () => {
        We offer great deals on flights, accommodation, and
         activities in various destinations. We also handle 
         all the details for you, from planning to booking 
-        to insurance.  Contact us today and let us help you
+        to insurance. Swipe our offers below and 
+        contact us today and let us help you
          travel more and spend less.
         </p>
         

@@ -69,7 +69,7 @@
       .home-page .blogs-on-homepage .swiper-wrapper{
         height: auto;
         padding-bottom: 0.25rem;
-      }
+      } 
       .home-page .reviewsslide .swiper-wrapper{
 
         padding-bottom: 2rem;
@@ -165,7 +165,10 @@
        .home-page .blogs-on-homepage .swiper-button-prev{
         display: block;
         right: 0rem;
+        transition: all ease-in-out 400ms;
+        
       }
+   
       .blogs-on-homepage .swiper-button-prev:after,
       .blogs-on-homepage .swiper-rtl .swiper-button-next:after,
       .blogs-on-homepage .swiper-button-next:after, 
@@ -173,6 +176,13 @@
           font-size: 1.25rem;
           font-weight: 900;
           color: var(--green-A01);
+      }
+      .blogs-on-homepage .swiper-button-prev:hover:after,
+      .blogs-on-homepage .swiper-rtl .swiper-button-next:hover:after,
+      .blogs-on-homepage .swiper-button-next:hover:after, 
+      .blogs-on-homepage .swiper-rtl .swiper-button-prev:hover:after {
+          font-size: 1rem;
+          color: var(--green-003);
       }
       .blogs-on-homepage .swiper-horizontal>.swiper-pagination-bullets,
       .blogs-on-homepage .swiper-pagination-bullets.swiper-pagination-horizontal, 
@@ -206,17 +216,20 @@
   top: 2rem;
 } 
 .packagehomefade{
-  top: 1.2rem;
+  top: 2.2rem;
 } 
     
 .packagehomeslide  .BackBlog {
   opacity: 1;
   padding-bottom: 3rem;
 } 
-.paratext {
+.home-page .paragraphs{
 margin-top: -0.5rem;
 }
-    
+.home-page .packagehomeslide .swiper-wrapper {
+  margin-top: 0.5rem;
+  /* height: 90vh; */
+}
     
     
       @media screen and (max-width: 900px) {
@@ -224,6 +237,25 @@ margin-top: -0.5rem;
             font-size: 28px;
             line-height: 150%;
             padding: 3rem;
+        }
+        .blogs-on-homepage .swiper-button-prev:after,
+        .blogs-on-homepage .swiper-rtl .swiper-button-next:after,
+        .blogs-on-homepage .swiper-button-next:after, 
+        .blogs-on-homepage .swiper-rtl .swiper-button-prev:after {
+            font-size: 1rem;
+            transition: all ease-in-out 500ms;
+        }
+        .home-page .blogs-on-homepage .swiper-button-next:hover, 
+        .home-page .blogs-on-homepage .swiper-button-prev:hover{
+         background: rgb(238, 238, 238);
+         border: 1px solid var(--green-A01);
+       }
+        .blogs-on-homepage .swiper-button-prev:hover:after,
+        .blogs-on-homepage .swiper-rtl .swiper-button-next:hover:after,
+        .blogs-on-homepage .swiper-button-next:hover:after, 
+        .blogs-on-homepage .swiper-rtl .swiper-button-prev:hover:after {
+            font-size: 0.75rem;
+            color: var(--green-003);
         }
         .home-heading span {
             font-size: 30px;
@@ -249,28 +281,57 @@ margin-top: -0.5rem;
     .moredestinations{
       margin-bottom: 1.5rem;
     }
+    .home-page .paragraphs {
+      margin-top: 1.5rem;
+    }
 
-      }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .home-page .blogs-on-homepage .swiper-button-next, 
+  .home-page .blogs-on-homepage .swiper-button-prev{
+   display: flex;
+   border-radius: 30rem;
+   right: 0rem;
+   width: 40px;
+   height: 40px;
+   background: rgba(238, 238, 238, 0.529);
+   border: 1px solid rgba(114, 142, 119, 0.263) ;
+   transition: all ease-in-out 400ms;
+   
+ }
+  .home-page .blogs-on-homepage .swiper-wrapper{
+    width: 80vw;
+  }
+}
+
+
+
     
-      @media screen and (max-width: 450px) {
-        .home-heading {
-            font-size: 22px;
-            line-height: 170%;
-            padding: 3rem;
-        }
+@media screen and (max-width: 450px) {
+  .home-heading {
+      font-size: 22px;
+      line-height: 170%;
+      padding: 3rem;
+  }
         .home-heading span {
             font-size: 24px;
             line-height: 160%;
         }
         .packagehomefade {
-          top: 6.2rem;
+          top: 4.2rem;
       }
       .fadingTitle {
         font-size: 46px;
         margin-bottom: 0.5rem;
         color: #00280017;
     }
-      }
+    .home-page .paragraphs {
+      margin-top: 2.5rem;
+      margin-bottom: 0;
+  }
+ }
 
 
      

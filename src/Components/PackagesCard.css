@@ -35,6 +35,7 @@ position: relative; /* Added */
 width: inherit;
 overflow-y: clip;
 position: relative;
+overflow: hidden;
 }
 
 .packagesCard .prevButton,

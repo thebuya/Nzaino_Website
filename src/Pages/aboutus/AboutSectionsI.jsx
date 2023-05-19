@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './about.css'
 import headerimage from '../../Images/discoveruganda.jpg';
+
 import who from '../../Images/van.jpg';
+
 
 //import Backgroundserve from '../../Images/backgroundservices.jpg';
 //
