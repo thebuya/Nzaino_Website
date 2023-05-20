@@ -425,7 +425,7 @@ export const packages = [
             
           ],
         caption: "Mt Rwenzori, Uganda",
-        title: "Mountains of the Moon",
+        title: "Mountains of the Moon 🏔",
         activities: "Mountain Climbing / Hiking / Bird watching / Cultural encounters / Scenic photography",
         price: "$600",
         people: "per person",
@@ -478,7 +478,7 @@ export const packages = [
             
           ],
         caption: "Mt Kilimanjaro, Tanzania",
-        title: "Mountain Climbing",
+        title: "Mountain Climbing ",
         activities: "Hiking / Cultural Immersion / Safari Tours",
         price: "$780",
         people: "per person",
@@ -531,7 +531,7 @@ export const packages = [
             
           ],
         caption: "Bwindi Impenetrable Forest, Uganda",
-        title: "Gorilla Trekking",
+        title: "Gorilla Trekking 🦍",
         activities: "Hiking / WildLife-Photography / Batwa Forest Experience / BirdWatching / Safari Tours",
         price: "$1100",
         people: "per person",
@@ -561,7 +561,7 @@ export const packages = [
             
           ],
         caption: "Virunga Park, Rwanda",
-        title: "Volcanoes & Gorillas",
+        title: "Volcanoes & Gorillas ",
         activities: "Gorilla Trekking / Volcano Hiking / Tongo Forest Walk / Safari Tours",
         price: "$1000",
         people: "per person",

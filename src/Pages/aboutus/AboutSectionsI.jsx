@@ -50,7 +50,7 @@ const AboutSectionsI = () => {
 
   return (
     <div>
-         <div className="firstpart">
+        <div className="firstpart">
             <div className="behind">
                 <div className="headerWords">
                     <FadingHeader

@@ -54,7 +54,7 @@ const Footer = () => {
                 <p>
                     <BsGeoAltFill/>Behind Nakawa PostOffice <br className='off-phone' /> 
                     <BsGeo className='off-phone'/> Next to MUBS. <br />
-                    < BsSignpost/> P.O Box 6365, Kampala (U)
+                    < BsSignpost/> P.O Box 6365, Kampala 🇺🇬
                 </p>
             </div>
 

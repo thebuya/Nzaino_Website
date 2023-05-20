@@ -50,11 +50,11 @@ const HomePackageSlide = () => {
        <p className="whotext paragraphs paratext">
        If you dream of exploring East Africa on a budget, 
        Nzaino Travels has the perfect packages for you. 
-       We offer great deals on flights, accommodation, and
-        activities in various destinations. We also handle 
+       We offer great deals on flights 🛩 accommodation 🏕 and
+        activities in various destinations. We also assist with
         all the details for you, from planning to booking 
         to insurance. Swipe our offers below and 
-        contact us today and let us help you
+        contact us today. Let us help you
          travel more and spend less.
         </p>
         

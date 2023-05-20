@@ -231,8 +231,107 @@ margin-top: -0.5rem;
   /* height: 90vh; */
 }
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-page .whoHeader{
+  margin-top: -3rem;
+}
+.home-page .teamswiper .swiper-button-next,
+.home-page .teamswiper .swiper-button-prev {
+  display: flex;
+  }
+  .home-page .teamswiper .blogo {
+    height: -webkit-fit-content;
+    overflow: inherit;
+    }
+    .home-page .teamswiper .swiper,  .home-page .teamswiper .swiper-container {
+      height: auto;
+      margin-bottom: 2.5rem;
+
+      margin-left: auto;
+      margin-right: auto;
+      
+      }
+      .home-page .teamswiper .swiper-wrapper {
+        padding-bottom: 0rem;
+        height: -webkit-fit-content;
+        margin-top: 1rem;
+        }
+        .home-page .teamswiper .swiper-pagination {
+          top: 18.2rem;
+          }
+.exp{
+  height: 100px;
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--green-003);
+}
+
+.exp h3 {
+  font-family: 'Courgette', cursive;
+ /* font-family: 'Tangerine', cursive;*/
+
+  font-size: 23px;
+  width: 80%;
+  color: rgba(255, 255, 255, 0.28);
+  line-height: 150%;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  }
     
       @media screen and (max-width: 900px) {
+        .home-page .whoHeader{
+          margin-top: 0rem;
+        }
+        .home-page .secondpart .team .teamtitle{
+          margin-top: 0rem;
+          margin-bottom: 0rem;
+        }
+        
+        .home-page .teamswiper .swiper-wrapper {
+          padding-bottom: 0rem;
+          height: -webkit-fit-content;
+          margin-top: 1rem;
+          }
+          .home-page .teamswiper .swiper,  .home-page .teamswiper .swiper-container {
+            height: auto;
+            margin-bottom: 2.5rem;
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+            
+            }
+            .home-page .teamswiper .swiper-pagination {
+              top: 18rem;
+              }
+      
+         
+        
         .home-heading {
             font-size: 28px;
             line-height: 150%;
@@ -263,8 +362,12 @@ margin-top: -0.5rem;
         }
         .packagehomeslide  .blogs-on-homepage .swiper-wrapper {
  
-          padding-bottom: 2rem;
+          padding-bottom: 3rem;
         } 
+
+.packagehomeslide .blogs-on-homepage .swiper-pagination, .packagehomeslide .blogs-on-homepage .swiper-pagination-clickable, .packagehomeslide .blogs-on-homepage .swiper-pagination-bullets, .packagehomeslide .blogs-on-homepage .swiper-pagination-horizontal {
+  margin-bottom: 0.5rem;
+}
         .packagehomefade {
           top: 3.2rem;
       }
@@ -288,7 +391,7 @@ margin-top: -0.5rem;
 }
 
 
-@media screen and (min-width: 500px) and (max-width: 700px) {
+@media screen and  (min-width: 500px) and (max-width: 700px) {
   .home-page .blogs-on-homepage .swiper-button-next, 
   .home-page .blogs-on-homepage .swiper-button-prev{
    display: flex;
@@ -315,6 +418,18 @@ margin-top: -0.5rem;
       line-height: 170%;
       padding: 3rem;
   }
+  .home-page .blogs-on-homepage .swiper-button-next:hover, 
+  .home-page .blogs-on-homepage .swiper-button-prev:hover{
+   background: none;
+   border: none;
+ }
+  .blogs-on-homepage .swiper-button-prev:hover:after,
+  .blogs-on-homepage .swiper-rtl .swiper-button-next:hover:after,
+  .blogs-on-homepage .swiper-button-next:hover:after, 
+  .blogs-on-homepage .swiper-rtl .swiper-button-prev:hover:after {
+      font-size: 0.75rem;
+      color: none;
+  }
         .home-heading span {
             font-size: 24px;
             line-height: 160%;
@@ -331,6 +446,11 @@ margin-top: -0.5rem;
       margin-top: 2.5rem;
       margin-bottom: 0;
   }
+
+.home-page .teamswiper .swiper, .home-page .teamswiper .swiper-container {
+
+    width: 90vw;
+}
  }
 
 

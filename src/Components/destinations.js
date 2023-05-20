@@ -1,14 +1,13 @@
 
 export const links = [
     {
-        name: "Nzaino Home", 
+        name: "Home", 
         path: '/',
     },
-    /*
     {
-        name: "About-Us",
+        name: "About Nzaino",
         path: '/aboutus',
-    },*/
+    },
     {
         name: "Destinations",
         path: '/destinations',
@@ -18,7 +17,7 @@ export const links = [
         path: '/packages',
     },
     {
-        name: "Car-Hire",
+        name: "Car Hire ",
         path: '/car',
     },
     {

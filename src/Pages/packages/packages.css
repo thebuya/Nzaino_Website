@@ -107,9 +107,12 @@
     top: 0.5rem;
     margin-bottom: 1rem;
 }
-.upper{
-    display: none;
+
 
 }
 
+@media screen and (max-width: 450px){
+.Packages .mainFade {
+    top: 2.5rem;
+}
 }
