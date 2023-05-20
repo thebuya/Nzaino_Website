@@ -4,20 +4,74 @@ import BackgroundImage1 from '../Images/bwindibuyajpeg1.jpg'
 import BackgroundImage from '../Images/bwindibuyajpeg4.jpg'
 
 
-const BookingForm = () => {
-  const [bookingData, setBookingData] = useState({
-    startdate: new Date().toISOString().split('T')[0],
-    enddate: '',
-    destinationLocation: '',
-    returnLocation: '',
-    adultCount: 2,
-    childCount: 2,
-    travelerName: '',
-    travelerContact: '',
-    specialRequests: ''
-  });
 
-   
+
+
+
+
+
+
+
+
+
+
+const BookingForm = () => {
+const [values, setValues] = useState({
+  startdate: new Date().toISOString().split('T')[0],
+  enddate: '',
+  destinationLocation: '',
+  returnLocation: '',
+  adultCount: 1,
+  childCount: 0,
+  travelerName: '',
+  travelerContact: '',
+  specialRequests: ''
+});
+
+
+    //Just For Just
+  console.log("re-rendered")
+
+
+
+  const handleSubmit = (e)=> {
+    e.preventDefault(); //Prevents Submit Button From Re-Loading Page
+
+  };
+
+
+
+
+
+  //Captures What Someone is Typing
+  const onChange = (e) => {
+    const { name, value } = e.target;
+  
+    setValues((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+  };
+  console.log(values);
+
+
+
+
+
+  //So error appears only when needed, <---
+  const [focused, setFocused] = useState(false)
+
+  const handleFocus = (e) => {
+    setFocused(true);
+
+  };
+
+
+
+
+
+
+
   return (
     <section className="bookingSection"  id="bookingSection">
         <h1 className="bookTrip" >
@@ -25,7 +79,7 @@ const BookingForm = () => {
         </h1>
 
 
-     <form className="bookingForm" 
+     <form className="bookingForm" onSubmit={handleSubmit} onChange={onChange}
                         style={{ backgroundImage: `url(${BackgroundImage})`,
                         backgroundSize: 'contain',
                         backgroundPositionY: 'bottom',
@@ -42,9 +96,13 @@ const BookingForm = () => {
                       type="text"
                       name="destinationLocation"
                       placeholder='e.g Murchison Falls Park'
-                      value={bookingData.destinationLocation}
-                     // onChange={handleInputChange}
+                      value={values.destinationLocation}
+                      onChange={onChange}
+                      required
+                      
+                      focused={focused.toString()}
                       />
+                       <span className="errorMessage">Please provide a destination</span>
                   </label>
                   <label>
                       Where From ?
@@ -52,9 +110,12 @@ const BookingForm = () => {
                       type="text"
                       name="returnLocation"
                       placeholder='e.g Entebbe Airport'
-                      value={bookingData.returnLocation}
-                     // onChange={handleInputChange}
+                      value={values.returnLocation}
+                      onChange={onChange}
+                      required
+                      focused={focused.toString()}
                       />
+                       <span className="errorMessage">Please provide a pick-up location</span>
                   </label>
               </div>
           
@@ -64,8 +125,12 @@ const BookingForm = () => {
                 <input
                   type="date"
                   name="startdate"
-                  value={bookingData.startdate}
+                  //value={bookingData.startdate}
+                  value={values.startdate}
+                  onChange={onChange}
+                  
                   //onChange={handleInputChange}
+
                   min={new Date().toISOString().split('T')[0]} // Restrict to current date or later
                 />
               </label>
@@ -76,7 +141,11 @@ const BookingForm = () => {
                       <input
                           type="date"
                           name="enddate"
-                          value={bookingData.enddate}
+                          placeholder='return date e.g 2023-05-31'
+                          //value={bookingData.enddate}
+                          
+                          value={values.enddate}
+                          onChange={onChange}
                          // onChange={handleInputChange}
                           min={(new Date(Date.now() + 2 * 24 * 60 * 60 * 1000)).toISOString().split('T')[0]}
                       />
@@ -84,23 +153,29 @@ const BookingForm = () => {
               </div>
 
               <div className="pickPeople">
+
               <label>
               Adults
               <input
                 type="number"
                 name="adultCount"
                 min="1"
-                value={bookingData.adultCount}
+                //value={bookingData.adultCount}
+                value={values.adultCount}
+                onChange={onChange}
                 //onChange={handleInputChange}
               />
             </label>
+
             <label className='children'>
               Children
               <input
                 type="number"
                 name="childCount"
                 min="0"
-                value={bookingData.childCount}
+                //value={bookingData.childCount}
+                value={values.childCount}
+                onChange={onChange}
                 //onChange={handleInputChange}
               />
             </label>
@@ -113,21 +188,33 @@ const BookingForm = () => {
                       type="text"
                       name="travelerName"
                       placeholder='e.g Kwizera Davis'
-                      value={bookingData.travelerName}
-                     // onChange={handleInputChange}
+                      value={values.travelerName}
+                      onChange={onChange}
+                      focused={focused.toString()}
                       //className={validationErrors.travelerNameError ? 'error' : ''}
+                      required
+                      pattern="^[A-Za-z]+ [A-Za-z]+$"
                       />
-                  </label>
-                  <label>
-                    Phone Number
-                      <input
-                      type="number"
-                      name="travelerContact"
-                      placeholder='e.g +256 *********'
-                      value={bookingData.travelerContact}
-                     // onChange={handleInputChange}
-                      />
-                  </label>
+                      {values.travelerName && !/^([A-Za-z]+\s[A-Za-z]+)$/.test(values.travelerName) && (
+                        <span className="errorMessage">Include a space between your names.</span>
+                      )}
+                    </label>
+                    <label>
+                        Phone Number
+                        <input
+                          type="text"
+                          name="travelerContact"
+                          placeholder="e.g +256*********"
+                          focused={focused.toString()}
+                          value={values.travelerContact}
+                          onChange={onChange}
+                          pattern="^(\+[1-9]\d{9,14}|0\d{9,14})$"
+                          required
+                        />
+                        {values.travelerContact && !/^(\+[1-9]\d{9,14}|0\d{9,14})$/.test(values.travelerContact) && (
+                          <span className="errorMessage">Please provide a valid phone number.</span>
+                        )}
+                      </label>
               </div>
 
               <div className="specialRequests">
@@ -136,16 +223,16 @@ const BookingForm = () => {
                           <textarea
                               name="specialRequests"
                               placeholder="Let us know how we can make your trip more enjoyable "
-                              value={bookingData.specialRequests}
+                              //value={bookingData.specialRequests}
+                               value={values.specialRequests}
+                               onChange={onChange}
                               //onChange={handleInputChange}
                           />
                       </label>
               </div>
-
-              <div className="submitBooking">
-              <button type="submit" >
-            Complete Booking
-          </button>
+{/** onBlur={handleFocus} */}
+              <div className="submitBooking" >
+              <button type="submit"  onClick={handleFocus}> Complete Booking </button>
             
               </div>
               <p className="belowBook">Travel Africa with Insurance.</p>

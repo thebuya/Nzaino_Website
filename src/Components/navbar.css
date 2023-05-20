@@ -107,8 +107,9 @@ transition: all ease-in-out 500ms;
 
 
 
-.active-nav{
+.nav__links .active-nav{
   position: relative;
+  color: var(--green-B03);
 }
 .active-nav::after{
  /* content: '';*/

@@ -15,6 +15,7 @@ const Navbar = () => {
     const [isNavShowing, setIsNavShowing] = useState (false);
 
 
+
     const scrollToSection = () => {
         const section = document.getElementById('bookingSection');
         section.scrollIntoView({ behavior: 'smooth' });

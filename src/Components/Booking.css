@@ -34,7 +34,7 @@
     padding-left: 4.5rem;
     padding-right: 4.5rem;
     margin-bottom: -4.5rem;
-
+    transition: all ease-in-out 500ms;
     box-sizing: border-box;
     background: var(--green-002);
     border: 0.9px solid var(--green-002);
@@ -71,12 +71,7 @@
 
 }
 
-.bookingForm label .errorMessage {
-    font-size: 13px;
-    color: red;
-    font-weight: 300;
-    transition: all ease-in-out 600ms;
-}
+
 
 .bookingForm .specialRequests label {
     width: inherit;
@@ -117,6 +112,24 @@
 .bookingForm .pickLocation input {
     border: 1px solid #006400;
 }
+.bookingForm label .errorMessage {
+    font-size: 12px;
+    color: rgb(159, 50, 50);
+    font-weight: 300;
+    transition: all ease-in-out 600ms;
+    display: none; /*update*/
+}
+.bookingForm label input:invalid[focused="true"]{   
+    border: 1px solid rgb(159, 50, 50);
+    transition: all ease-in-out 600ms;
+}
+.bookingForm label input:active{   
+    border: 1px solid var(--green-B03);
+    transition: all ease-in-out 600ms;
+}
+.bookingForm label input:invalid[focused="true"] ~ .errorMessage {
+    display: block; /*update*/
+}
 
 .bookingForm .pickPeople label {
     justify-content: center;
@@ -139,7 +152,8 @@
     padding: 15px 6px;
     width: 210px;
     font-family: poppins;
-    color: var(--greengrayhue-3);
+    font-size: 14px;
+    color: var(--greengrayhue-1);
     background: transparent;
     height: 36px;
     border: 1px solid var(--greengrayhue-4);
@@ -218,6 +232,25 @@
     bottom: 0;
     mix-blend-mode: darken;
 }
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
