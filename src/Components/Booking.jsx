@@ -44,7 +44,7 @@ const [values, setValues] = useState({
   const handleSubmit = (e)=> {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'service_ne5ijvv', e.target, 'OjV8v_LlrwE82S4dU')
+    emailjs.sendForm('service_n29vta7','template_tg8uhff', e.target, 'OjV8v_LlrwE82S4dU')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
