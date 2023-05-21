@@ -1,8 +1,15 @@
+import emailjs from '@emailjs/browser';
 import React, { useState} from 'react';
-import './Booking.css';
+
+
+
+
+
+import './Booking.css'; //Styling
+
+//One is behind Card, The Other is On Card
 import BackgroundImage1 from '../Images/bwindibuyajpeg1.jpg'
 import BackgroundImage from '../Images/bwindibuyajpeg4.jpg'
-
 
 
 
@@ -35,7 +42,15 @@ const [values, setValues] = useState({
 
 
   const handleSubmit = (e)=> {
-    e.preventDefault(); //Prevents Submit Button From Re-Loading Page
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'service_ne5ijvv', e.target, 'OjV8v_LlrwE82S4dU')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
 
   };
 
