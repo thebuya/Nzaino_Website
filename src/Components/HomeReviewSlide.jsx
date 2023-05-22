@@ -40,7 +40,7 @@ const HomeReviewSlide = () => {
     <>
     <FadeHeader
         fadingtitle = "Reviews"
-        cleartitle = "What Our Clients Say"
+        cleartitle = "What Our Travellers Say"
         className="fade"
       /> 
         

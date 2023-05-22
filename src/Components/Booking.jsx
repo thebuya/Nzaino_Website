@@ -47,8 +47,23 @@ const [values, setValues] = useState({
     emailjs.sendForm('service_n29vta7','template_tg8uhff', e.target, 'OjV8v_LlrwE82S4dU')
       .then((result) => {
           console.log(result.text);
+          const travelerName = e.target.elements.travelerName.value;
+          alert(`${travelerName}, Your trip has been Booked Successfully.`);
+          
+        setValues({
+          startdate: new Date().toISOString().split('T')[0],
+          enddate: '',
+          destinationLocation: '',
+          returnLocation: '',
+          adultCount: 1,
+          childCount: 0,
+          travelerName: '',
+          travelerContact: '',
+          specialRequests: ''
+        });
       }, (error) => {
           console.log(error.text);
+          alert("Yes")
       });
       e.target.reset()
 

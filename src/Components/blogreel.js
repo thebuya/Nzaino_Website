@@ -75,16 +75,17 @@ export const places= [
     },
     {
         id:"3",
-        image: Rwenzori,
-        name: "Mt.Rwenzori, Uganda",
+        image: Kenya,
+        name: "Nairobi",
         description: "Beautiful Sunset View of Serengeti Park.",
         activities: [
             "WildLife Photography",
             "Game Park Visit",
             "Safari Tours",
-            "Guided Tours",
+            "Matatu Tours",
         ]
     },
+   
    
     {
         id:"4",
@@ -100,16 +101,17 @@ export const places= [
     },
     {
         id:"5",
-        image: Kenya,
-        name: "Mt.Kilimanjaro",
+        image: Rwenzori,
+        name: "Mt.Rwenzori, Uganda",
         description: "Beautiful Sunset View of Serengeti Park.",
         activities: [
-            "WildLife Photography",
+            "Mountain Climbing",
             "Game Park Visit",
             "Safari Tours",
             "Guided Tours",
         ]
     },
+
     
 ]
 

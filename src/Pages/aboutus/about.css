@@ -17,14 +17,40 @@
     display: flex;
     flex-direction: column;
 }
+
 .firstpart .ontop{
-    height: 240px;
+    height: -webkit-fit-content;
     width: 100%;
     background: var(--green-002);
     position: relative;
     box-shadow: 0px 0px 73px rgba(0, 40, 0, 0.13);
     border-radius: 3px;
+
+    display: grid;
+    align-items: baseline;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    grid-template-columns: repeat(4, 1fr);
 }
+.firstpart .showff .ontop .stat{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .firstpart .showff .ontop .stat h4{
+    position: relative;
+    font-size: 60px;
+    color: var(--greengrayhue-1);
+    line-height: 140%;
+    }
+ .firstpart .showff .ontop .stat p{
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+    color: var(--greengrayhue-2);
+ }
 .firstpart .partners {
     font-weight: 600;
     font-size: 18px;
@@ -101,36 +127,49 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 400%; /* Adjust the width to accommodate duplicated images */
-  animation: scroll-left 1800s linear infinite; /* Change the animation duration here */
-   /** margin-top: 7rem;*/
-    margin-top: auto;
+   /* width: 400%; /* Adjust the width to accommodate duplicated images */
+
+
+   margin-top: 4rem;
+   bottom: 0.5rem;
     white-space: nowrap;
-  }@keyframes scroll-left {
-    0% {
-      transform: translateX(0);
-    }
-    25% {
-      transform: translateX(-100%);
-    }
-    50% {
-      transform: translateX(-200%);
-    }
-    75% {
-      transform: translateX(-300%);
-    }
-    100% {
-      transform: translateX(-400%); /* Adjust the translateX value to match the width of the logoscroll */
-    }
+    overflow: hidden;
   }
-  
   .firstpart .behind .logos .logoscroll img {
     position: relative;
-    width: 150px;
+    width: 200px;
     margin-left: 1rem;
     margin-right: 1rem;
-  }
+    margin-bottom: 1rem;
 
+    display: inline-block;
+  margin: 0 24.7px;
+  transition: all .2s ease-out;
+  }
+  .firstpart .behind .logos .logoscroll img:hover {
+    transform: scale(1.2);
+    opacity: .5;
+  }
+  .marquee--inner {
+    display: block;
+    width: 200%;
+    position: absolute;
+    animation: marquee 20s linear infinite;
+  }
+  
+  .marquee--inner:hover {
+    animation-play-state: paused;
+  }
+  
+  .marquee--inner span {
+    float: left;
+    width: auto;
+  }
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
 
 
 
@@ -322,6 +361,7 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: -webkit-fill-available;
+    max-width: 1200px;
     justify-content: center;
     align-items: center;
     margin-left: auto;
@@ -363,6 +403,15 @@ margin: auto;
 
 
 
+@media screen and (min-width: 1200px) {
+    .firstpart .showff{
+        margin-top: 14rem;
+    }
+    .firstpart .partners {
+        font-weight: 600;
+        padding-top: 1rem;
+    }
+}
 @media screen and (max-width: 1200px) {
     .secondpart .who .left {
         width: 40%;
@@ -381,6 +430,27 @@ margin: auto;
     }
 }
 @media screen and (max-width: 900px) {
+    .firstpart .behind .logos .logoscroll img {
+        position: relative;
+        width: 120px;
+      }
+
+
+    .firstpart .ontop{
+        align-items: center;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+.firstpart .showff .ontop .stat{
+    align-items: center;
+}
+ .firstpart .showff .ontop .stat h4{
+    font-size: 48px;
+    }
+ .firstpart .showff .ontop .stat p{
+    font-size: 13px;
+ }
 
     .firstpart .behind .headerWords .mainwording {
         margin-top: 0rem;
@@ -480,6 +550,12 @@ margin: auto;
     padding-bottom: 1rem;
     border-bottom: 1px solid #e3e3e387;
 }
+.firstpart .partners {
+    margin-top: 1rem;
+}
+.firstpart .behind .logos .logoscroll {
+    margin-top: 4rem;
+}
 }
 @media screen and (max-width: 750px) {
     .firstpart .main-image img {
@@ -488,6 +564,31 @@ margin: auto;
     }
 }
 @media screen and (max-width: 600px) {
+    .firstpart .showff {
+        align-items: center;
+        margin-top: 6.5rem;
+        }
+        .marquee--inner {
+            animation: marquee 6s linear infinite;
+        }
+        .firstpart .ontop {
+            align-items: center;
+            width: -webkit-fit-content;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0;
+            padding-bottom: 0.5rem;
+            grid-template-columns: repeat(1, 1fr);
+            }
+            .firstpart .showff .ontop .stat {
+                margin-bottom: 0.75rem;
+                }
+                .firstpart .partners {
+                    margin-top: 0.5rem;
+                    }
+                    .firstpart .behind .logos .logoscroll {
+                        margin-top: 9rem;
+                    }
     .firstpart .behind .headerWords .mainwording {
         font-size: 24px;
     }

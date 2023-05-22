@@ -44,12 +44,13 @@ const About = () => {
                           cleartitle = "What Nzaino Offers"
                           />
                         <p className="whotext paragraphs">
-                        At Nzaino, we understand that comfort and security
-                         are essential for a memorable journey. 
-                         That’s why we provide services that make it easy for you to
+                         
+                         At Nzaino, we provide services that make it easy for you to
                           explore the rich and diverse cultures of Africa. Whether you want
-                           to experience the wildlife, the landscapes, or the people,
-                            we are here to help you discover the beauty of this continent.
+                           to experience the wildlife, the landscapes, the people, or you just want to get a ride,
+                            we are here to help you discover the beauty of this continent with our catalogue of services
+                            shown below. We understand that comfort and security
+                         are essential for a memorable journey. 
                         </p>
                     </div>
           </div>
@@ -100,7 +101,7 @@ const About = () => {
                          you with the best of East Africa and beyond. Whether
                           you are looking for adventure, romance, business, or culture,
                            we have the perfect travel package for you. We work with
-                            trusted partners in Europe and the United States to ensure 
+                            trusted partners all over East Africa to ensure 
                             your safety and satisfaction. Join us and discover
                              the wonders of this amazing region.
                         </p>

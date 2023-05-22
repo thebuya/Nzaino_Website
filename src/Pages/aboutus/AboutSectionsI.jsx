@@ -3,10 +3,8 @@ import './about.css'
 import headerimage from '../../Images/discoveruganda.jpg';
 
 import who from '../../Images/van.jpg';
+//import { AiTwotoneCustomerService } from "react-icons/ai";
 
-
-//import Backgroundserve from '../../Images/backgroundservices.jpg';
-//
 import FadingHeader from '../../Components/FadingHeader'
 import FadeHeader from '../../UI/FadeHeader';
 
@@ -15,9 +13,9 @@ import logo from '../../Images/logos/logo.png'
 import logo2 from '../../Images/logos/logoutb.png'
 import logo3 from '../../Images/logos/logoregistration.png'
 import logo4 from '../../Images/logos/logotourismmin.png'
-import logo5 from '../../Images/logos/logo.png'
-import logo6 from '../../Images/logos/logo.png'
-import logo7 from '../../Images/logos/logo.png'
+import logo5 from '../../Images/logos/logoutb.png'
+import logo6 from '../../Images/logos/logoregistration.png'
+import logo7 from '../../Images/logos/logotourismmin.png'
 import TeamSlide from '../../Components/TeamSlide';
 
 
@@ -64,61 +62,49 @@ const AboutSectionsI = () => {
                 </div>
 
                 <div className="logos">
-                <div className="logoscroll" style={{ animationPlayState: animationPaused ? 'paused' : 'running' }}>
-                       <img src={logo} alt="" />
-                      <img src={logo2} alt="" />
-                      <img src={logo3} alt="" />
-                      <img src={logo4} alt="" />
-                      <img src={logo5} alt="" />
-                      <img src={logo6} alt="" />
-                      <img src={logo7} alt="" />
-                       {/* Duplicate the images here */}
-                      <img src={logo} alt="" />
-                      <img src={logo2} alt="" />
-                      <img src={logo3} alt="" />
-                      <img src={logo4} alt="" />
-                      <img src={logo5} alt="" />
-                      <img src={logo6} alt="" />
-                      <img src={logo7} alt="" />
-                       {/* Duplicate the images here */}
-                      <img src={logo} alt="" />
-                      <img src={logo2} alt="" />
-                      <img src={logo3} alt="" />
-                      <img src={logo4} alt="" />
-                      <img src={logo5} alt="" />
-                      <img src={logo6} alt="" />
-                      <img src={logo7} alt="" />
-                       {/* Duplicate the images here */}
-                      <img src={logo} alt="" />
-                      <img src={logo2} alt="" />
-                      <img src={logo3} alt="" />
-                      <img src={logo4} alt="" />
-                      <img src={logo5} alt="" />
-                      <img src={logo6} alt="" />
-                      <img src={logo7} alt="" />
-                       {/* Duplicate the images here */}
-                      <img src={logo} alt="" />
-                      <img src={logo2} alt="" />
-                      <img src={logo3} alt="" />
-                      <img src={logo4} alt="" />
-                      <img src={logo5} alt="" />
-                      <img src={logo6} alt="" />
-                      <img src={logo7} alt="" />
-                       {/* Duplicate the images here */}
-                      <img src={logo} alt="" />
-                      <img src={logo2} alt="" />
-                      <img src={logo3} alt="" />
-                      <img src={logo4} alt="" />
-                      <img src={logo5} alt="" />
-                      <img src={logo6} alt="" />
-                      <img src={logo7} alt="" />
-                  </div>
+       
+                       <div className="logoscroll marquee--inner" style={{ animationPlayState: animationPaused ? 'paused' : 'running' }}>
+                            <span>
+                                <img src={logo} alt="" />
+                                <img src={logo2} alt="" />
+                                <img src={logo3} alt="" />
+                                <img src={logo4} alt="" />
+                                <img src={logo5} alt="" />
+                                <img src={logo6} alt="" />
+                                <img src={logo7} alt="" />
+                            </span>
+                            <span>
+                                <img src={logo3} alt="" />
+                                <img src={logo2} alt="" />
+                                <img src={logo3} alt="" />
+                                <img src={logo4} alt="" />
+                                <img src={logo5} alt="" />
+                                <img src={logo6} alt="" />
+                                <img src={logo7} alt="" />
+                            </span>
+                        </div>
+             
                 </div>
             </div>
 
             <div className="showff">
                 <div className="ontop">
-
+                      <div className="stat">
+                        <h4>40+</h4>
+                        <p>Satisfied Customers</p>             
+                      </div>
+                      <div className="stat">
+                        <h4>24/7 </h4>
+                        <p>Customer Service</p>             
+                      </div>
+                      <div className="stat">
+                        <h4>100+</h4>
+                        <p>Successful Trips</p>             
+                      </div>
+                      <div className="stat">
+                        <h4>2020</h4>
+                        <p>Registered Under Ugandan Law</p>             
+                      </div>
                 </div>
                 <h3 className="partners" id='Partners'>Trusted By:</h3>
             </div>

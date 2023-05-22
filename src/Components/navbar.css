@@ -94,6 +94,8 @@ transition: all ease-in-out 500ms;
 }
 .nav__links li a{
   padding: 0rem 1.2rem ;
+  width: max-content;
+  display: flex;
   cursor: pointer;
   font-size: 15px;
   color: var(--green-003);
@@ -109,6 +111,7 @@ transition: all ease-in-out 500ms;
 
 .nav__links .active-nav{
   position: relative;
+  font-weight:500;
   color: var(--green-B03);
 }
 .active-nav::after{
