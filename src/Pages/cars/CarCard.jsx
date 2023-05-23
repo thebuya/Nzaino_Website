@@ -3,8 +3,10 @@ import {MdOutlineClose} from 'react-icons/md'
 import {inputs} from '../../Components/cars'
 import Carinput from './Carinput'
 
-import { BsPersonCircle} from "react-icons/bs";
-
+import { BsPersonCircle, BsFillFuelPumpFill} from "react-icons/bs";
+import { TbSettingsAutomation, TbWindmill } from "react-icons/tb";
+import { GiPathDistance } from "react-icons/gi";
+// TbSettingsAutomation
 
 function CarCard(props)  {
 
@@ -61,10 +63,10 @@ const handleHideContent = () =>{
             <div className="infoPart">
                     <div className="infographs">
                         <div className="seats"><BsPersonCircle/> {props.carpeople}</div>
-                        <div className="mileage">{props.mileage}</div>
-                        <div className="system">{props.system}</div>
-                        <div className="AC">{props.conditioning}</div>
-                        <div className="Fuel">{props.fuelcapacity}</div>
+                        <div className="mileage"><GiPathDistance/>{props.mileage}</div>
+                        <div className="system"><TbSettingsAutomation/>{props.system}</div>
+                        <div className="AC"><TbWindmill/>{props.conditioning}</div>
+                        <div className="Fuel"><BsFillFuelPumpFill/>{props.fuelcapacity}</div>
                     </div>
 
                     <div className="mainInfo">
