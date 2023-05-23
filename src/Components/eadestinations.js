@@ -216,27 +216,28 @@ export const kenyaPlaces = [
 
 
 export const tanzaniaPlaces = [
-    {
+    { 
         id: 1,
-        image: kilimanjaro4,
-        fact: "Did you know Mt.Kilimanajro is the highest mountain in Africa at 5,895 meters  ",
-        locationTitle: "Mountain Kilimanjaro",
-        paragraph: "Rise above the clouds and conquer the majestic Mount Kilimanjaro," +
-            " Africa's highest peak! Embark on an exhilarating journey as you trek" +
-            " through diverse landscapes, from lush rainforests to barren alpine deserts." +
-            " Feel the thrill as you reach the summit and stand proudly on the Roof" +
-            " of Africa, taking in the breathtaking panoramic views that stretch as" +
-            " far as the eye can see. It's not just a climb; it's a" +
-            " life-changing adventure that will test your limits and" +
-            " leave you with unforgettable memories of triumph and awe.",
+        image: tarangire4,
+        fact: "Did you know Tarangire National Park is known for having one of the highest concentrations of elephants in the world.",
+        locationTitle: "Tarangire National Park",
+        paragraph: "Prepare for an unforgettable safari experience in Tarangire National Park," +
+            " where adventure awaits amidst the picturesque landscapes of Tanzania." +
+            " Traverse the park's vast open plains and be captivated by the sight of" +
+            " massive elephant herds gathering around the life-giving Tarangire River." +
+            " Spot an array of wildlife, from graceful leopards and cheetahs" +
+            " to majestic lions and giraffes. With its unique charm and diverse wildlife," +
+            " Tarangire National Park is a hidden gem that promises an" +
+            " authentic African safari experience." +
+            "",
         activity1: "1. Cultural Immersion",
-        activity2: "2. Wildlife Safaris",
-        activity3: "3. Mountain Climbing",
-        activity4: "4. Nature Walks & Hiking",
-        image2: kilimanjaro2,
-        image3: kilimanjaro3,
-        image4: kilimanjaro1,
-        image5: kilimanjaro5,
+        activity2: "2. Night Game Drives",
+        activity3: "3. BirdWatching",
+        activity4: "4. Balloon Safaris etc",
+        image2: tarangire2,
+        image3: tarangire,
+        image4: tarangire5,
+        image5: tarangire3,
     },
     {
         id: 2,
@@ -261,6 +262,29 @@ export const tanzaniaPlaces = [
     },
     {
         id: 3,
+        image: kilimanjaro4,
+        fact: "Did you know Mt.Kilimanajro is the highest mountain in Africa at 5,895 meters  ",
+        locationTitle: "Mountain Kilimanjaro",
+        paragraph: "Rise above the clouds and conquer the majestic Mount Kilimanjaro," +
+            " Africa's highest peak! Embark on an exhilarating journey as you trek" +
+            " through diverse landscapes, from lush rainforests to barren alpine deserts." +
+            " Feel the thrill as you reach the summit and stand proudly on the Roof" +
+            " of Africa, taking in the breathtaking panoramic views that stretch as" +
+            " far as the eye can see. It's not just a climb; it's a" +
+            " life-changing adventure that will test your limits and" +
+            " leave you with unforgettable memories of triumph and awe.",
+        activity1: "1. Cultural Immersion",
+        activity2: "2. Wildlife Safaris",
+        activity3: "3. Mountain Climbing",
+        activity4: "4. Nature Walks & Hiking",
+        image2: kilimanjaro2,
+        image3: kilimanjaro3,
+        image4: kilimanjaro1,
+        image5: kilimanjaro5,
+    },
+    
+    {
+        id: 4,
         image: serengeti5,
         fact: "Did you know Serengeti is home to one of the largest terrestrial mammal migrations in the world, known as the Great Migration.",
         locationTitle: "Serengeti National Park",
@@ -280,29 +304,7 @@ export const tanzaniaPlaces = [
         image4: serengeti,
         image5: serengeti4,
     },
-    {
-        id: 4,
-        image: tarangire4,
-        fact: "Did you know Tarangire National Park is known for having one of the highest concentrations of elephants in the world.",
-        locationTitle: "Tarangire National Park",
-        paragraph: "Prepare for an unforgettable safari experience in Tarangire National Park," +
-            " where adventure awaits amidst the picturesque landscapes of Tanzania." +
-            " Traverse the park's vast open plains and be captivated by the sight of" +
-            " massive elephant herds gathering around the life-giving Tarangire River." +
-            " Spot an array of wildlife, from graceful leopards and cheetahs" +
-            " to majestic lions and giraffes. With its unique charm and diverse wildlife," +
-            " Tarangire National Park is a hidden gem that promises an" +
-            " authentic African safari experience." +
-            "",
-        activity1: "1. Cultural Immersion",
-        activity2: "2. Night Game Drives",
-        activity3: "3. BirdWatching",
-        activity4: "4. Balloon Safaris etc",
-        image2: tarangire2,
-        image3: tarangire,
-        image4: tarangire5,
-        image5: tarangire3,
-    }
+   
 ]
 
 

@@ -1,0 +1,315 @@
+.carCards{
+    max-width: 1500px;
+    justify-items: center;
+    overflow-x: clip;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.carCard{
+width: 370px;
+box-shadow: 11px 27px 81px rgba(219, 218, 218, 0.91);
+background: #F9FDF9;
+border: 1px solid #0064000a;
+border-radius: 10px;
+margin-top: 3rem;
+height: fit-content;
+box-sizing: border-box;
+padding-left: 1.2rem;
+padding-right: 1.2rem;
+transition: all ease-in-out 500ms;
+}
+.carCard:hover{
+    box-shadow: 11px 27px 81px rgba(219, 218, 218, 0.129);
+    border: 1px solid var(--green-A01);
+}
+
+
+
+
+
+.carShow{
+    width: 100%;
+}
+.carShow img{
+    width: 100%;
+    mix-blend-mode: darken;
+}
+.carShow .infographs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+    margin-top: -1.5rem;
+}
+.carShow .infographs div svg{
+    margin-right: 0.25rem;
+}
+.carShow .infographs div{
+    font-size: 14px;
+    color: var(--green-003);
+    display: flex;
+    line-height: 140%;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+.carShow .mainInfo{
+    width: 100%;
+}
+.carShow .mainInfo .head{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.carShow .mainInfo .head h3{
+    color: var(--green-003);
+}
+.carShow .mainInfo .head p{
+    color: var(--green-B07);
+    height: 24px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 0px 12px;
+    background: var(--greengrayhue-3);
+    border-radius: 15px;
+}
+
+
+
+
+.carShow .pricingInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+    margin-top: 0.5rem;
+}
+.carShow .pricingInfo ul{
+    display: flex;
+    flex-direction: column;
+}
+.carShow .pricingInfo ul li{
+    font-size: 14px;
+    padding-left: 1rem;
+}
+.carShow .pricingInfo ul .good::before {
+    content: '\2713';
+    color: green;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+.carShow .pricingInfo ul .bad{
+    color: var(--greengrayhue-3);
+}
+.carShow .pricingInfo ul .bad::before {
+    content: '\2717';
+    color: rgb(128, 0, 0);
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+.carShow .pricingInfo .carpricing{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.carShow .pricingInfo .carpricing .percentageOff{
+
+    color: #640000;
+    font-size: 1rem;
+}
+.carShow .pricingInfo .carpricing .previousPrice{
+
+    line-height: 100%;
+    color: var(--greengrayhue-2);
+    text-decoration: line-through;
+    font-size: 1.25rem;
+}
+.carShow .pricingInfo .carpricing .price{
+
+    font-size: 2rem;
+    color: var(--green-B03);
+}
+.carShow .pricingInfo .carpricing .rate{
+    display: flex;
+    bottom: 12px;
+    position: relative;
+}
+
+
+
+
+
+.carCard .bookCar{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    background: var(--green-A01);
+    box-shadow: 0px 0px 50px rgba(0, 40, 0, 0.35);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    width: 100%;
+    color: var(--green-B07);
+    transition: all ease-in-out 600ms;
+}
+
+
+
+
+
+
+
+
+/*The Form For Booking Cars*/
+.carForm{
+    width: auto;
+    box-shadow: none;
+    border: none;
+    background: none;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.carForm label{
+    margin-bottom: 0.25rem;
+}
+.carForm h3{
+    text-align: center;
+    padding-bottom: 1rem;
+    width: fit-content;
+    margin-left: 28.7%;
+}
+.carForm svg{
+    margin-left: 90%;
+    font-size: 1.5rem;
+    margin-bottom: -1.5rem;
+    cursor: pointer;
+    color: var(--greengrayhue-3);
+    transition: all ease-in-out 400ms;
+}
+.carForm svg:hover{
+    color: red;
+    transform: scale(0.8);
+    z-index: 2;
+}
+.carForm input{
+    width: auto;
+}
+.carForm .formInput{
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+.carForm button{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: var(--green-B03);
+    box-shadow: 0px 0px 50px rgba(0, 40, 0, 0.35);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--green-B07);
+    transition: all ease-in-out 600ms;
+    border: 1px solid var(--greengrayhue-4);
+}
+.carForm button:hover{
+    background:var(--green-B04);
+    color: #fff;
+}
+.carForm button:active{
+    box-shadow: 0px 0px 50px rgba(0, 40, 0, 0.013);
+    border: none;
+}
+.carForm .errorMessage{
+    font-size: 12px;
+    color: rgb(159, 50, 50);
+    font-weight: 300;
+    transition: all ease-in-out;
+    display: none;
+    transition: all ease-in-out 500ms;
+}
+.carForm .helpInfo{
+    font-size: 12px;
+    color: var(--green-003);
+    font-weight: 300;
+    transition: all ease-in-out;
+    display: block;
+    transition: all ease-in-out 500ms;
+}
+.carForm input:invalid[focus = "true"] ~ .helpInfo{
+    display: none;
+}
+.carForm input:invalid[focus = "true"] ~ .errorMessage{
+    display: block;
+}
+.carForm input:invalid[focus = "true"]{
+    border: 1px solid rgb(159, 50, 50);
+}
+.carForm input[type="checkbox"]{
+    width: max-content;
+    height: 22px;
+}
+.carForm input:checked{
+    width: max-content;
+    color: var(--green-A01);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px){
+    .carCards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+@media screen and (max-width: 900px){
+    .carCards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+.carCard .bookCar{
+    font-size: 14px;
+}
+    }
+@media screen and (max-width: 375px){
+   .carCard {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 355px){
+   .carCard {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 300px){
+   .carCard {
+        width: 275px;
+    }
+}
+

@@ -112,7 +112,11 @@
 }
 
 @media screen and (max-width: 450px){
-.Packages .mainFade {
-    top: 2.5rem;
-}
-}
+    .Packages .mainFade {
+        top: 2.5rem;
+    }
+    .upper button{
+        padding: 6px 8px;
+        margin: 0 4px;
+    }
+    }
