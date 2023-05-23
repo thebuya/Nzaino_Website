@@ -48,7 +48,7 @@ const Home = () => {
                           we have something for everyone. We tailor each safari 
                           to your personal preferences and interests, ensuring that you have
                             the best experience possible. Join us and discover the wonders
-                            of Africa with Nzaino Travel Africa.
+                            of Africa 🌍 with Nzaino Travel Africa.
                         </p>
                     </div>
 
@@ -65,7 +65,7 @@ const Home = () => {
                     <p className="caption">
                     A special mention to all our friends all around East
                     Africa who offer their guide and support on our tours. 
-                    They are a crucial part of our team.
+                    They are a crucial part of our team. 👏🏾
                     </p>
                   </div>
               </div>

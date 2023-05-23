@@ -23,7 +23,7 @@ const Car = () => {
                         cleartitle = "Nzaino Cars"
                         /> 
                         <p className="paragraphs">
-                         If you are looking for a car to take you on your own travel,
+                         If you are looking for a car to take you on your own travel 🚗,
                          at Nzaino we avail to you a catalogue of cars ranging from
                          8 seaters to a more cozy 4 seater. You have the option of 
                          having a designated driver or taking yourself on an adevnture. 

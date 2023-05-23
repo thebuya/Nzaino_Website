@@ -121,7 +121,7 @@ transition: all ease-in-out 500ms;
 .carShow .pricingInfo .carpricing{
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
 }
 .carShow .pricingInfo .carpricing .percentageOff{
 
@@ -143,6 +143,10 @@ transition: all ease-in-out 500ms;
 .carShow .pricingInfo .carpricing .rate{
     display: flex;
     bottom: 12px;
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--green-B02);
+    line-height: 15px;
     position: relative;
 }
 

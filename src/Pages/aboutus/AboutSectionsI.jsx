@@ -146,7 +146,7 @@ const AboutSectionsI = () => {
                 <p className="caption">
                 A special mention to all our friends all around East
                  Africa who offer their guide and support on our tours. 
-                 They are a crucial part of our team.
+                 They are a crucial part of our team. 👏🏾
                 </p>
               </div>
           </div>

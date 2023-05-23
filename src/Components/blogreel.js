@@ -128,7 +128,7 @@ export const reviews= [
     },
     {
         id:"2",
-        quote: "We had an amazing time with Nzaino on our Uganda tour. The itinerary was well-planned,"+
+        quote: "We had an amazing time💫 with Nzaino on our Uganda tour. The itinerary was well-planned,"+
         " the guides were knowledgeable and friendly, and the accommodation was comfortable and clean. "+
         "We saw so many beautiful places and animals, and learned a lot about the culture and history of Uganda."+
         "<span class='highlight'>We highly recommend Nzaino to anyone looking for a memorable and affordable travel experience in East Africa.</span> ",
