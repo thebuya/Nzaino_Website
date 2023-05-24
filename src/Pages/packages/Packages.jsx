@@ -1,7 +1,7 @@
 import React, { useState, useEffect  }  from 'react'
 import './packages.css'
 
-import headerimage from '../../Images/packagesHeader.jpg';
+import headerimage from '../../Images/nana.jpg';
 import FadingHeader from '../../Components/FadingHeader';
 import {faqs} from '../../Components/destinations'
 import BookingForm from '../../Components/Booking';
@@ -17,7 +17,7 @@ const Packages = () => {
 
   const [selectedFilter, setSelectedFilter] = useState(null);
 
-  const description = 'Volcanoes National Park Lodges, Rwanda'; // Replace with your description
+  const description = 'Queen Elizabeth National Park, Uganda'; // Replace with your description
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);

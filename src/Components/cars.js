@@ -157,7 +157,7 @@ export const inputs=[
     },
     {
         id:6,
-        name:"driver",
+        name:"withdriver",
         type:"checkbox",
         //placeholder:"year-month-day",
         //errorMessage:"Please provide a date to return the car",

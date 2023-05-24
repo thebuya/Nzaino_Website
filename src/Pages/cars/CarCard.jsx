@@ -12,11 +12,14 @@ function CarCard(props)  {
 
 
 const[values, setValues] = useState({
+    carname: props.carname, 
+    driversName: "",
     email:"",
     phonenumber: "",
     pickupdate: new Date().toISOString().split('T')[0],
     returndate: '',
-    driver:""
+    withdriver: false, // Updated to include the driver property
+    
   });
   
   const handleSubmit = (e) => {
@@ -25,7 +28,10 @@ const[values, setValues] = useState({
   
   
   const onChange = (e) => {
-    setValues ({...values, [e.target.name]: e.target.value})
+    const { name, value, type} = e.target;
+    const newValue = type === "checkbox" ? !values[name] : value;
+  
+    setValues({ ...values, [name]: newValue });
   };
   
   console.log(values);
@@ -58,7 +64,7 @@ const handleHideContent = () =>{
    <div className="carCard" key={props.id}>
    
         <div className="carShow">
-            <img src={props.carimage} alt="" srcset="" />
+            <img src={props.carimage} alt="Nzaino Car"/>
             <hr className='divider'/>
             <div className="infoPart">
                     <div className="infographs">
@@ -71,7 +77,7 @@ const handleHideContent = () =>{
 
                     <div className="mainInfo">
                         <div className="head">
-                            <h3>{props.carname}</h3>
+                        <h3>{props.carname}</h3>
                             <p>{props.availability}</p>
                         </div>
 

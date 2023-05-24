@@ -12,8 +12,11 @@ const Carinput = (props) => {
   return (
     <div className='formInput'>
         <label> {label}</label>
-        <input {...inputProps} onChange={onChange} onBlur={handleFocused}
-                focus = {focus.toString()}
+        <input {...inputProps} 
+            onChange={onChange} 
+            checked={props.value} // Bind the checked value to props.value
+            onBlur={handleFocused}
+            focus = {focus.toString()}
         />
         <span className='errorMessage'>{errorMessage}</span>
         <span className="helpInfo">{helpfulInfo}</span>

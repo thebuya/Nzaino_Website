@@ -4,16 +4,18 @@ import BookingForm from '../../Components/Booking'
 import './car.css'
 import {availablecars} from '../../Components/cars'
 
-import SlideImage4 from '../../Images/Zanzibarfader.jpg'
+import SlideImage4 from '../../Images/carz.jpg'
 import FadeHeader from '../../UI/FadeHeader'
 import CarCard from './CarCard'
-
+import BackgroundCar from '../../Images/carback.jpg';
+//import BackgroundCar from '../../Images/carbehing2.jpg';
+//
 
 const Car = () => {
 
   return (
     <div>
-      <div className="main-image">
+      <div className="main-image carhead">
         <img src={SlideImage4} alt="" />
       </div>
 
@@ -39,7 +41,7 @@ const Car = () => {
                 {...car}
                />
         ))}
-       
+         <img src={BackgroundCar} className="CarBack" alt="" />
       </div>
 
       

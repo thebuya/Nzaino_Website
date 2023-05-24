@@ -1,11 +1,12 @@
 .carCards{
     max-width: 1500px;
     justify-items: center;
-    overflow-x: clip;
+    overflow: hidden;
     margin: auto;
     margin-top: 1rem;
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 }
 .carCard{
@@ -152,7 +153,14 @@ transition: all ease-in-out 500ms;
 }
 
 
+.carCards .CarBack{
 
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    opacity: 0.5;
+
+}
 
 
 .carCard .bookCar{
@@ -170,7 +178,12 @@ transition: all ease-in-out 500ms;
     color: var(--green-B07);
     transition: all ease-in-out 600ms;
 }
-
+.carCard:hover .bookCar{
+    background: var(--green-B03);
+}
+.carCard:hover .bookCar:hover{
+    background: var(--green-B04);
+}
 
 
 
