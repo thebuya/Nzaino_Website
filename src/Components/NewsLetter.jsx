@@ -64,7 +64,7 @@ const NewsLetter = () => {
 
   return (
     <section className="NewsLetter">
-      <h2 className="title">Travel the World with Our Exclusive Tips</h2>
+      <h2 className="title">Travel Africa with Our Exclusive Tips</h2>
       <div className="subscribing">
         <form onSubmit={handleSubmit}>
           <div className="inputWerror">

@@ -58,6 +58,14 @@ overflow: hidden;
   z-index: 1;
 }
 
+.packagesCard:hover .prevButton,
+.packagesCard:hover .nextButton{
+    box-shadow: 0 2px 19px rgba(31, 31, 31, 0.82);
+}
+.packagesCard:hover .prevButton:hover,
+.packagesCard:hover .nextButton:hover{
+    box-shadow: none;
+}
 .packagesCard .prevButton:hover,
 .packagesCard .nextButton:hover {
     background: rgba(0, 128, 0, 0.63);
@@ -200,7 +208,7 @@ width: inherit;
   bottom: 0; /* Added */
     font-weight: bolder;
     width: 100%;
-
+    font-size: 15px;
 
 height: 36px;
 color: var(--green-B07);

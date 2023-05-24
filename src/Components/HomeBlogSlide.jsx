@@ -17,7 +17,7 @@ import {Pagination, Navigation } from 'swiper';
 
 
 const HomeBlogSlide = () => {
-    const swiperRef = useRef(null);
+  const swiperRef = useRef(null);
 
   useEffect(() => {
     const swiperInstance = swiperRef.current.swiper;

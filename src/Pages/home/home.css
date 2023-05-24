@@ -5,10 +5,26 @@
   justify-content: center;
   align-items: center;
 }
-.firstbutton{
+.buttons{
   position: absolute;
   bottom: 50%; /* Place the button at the vertical center */
   transform: translateY(50%); /* Adjust for button height */
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  bottom: 10rem;
+  width: 100%;
+}
+.buttons .bookhome{
+  display: none;
+}
+.firstbutton{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
@@ -20,7 +36,6 @@
   width: 200px;
   height: 44px;
   color: var(--green-A01);
-    bottom: 12rem;
     
     background: var(--green-B07);
   box-shadow: 0px 1px 30px 1px rgba(194, 232, 251, 0.28);
@@ -293,20 +308,35 @@ background-color: var(--green-003);
 }
 
 .exp h3 {
-  font-family: 'Courgette', cursive;
- /* font-family: 'Tangerine', cursive;*/
+  /*font-family: 'Courgette', cursive;
+  /*font-family: 'Tangerine', cursive;
+  font-size: 23px;*/
 
-  font-size: 23px;
   width: 80%;
   color: rgba(255, 255, 255, 0.28);
-  line-height: 150%;
-  letter-spacing: 0.1rem;
+  line-height: 150%;  
+  letter-spacing: 0.05rem;
   text-align: center;
   }
     
       @media screen and (max-width: 900px) {
         .home-page .whoHeader{
           margin-top: 0rem;
+        }
+        .buttons .bookhome{
+          display: block;
+          background: var(--green-A01);
+          border: 1px solid var(--green-B07);
+          color:var(--green-B07);
+        }
+        .buttons{
+            position: absolute;
+            transform: translateY(50%); /* Adjust for button height */
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .firstbutton{
           width: 50%;

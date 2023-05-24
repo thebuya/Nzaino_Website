@@ -1,0 +1,56 @@
+.blogContainer .populartitle{
+    padding-left: 1.5rem;
+}
+.blogContainer .popularblogs, .blogContainer .recentblogs{
+    margin-left: 1rem;
+}
+.blogContainer .textAndTitle{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--greengrayhue-1);
+}
+.blogContainer .textAndTitle .textblog{
+    line-height: 160%;
+    width: 80%;
+}
+.blogContainer .textAndTitle .boldblog{
+    font-weight: bolder;
+}
+.blogContainer .textAndTitle .blogtitle{
+    font-size: 3rem;
+    width: 80vw;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+
+
+
+@media screen and (max-width: 1000px){
+    .blogContainer .textAndTitle .blogtitle{
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+}
+@media screen and (max-width: 550px){
+.blogContainer .main-image img {
+    right: 110%;
+}
+.blogContainer .populartitle{
+    text-align: center;
+}
+.blogContainer .textAndTitle .textblog {
+    width: 80%;
+    text-align: justify;
+}
+.blogContainer .textAndTitle .blogtitle{
+    font-size: 1.75rem;
+}
+}

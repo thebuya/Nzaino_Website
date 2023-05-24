@@ -114,10 +114,18 @@ const HomeMainSlide = () => {
           <span ref={progressContent}></span>
         </div>
       </Swiper>
-      <button className="firstbutton" onClick={scrollToSection}>
-      <span>Book a Trip</span>
-       <div className="btn-bg"></div>
-      </button>
+
+      <div className="buttons">
+          <button className="firstbutton bookhome" onClick={scrollToSection}>
+              <span>Book a Trip</span>
+          </button>
+
+          <button className="firstbutton" onClick={scrollToSection}>
+              <span>Hire a Car</span>
+          </button>
+      </div>
+
+      
     </div>
   )
 }

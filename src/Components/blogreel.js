@@ -13,6 +13,8 @@ import Kiso from '../Images/discoveruganda.jpg'
 export const blogs = [
     {
     id:1,
+    recent:true,
+    popular:false,
     image: Zanzibar,
     location:"Zanzibar, Tanzania",
     heading:"Coastal Relief On The Shores",
@@ -21,6 +23,8 @@ export const blogs = [
 },
 {
     id:2,
+    recent:true,
+    popular:true,
     image: Rwenzori,
     location:"The Rwenzori Mountain, Uganda",
     heading:"5 Places To Visit In Uganda.",
@@ -28,16 +32,17 @@ export const blogs = [
 },
 {
     id:3,
+    recent:true,
+    popular:false,
     image: Kiso,
     location:"Rwanda",
     heading:"The Wonders of Rwanda.",
     paragraph:"The 'Land of a Thousand Hills', is a country full of natural beauty and cultural richness. From the lush greenery of Nyungwe Forest to the sparkling waters of Lake Kivu, there's no shortage of stunning sights to explore",
 },
-
-
-
-    {
+{
         id:4,
+        recent:true,
+        popular:true,
         image: Gorillatrekking,
         location:"Bwindi Impenetrable Forest, Western Uganda",
         heading:"Our Guide To Gorilla Trekking",
