@@ -9,6 +9,8 @@ import Serengeti from '../Images/serengeti5.jpg'
 import Kenya from '../Images/Kenya.jpeg'
 import Kili from '../Images/clearblueskymountain.jpg'
 import Kiso from '../Images/discoveruganda.jpg'
+import Kenyan8Places from '../Pages/blog/Kenyan8Places';
+
 
 export const blogs = [
     {
@@ -16,6 +18,7 @@ export const blogs = [
     recent:true,
     popular:false,
     image: Zanzibar,
+    content: Kenyan8Places,
     location:"Zanzibar, Tanzania",
     heading:"Coastal Relief On The Shores",
     paragraph:"The picturesque island located off the coast of Tanzania, offers a perfect escape from the hustle and bustle of city life. Zanzibar has something to offer for everyone. So pack your bags and head to Zanzibar for an unforgettable coastal vacation experience.",
@@ -26,6 +29,7 @@ export const blogs = [
     recent:true,
     popular:true,
     image: Rwenzori,
+    content: Kenyan8Places,
     location:"The Rwenzori Mountain, Uganda",
     heading:"5 Places To Visit In Uganda.",
     paragraph:"The ‘Mountains of the Moon’, as they are famously known, are a wonderland of snow-capped peaks and alpine lakes. From the rich biodiversity of the lower slopes to the majestic views of the summit, there’s no limit to the adventure and beauty that await you.",
@@ -35,6 +39,7 @@ export const blogs = [
     recent:true,
     popular:false,
     image: Kiso,
+    content: Kenyan8Places,
     location:"Rwanda",
     heading:"The Wonders of Rwanda.",
     paragraph:"The 'Land of a Thousand Hills', is a country full of natural beauty and cultural richness. From the lush greenery of Nyungwe Forest to the sparkling waters of Lake Kivu, there's no shortage of stunning sights to explore",
@@ -43,6 +48,7 @@ export const blogs = [
         id:4,
         recent:true,
         popular:true,
+        content: Kenyan8Places,
         image: Gorillatrekking,
         location:"Bwindi Impenetrable Forest, Western Uganda",
         heading:"Our Guide To Gorilla Trekking",
