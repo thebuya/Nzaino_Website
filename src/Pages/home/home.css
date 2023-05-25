@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
 }
-.buttons{
+.buttonz{
   position: absolute;
   bottom: 50%; /* Place the button at the vertical center */
   transform: translateY(50%); /* Adjust for button height */
@@ -18,7 +18,7 @@
   bottom: 10rem;
   width: 100%;
 }
-.buttons .bookhome{
+.buttonz .bookhome{
   display: none;
 }
 .firstbutton{
@@ -323,13 +323,13 @@ background-color: var(--green-003);
         .home-page .whoHeader{
           margin-top: 0rem;
         }
-        .buttons .bookhome{
+        .buttonz .bookhome{
           display: block;
           background: var(--green-A01);
           border: 1px solid var(--green-B07);
           color:var(--green-B07);
         }
-        .buttons{
+        .buttonz{
             position: absolute;
             transform: translateY(50%); /* Adjust for button height */
             display: flex;

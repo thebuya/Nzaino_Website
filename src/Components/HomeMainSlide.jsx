@@ -1,5 +1,6 @@
 import React, { useRef }  from 'react'
-
+//import { useHistory } from 'react-router-dom'; // Import useHistory from react-router-dom
+import { useNavigate } from 'react-router-dom';
 
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -30,8 +31,14 @@ import { Autoplay, Pagination, Navigation } from 'swiper';
 
 
 const HomeMainSlide = () => {
-    const progressCircle = useRef(null);
+  const navigate = useNavigate();// Initialize useHistory
+  const progressCircle = useRef(null);
   const progressContent = useRef(null);
+
+
+  const goToCarPage = () => {
+    navigate('/car'); // Navigate to the car page
+  };
 
   const onAutoplayTimeLeft = (s, time, progress) => {
     progressCircle.current.style.setProperty('--progress', 1 - progress);
@@ -115,12 +122,12 @@ const HomeMainSlide = () => {
         </div>
       </Swiper>
 
-      <div className="buttons">
+      <div className="buttonz">
           <button className="firstbutton bookhome" onClick={scrollToSection}>
               <span>Book a Trip</span>
           </button>
 
-          <button className="firstbutton" onClick={scrollToSection}>
+          <button className="firstbutton" onClick={goToCarPage}>
               <span>Hire a Car</span>
           </button>
       </div>

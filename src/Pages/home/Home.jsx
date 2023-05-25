@@ -27,9 +27,9 @@ const Home = () => {
   return (
     <div className='home-page'>
         <HomeMainSlide/>
-        <div className='exp'>
+     {/**  <div className='exp'>
           <h3>Founded on Over 40 years worth Travel Experiences. </h3>
-        </div>
+        </div>*/}  
         <HomePackageSlide/>
         <div className="secondpart">
               <div className="who">

@@ -1,11 +1,13 @@
-import React, {useEffect, useRef} from 'react'
+import  React, { useEffect, useRef, useState }from 'react'
 import './blog.css'
 import BookingForm from '../../Components/Booking';
 import NewsLetter from '../../Components/NewsLetter';
 import { blogs } from '../../Components/blogreel';
 
-//import headerimage from '../../Images/bloghead.jpg';
-import headerimage from '../../Images/zanib.jpg';
+import headerimage from '../../Images/bloghead.jpg';
+
+
+
 
 import FadingHeader from '../../Components/FadingHeader';
 import 'swiper/css/pagination';
@@ -17,6 +19,7 @@ import 'swiper/css';
 
 import {Pagination, Navigation } from 'swiper';
 import BlogCard from '../../Components/Blog-Card';
+import FadeHeader from '../../UI/FadeHeader';
 
 
 const Blog = () => {
@@ -35,46 +38,89 @@ const Blog = () => {
 
     document.addEventListener('keydown', handleKeyDown);
 
+
+
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
 
 
-const description = 'Welcome to Nzaino Blogs'; // Replace with your description
+  const description = 'Welcome to Nzaino Blogs'; // Replace with your description
+
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const [blogsPerPage, setBlogsPerPage] = useState(6);
+
+  // Calculate number of blogs per page based on screen width
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 650) {
+        setBlogsPerPage(3);
+      } else {
+        setBlogsPerPage(6);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Calculate indexes for current page
+  const indexOfLastBlog = currentPage * blogsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+
+  // Get the blogs for the current page
+  const currentBlogs = blogs.slice(indexOfFirstBlog, indexOfLastBlog);
+
+  // Change page
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
 
 
   return (
     <div className='blogContainer'>
 
-      <div className="moveableitems">
+      <div className="moveAbleItems">
           <FadingHeader image={headerimage} description={description}/>
+          <FadeHeader className="PackHeader"
+        fadingtitle = "Blogs"
+        cleartitle = "Travellers Blogs" 
+          /> 
+          <p className="whotext paragraphs">
+          If like us, you need to make your due diligence by researching about the destination
+          or travel experience more, we have you covered. For each of our trips, we endeavour
+            to document and write about it so that you can learn about the dos and donts, or 
+            better yet so that you know the exact destination you can’t miss out on during your adventures.
+          </p>
 
-          <div className='textAndTitle'>
-                <h1 className="blogtitle">8 Regions you must visit in Kenya</h1>
+          <div className="blogsGrid">
+            {currentBlogs.map((blog) => (
+              <BlogCard
+                key={blog.id}
+                image={blog.image}
+                location={blog.location}
+                paragraph={blog.paragraph}
+                heading={blog.heading}
+              />
+        ))}
+      </div>
+          {/* Pagination */}
+      <div className="paginationContainer">
+        {Array.from({ length: Math.ceil(blogs.length / blogsPerPage) }, (_, index) => (
+          <button
+            key={index}
+            className={currentPage === index + 1 ? 'active' : ''}
+            onClick={() => paginate(index + 1)}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
 
-                <div className="textblog">
-                  <p>
-                  If you're looking for a vacation destination that has it all
-                  , look no further than Kenya.Kenya is home to
-                   some of the most diverse and stunning landscapes, wildlife,
-                    and cultures in the world. Whether you want to explore the 
-                    savannah, the mountains, the coast, or the cities, Kenya has
-                     something for everyone. <br /> Here are eight regions you must visit
-                      in Kenya to experience its beauty and richness.
-                      <br /><br /><br />
-                      <span className="boldblog">1. Nairobi: </span> 
-                      <br />
-                      The capital and largest city of Kenya, Nairobi is a
-                       vibrant and cosmopolitan hub that offers a taste of modern Africa.
-                        You can visit museums, art galleries, markets, restaurants, 
-                        and nightlife venues, or take a short drive to the Nairobi 
-                        National Park, where you can see lions, giraffes, zebras, and more.
-                        <br />
-                  </p>
-
-                </div>
-          </div>
       </div>
 
 

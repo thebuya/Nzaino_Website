@@ -8,8 +8,9 @@ function Teamcard(props) {
       <div className='teamMemberCard' key={props.id}>
           {/**  <img src={props.image} className="memberImage" alt="" /> */} 
             <div className="jobDiv" >
-                 <h5 className="job">{props.job}</h5> 
-                 <p className="name">{props.name}</p>
+                 
+                 <h5 className="name">{props.name}</h5>
+                 <p className="job">{props.job}</p> 
             </div>
       </div>
     );

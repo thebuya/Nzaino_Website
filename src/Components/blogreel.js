@@ -125,34 +125,38 @@ export const reviews= [
         id:"1",
         quote: "During our 4 days, <span class='highlight'>I only have positive things to say about Nzaino Travel Africa.</span> Our guides, Alex and Chris"+
         " were outstanding, and went above and beyond to make sure we"+
-        " were happy. They even stopped in avillage to buy us Jackfruit."+
-        " They even helped us settle bills at restaurants,"+
-        " they are the real deal. And oh yeah!,help you get insurance."+
+        " were happy. They even stopped in a village to buy us Jackfruit,"+
+        " and even helped us settle bills at restaurants."+
+        " They are the real deal. And oh yeah!, help you get insurance."+
         "",
-        client: "Henri Cartier-Bresson",
+        client: "Hashaka Alfred Jr",
     },
     {
         id:"2",
-        quote: "We had an amazing time💫 with Nzaino on our Uganda tour. The itinerary was well-planned,"+
+        quote: "We had an amazing time💫 with Nzaino on our Kisoro tour. The itinerary was well-planned,"+
         " the guides were knowledgeable and friendly, and the accommodation was comfortable and clean. "+
-        "We saw so many beautiful places and animals, and learned a lot about the culture and history of Uganda."+
+        "We saw so many beautiful places and animals, and learned a lot about the culture and history of Kisoro. "+
         "<span class='highlight'>We highly recommend Nzaino to anyone looking for a memorable and affordable travel experience in East Africa.</span> ",
-        client: "Persons Name ",
+        client: "Kabura Harriet",
     },
     {
         id:"3",
         quote: "Nzaino is the best travel agency we have ever used."+
-        " They arranged everything for us, from flights and visas to hotels and activities"+
+        " They arranged everything for us, from accommodation to activities"+
         ". <span class='highlight'>They were always available to answer our questions and"+
-        " give us tips before and during our trip</span>. They made us feel like VIPs with their personalized service and attention to detail. We loved our trip to Uganda and can’t wait to book another one with Nzaino.",
-        client: "Persons Name",
+        " give us tips before and during our trip</span>. They made us feel like VIPs with their personalized service and attention to detail."+
+        " We loved our trip and can’t wait to book another one with Nzaino.",
+        client: "Nzaba Dick",
     },
     {
         id:"4",
         quote: "Thank you Nzaino for making our dream trip come true. "+
-        "<span class='highlight'>We enjoyed every moment of our Uganda tour</span>,"+
-        " from the stunning scenery and wildlife to the delicious food and friendly people. You took care of all the logistics and made sure we had a smooth and hassle-free trip. You also gave us some great suggestions for optional activities that added to our fun and adventure. We will definitely travel with Nzaino again.",
-        client: "Persons Name",
+        "<span class='highlight'>We enjoyed every moment of our tour</span>,"+
+        " from the stunning scenery and wildlife to the delicious food and friendly people. "+
+        "You took care of all the logistics and made sure we had a smooth and hassle-free trip."+
+        " You also gave us some great suggestions for optional activities that"+
+        " added to our fun and adventure. We will definitely travel with Nzaino again.",
+        client: "Higenyi Morris Wabuya",
     },
 ]
 
@@ -165,27 +169,27 @@ export const team= [
     },
     {
         id:"2",
-        name:"Brenda Patience",
+        name:"Mbabazi Winfred",
         job: "Administrator",
     },
     {
         id:"3",
-        name:"Name",
+        name:"Kwizera Davis Nkurunziza",
         job: "Head of Marketing",
     },
     {
         id:"4",
-        name:"Name",
-        job: "Job Title",
+        name:"Daniella Kamikaze",
+        job: "Head of Accounts",
     },
     {
         id:"5",
         name:"Name",
-        job: "Job Title",
+        job: "Job",
     },
     {
         id:"6",
         name:"Name",
-        job: "Job Title",
+        job: "Job",
     },
 ]

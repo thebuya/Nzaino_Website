@@ -23,8 +23,8 @@ export const availablecars = [
         badhighlight1:"Damage Waiver",
 
         percentageoff: "16%",
-        previousprice: "$125",
-        price: "$85",
+        previousprice: "$65",
+        price: "$25",
         rate: "per day",
     },
     {
@@ -45,9 +45,9 @@ export const availablecars = [
 
         badhighlight1:"Damage Waiver",
 
-        percentageoff: "20%",
-        previousprice: "$135",
-        price: "$105",
+        percentageoff: "15%",
+        previousprice: "$55",
+        price: "$30",
         rate: "per day",
     },
     {
@@ -69,8 +69,8 @@ export const availablecars = [
         badhighlight1:"Damage Waiver",
 
         percentageoff: "18%",
-        previousprice: "$105",
-        price: "$75",
+        previousprice: "$50",
+        price: "$30",
         rate: "per day",
     },
     {
@@ -92,8 +92,8 @@ export const availablecars = [
         badhighlight1:"Damage Waiver",
 
         percentageoff: "18%",
-        previousprice: "$205",
-        price: "$155",
+        previousprice: "$45",
+        price: "$25",
         rate: "per day",
     }
 ]

@@ -28,8 +28,52 @@
     text-align: center;
     padding-bottom: 1rem;
 }
+.blogContainer .bloghighlights {
+    margin: 2rem auto;
+}
+.blogContainer .textAndTitle .textblog img{
+    height: 300px;
+    border-radius: 30px;
+    margin: 2rem auto;
+    display: flex;
+}
+.blogContainer .moveAbleItems .blogsGrid{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem auto;
 
-
+}
+.blogContainer  .paginationContainer {
+    display: flex;
+    justify-content: center;
+    top: -2rem;
+    position: relative;
+  }
+  
+  .blogContainer  .paginationContainer button {
+    border: none;
+    background-color: #a1b3a1;
+    border: 1px solid var(--green-A01);
+    padding: 8px 12px;
+    border-radius: 3px;
+    color: var(--green-002);
+    font-size: 14px;
+    margin: 0 9px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+  .blogContainer  .paginationContainer button.active {
+    background-color: var(--green-A01);
+    font-weight: bold;
+    border: none;
+    color: var(--green-002);
+  }
+  
+  .blogContainer  .paginationContainer button:hover {
+    background-color: var(--greengrayhue-2);
+  }
 
 
 @media screen and (max-width: 1000px){
@@ -37,14 +81,35 @@
         font-size: 2rem;
         padding-bottom: 2rem;
     }
+    .blogContainer .moveAbleItems .blogsGrid{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+ 
 
 }
+
+
 @media screen and (max-width: 550px){
 .blogContainer .main-image img {
     right: 110%;
 }
+.blogContainer .moveAbleItems .blogsGrid{
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.blogContainer .popularblogs, .blogContainer .recentblogs {
+    margin-left: 0rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.blogsGrid .bloghighlights {
+    display: flex;
+    margin: 2rem auto;
+}
 .blogContainer .populartitle{
     text-align: center;
+    padding-left: 0;
 }
 .blogContainer .textAndTitle .textblog {
     width: 80%;
@@ -52,5 +117,14 @@
 }
 .blogContainer .textAndTitle .blogtitle{
     font-size: 1.75rem;
+    margin-top: 1rem;
+
+}
+.blogContainer .textAndTitle .textblog img {
+    height: auto; 
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem auto;
+    display: flex;
 }
 }
