@@ -23,7 +23,7 @@
 
 
 
-  @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .fadingTitle{
         font-size: 60px;
     }
@@ -32,6 +32,9 @@
         bottom: 3rem;
         text-align: center;
         margin-bottom: 2rem;
+    }
+    .quoteCard{
+        margin-top: 3rem;
     }
     .mainFade{
         height: 90px;

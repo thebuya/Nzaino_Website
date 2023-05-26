@@ -192,7 +192,7 @@ transition: all ease-in-out 500ms;
 
 
 /*The Form For Booking Cars*/
-.carForm{
+.carCard .carForm{
     width: auto;
     box-shadow: none;
     border: none;
@@ -200,18 +200,18 @@ transition: all ease-in-out 500ms;
     padding-left: 0rem;
     padding-right: 0rem;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
-.carForm label{
+.carCard .carForm label{
     margin-bottom: 0.25rem;
 }
-.carForm h3{
+.carCard .carForm h3{
     text-align: center;
     padding-bottom: 1rem;
     width: fit-content;
     margin-left: 28.7%;
 }
-.carForm svg{
+.carCard .carForm svg{
     margin-left: 90%;
     font-size: 1.5rem;
     margin-bottom: -1.5rem;
@@ -219,20 +219,20 @@ transition: all ease-in-out 500ms;
     color: var(--greengrayhue-3);
     transition: all ease-in-out 400ms;
 }
-.carForm svg:hover{
+.carCard .carForm svg:hover{
     color: red;
     transform: scale(0.8);
     z-index: 2;
 }
-.carForm input{
+.carCard .carForm input{
     width: auto;
 }
-.carForm .formInput{
+.carCard .carForm .formInput{
     flex-direction: column;
     justify-content: center;
     margin-bottom: 0.75rem;
 }
-.carForm button{
+.carCard .carForm button{
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -246,15 +246,15 @@ transition: all ease-in-out 500ms;
     transition: all ease-in-out 600ms;
     border: 1px solid var(--greengrayhue-4);
 }
-.carForm button:hover{
+.carCard .carForm button:hover{
     background:var(--green-B04);
     color: #fff;
 }
-.carForm button:active{
+.carCard .carForm button:active{
     box-shadow: 0px 0px 50px rgba(0, 40, 0, 0.013);
     border: none;
 }
-.carForm .errorMessage{
+.carCard .carForm .errorMessage{
     font-size: 12px;
     color: rgb(159, 50, 50);
     font-weight: 300;
@@ -262,7 +262,7 @@ transition: all ease-in-out 500ms;
     display: none;
     transition: all ease-in-out 500ms;
 }
-.carForm .helpInfo{
+.carCard .carForm .helpInfo{
     font-size: 12px;
     color: var(--green-003);
     font-weight: 300;
@@ -270,20 +270,20 @@ transition: all ease-in-out 500ms;
     display: block;
     transition: all ease-in-out 500ms;
 }
-.carForm input:invalid[focus = "true"] ~ .helpInfo{
+.carCard .carForm input:invalid[focus = "true"] ~ .helpInfo{
     display: none;
 }
-.carForm input:invalid[focus = "true"] ~ .errorMessage{
+.carCard .carForm input:invalid[focus = "true"] ~ .errorMessage{
     display: block;
 }
-.carForm input:invalid[focus = "true"]{
+.carCard .carForm input:invalid[focus = "true"]{
     border: 1px solid rgb(159, 50, 50);
 }
-.carForm input[type="checkbox"]{
+.carCard .carForm input[type="checkbox"]{
     width: max-content;
     height: 22px;
 }
-.carForm input:checked{
+.carCard .carForm input:checked{
     width: max-content;
     color: var(--green-A01);
 }

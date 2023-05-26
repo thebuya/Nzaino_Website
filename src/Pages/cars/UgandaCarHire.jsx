@@ -1,5 +1,5 @@
 import React from 'react'
-import BookingForm from '../../Components/Booking'
+
 
 import './car.css'
 import {availablecars} from '../../Components/cars'
@@ -49,7 +49,6 @@ const Car = () => {
 
 
 
-    <BookingForm/>
     </div>
   )
 }

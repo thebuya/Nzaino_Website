@@ -108,6 +108,8 @@ const [values, setValues] = useState({
             Book <span>Your</span> Trip
         </h1>
 
+        <img className='imageBehindCard mobilesOnly' src={BackgroundImage1} alt="" />
+
 
      <form className="bookingForm" onSubmit={handleSubmit} onChange={onChange}
                         style={{ backgroundImage: `url(${BackgroundImage})`,

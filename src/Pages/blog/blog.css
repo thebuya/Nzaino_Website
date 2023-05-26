@@ -26,13 +26,15 @@
     font-size: 3rem;
     width: 80vw;
     text-align: center;
+    z-index: 2;
     padding-bottom: 1rem;
 }
 .blogContainer .bloghighlights {
     margin: 2rem auto;
 }
 .blogContainer .textAndTitle .textblog img{
-    height: 300px;
+    /*height: 300px;*/
+    width: 100%;
     border-radius: 30px;
     margin: 2rem auto;
     display: flex;
@@ -41,8 +43,35 @@
     display: grid;
     max-width: 1200px;
     grid-template-columns: repeat(3, 1fr);
-    margin: 2rem auto;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 
+
+}
+ 
+.immoveavleitems .recentblogs, 
+.immoveavleitems .popularblogs {
+    max-width: 1200px;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blogContainer .serveback{
+    width: 100%;
+    left: 0;
+    transform: scale(1);
+}
+.blogContainer .NewsLetter .subscribeback{
+    z-index: -1;
+    mix-blend-mode: darken;
+}
+.blogContainer .swiper {
+    max-width: 1400px;
 }
 .blogContainer  .paginationContainer {
     display: flex;
@@ -53,13 +82,16 @@
   
   .blogContainer  .paginationContainer button {
     border: none;
-    background-color: #a1b3a1;
-    border: 1px solid var(--green-A01);
-    padding: 8px 12px;
-    border-radius: 3px;
+    background-color: var(--greengrayhue-3);
+    border: 1px solid var(--greengrayhue-3);
+    /* padding: 3px 7px; */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
     color: var(--green-002);
-    font-size: 14px;
-    margin: 0 9px;
+    font-size: 12px;
+    /* font-weight: 800; */
+    margin: 0 6px;
     cursor: pointer;
     transition: all 0.3s ease;
 }

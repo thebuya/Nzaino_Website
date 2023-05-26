@@ -4,7 +4,7 @@ import './packages.css'
 import headerimage from '../../Images/nana.jpg';
 import FadingHeader from '../../Components/FadingHeader';
 import {faqs} from '../../Components/destinations'
-import BookingForm from '../../Components/Booking';
+
 import FAQItem from '../../Components/Faq';
 import { packages } from '../../Components/eadestinations';
 import PackagesCard from '../../Components/PackagesCard';
@@ -182,7 +182,6 @@ const Packages = () => {
                     </div>
             </div>
         
-        <BookingForm />
     </div>
   )
 }

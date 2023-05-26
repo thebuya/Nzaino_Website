@@ -107,7 +107,7 @@ export const inputs=[
         placeholder:"Enter your full name",
         errorMessage:"Please space out your names",
         helpfulInfo:"",
-        label:"Drivers Name",
+        label:"Full Name",
         pattern:"^[A-Za-z]+ [A-Za-z]+$",
         required:true,
     },

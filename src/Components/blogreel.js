@@ -1,37 +1,47 @@
-import Zanzibar from '../Images/Zanzibar.jpg' ;
-import Gorillatrekking from '../Images/gorilla.jpg' ;
+import Zanzibar from '../Images/zanzibarblog.jpg' ;
+import Zanzibar2 from '../Images/Zanzibar.jpg' ;
+import Gorillatrekking from '../Images/bwindi4.jpg' ;
 import Rwenzori from '../Images/rwenzorimountains.jpg'
 //import serengeti5 from '../Images/serengeti.jpg'
 //import tarangire from '../Images/tarangire.jpg'
+import rwanda from '../Images/bwindi3.jpg'
+import romance from '../Images/romance.jpg'
+import tanzania from '../Images/kilimanjaro5.jpg'
 
 
 import Serengeti from '../Images/serengeti5.jpg'
 import Kenya from '../Images/Kenya.jpeg'
 import Kili from '../Images/clearblueskymountain.jpg'
 import Kiso from '../Images/discoveruganda.jpg'
-import Kenyan8Places from '../Pages/blog/Kenyan8Places';
+
+//import Kenyan8Places from '../Pages/blog/Kenyan8Places';
+//import Ugandan8Places from '../Pages/blog/Ugandan8Places';
+//import EA8Places from '../Pages/blog/EA8Places';
+//import Rwanda8Places from '../Pages/blog/Rwanda8Places';
+//import Tanzania8Places from '../Pages/blog/Tanzania8Places';
+
 
 
 export const blogs = [
     {
-    id:1,
-    recent:true,
-    popular:false,
-    image: Zanzibar,
-    content: Kenyan8Places,
-    location:"Zanzibar, Tanzania",
-    heading:"Coastal Relief On The Shores",
-    paragraph:"The picturesque island located off the coast of Tanzania, offers a perfect escape from the hustle and bustle of city life. Zanzibar has something to offer for everyone. So pack your bags and head to Zanzibar for an unforgettable coastal vacation experience.",
-
-},
+        id:1,
+        recent:false,
+        popular:true,
+        image: Zanzibar,
+        path: "/zanzibar8places",
+        location:"The Coastal Beaches",
+        heading:"8 Places To Visit In Zanzibar",
+        paragraph:"The picturesque island located off the coast of Tanzania, offers a perfect escape from the hustle and bustle of city life. Zanzibar has something to offer for everyone. So pack your bags and head to Zanzibar for an unforgettable coastal vacation experience.",
+    
+    },
 {
     id:2,
     recent:true,
     popular:true,
     image: Rwenzori,
-    content: Kenyan8Places,
+    path: "/ugandan8places",
     location:"The Rwenzori Mountain, Uganda",
-    heading:"5 Places To Visit In Uganda.",
+    heading:"8 Places To Visit In Uganda.",
     paragraph:"The ‘Mountains of the Moon’, as they are famously known, are a wonderland of snow-capped peaks and alpine lakes. From the rich biodiversity of the lower slopes to the majestic views of the summit, there’s no limit to the adventure and beauty that await you.",
 },
 {
@@ -39,21 +49,76 @@ export const blogs = [
     recent:true,
     popular:false,
     image: Kiso,
-    content: Kenyan8Places,
-    location:"Rwanda",
-    heading:"The Wonders of Rwanda.",
+    path: "/westernuganda",
+    location:"Kisoro",
+    heading:"The Wonders of Western Uganda.",
     paragraph:"The 'Land of a Thousand Hills', is a country full of natural beauty and cultural richness. From the lush greenery of Nyungwe Forest to the sparkling waters of Lake Kivu, there's no shortage of stunning sights to explore",
 },
 {
         id:4,
         recent:true,
-        popular:true,
-        content: Kenyan8Places,
+        popular:false,
+        path: "/gorillatrekkingtips",
         image: Gorillatrekking,
-        location:"Bwindi Impenetrable Forest, Western Uganda",
-        heading:"Our Guide To Gorilla Trekking",
+        location:"Bwindi Impenetrable Forest, Rwanda & Uganda",
+        heading:"Our Tips To Gorilla Trekking",
         paragraph:"To fully appreciate the majesty of the gorillas, you must approach the experience with an open heart and mind, ready to witness nature's beauty and power.",
 
+    },
+    {
+        id:5,
+        recent:true,
+        popular:true,
+        image: Zanzibar2,
+        path: "/EA8places",
+        location:"Zanzibar",
+        heading:"The 8 Places To Visit In East Africa",
+        paragraph:"The picturesque island located off the coast of Tanzania, offers a perfect escape from the hustle and bustle of city life. Zanzibar has something to offer for everyone. So pack your bags and head to Zanzibar for an unforgettable coastal vacation experience.",
+    
+    },
+    {
+        id:6,
+        recent:true,
+        popular:false,
+        image: tanzania,
+        path: "/tanzania8places",
+        location:"Mt. Kilimanjaro, Tanzania",
+        heading:"The 8 Places To Visit In Tanzania.",
+        paragraph:"The picturesque island located off the coast of Tanzania, offers a perfect escape from the hustle and bustle of city life. Zanzibar has something to offer for everyone. So pack your bags and head to Zanzibar for an unforgettable coastal vacation experience.",
+    
+    },
+    {
+        id:7,
+        recent:true,
+        popular:true,
+        image: Kenya,
+        path: "/kenyan8places",
+        location:"The Capital, Nairobi.",
+        heading:"The 8 Places To Visit While In Kenya.",
+        paragraph:"The picturesque island located off the coast of Tanzania, offers a perfect escape from the hustle and bustle of city life. Zanzibar has something to offer for everyone. So pack your bags and head to Zanzibar for an unforgettable coastal vacation experience.",
+    
+    },
+    
+    {
+        id:8,
+        recent:true,
+        popular:true,
+        image: rwanda,
+        path: "/rwanda8places",
+        location:"Volcano National Park, Rwanda",
+        heading:"The 8 Places To Visit In Rwanda.",
+        paragraph:"The 'Land of a Thousand Hills' is a country full of natural beauty in many ways, and cultural richness. From the lush greenery of Nyungwe Forest to the sparkling waters of Lake Kivu, there's no shortage of stunning sights to explore.",
+    },
+    
+    {
+        id:9,
+        recent:true,
+        popular:true,
+        image: romance,
+        path: "/romanticgetaways",
+        location:"Entebbe, Uganda.",
+        heading:"The Romantic GetAways of EastAfrica.",
+        paragraph:"The 'Land of a Thousand Hills' is a country full of natural beauty in many ways, and cultural richness. From the lush greenery of Nyungwe Forest to the sparkling waters of Lake Kivu, there's no shortage of stunning sights to explore.",
     }
     
 ]

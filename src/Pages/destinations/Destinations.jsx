@@ -5,7 +5,7 @@ import Destinationcard from '../../Components/Destinationcard';
 import SlideImage4 from '../../Images/Zanzibarfader.jpg' ;
 import './destinations.css'
 
-import BookingForm from '../../Components/Booking';
+
 
 
 // Import Swiper React components
@@ -199,9 +199,6 @@ const Destinations = () => {
 
       <HomeReviewSlide/>
 
-      <BookingForm />
-
- 
     </>
   )
 }

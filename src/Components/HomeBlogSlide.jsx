@@ -82,6 +82,7 @@ const HomeBlogSlide = () => {
                           location={blogs.location}
                           paragraph={blogs.paragraph}
                           heading={blogs.heading}
+                          path={blogs.path}
                           />
                           </SwiperSlide>
                           ))}

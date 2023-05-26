@@ -1,8 +1,7 @@
 import React from 'react'
-import './blog.css'
 
-import headerimage from '../../Images/zanib.jpg';
-import nai from  '../../Images/mombasa4.jpg'
+import headerimage from '../../Images/fadedestiny.jpg';
+import first from  '../../Images/discoveruganda.jpg'
 
 
 
@@ -10,7 +9,7 @@ import FadingHeader from '../../Components/FadingHeader';
 import Immovableitems from './Immovableitems';
 
 
-const Kenyan8Places = () => {
+const WesternUganda = () => {
     const description = 'Welcome to Nzaino Blogs'; // Replace with your description
     return (
       <div className='blogContainer'>
@@ -19,29 +18,25 @@ const Kenyan8Places = () => {
             <FadingHeader image={headerimage} description={description}/>
   
             <div className='textAndTitle'>
-                  <h1 className="blogtitle">8 Regions you must visit in Kenya</h1>
+                  <h1 className="blogtitle">The Wonders of Western Uganda</h1>
   
                   <div className="textblog">
                         <p>
-                        If you're looking for a vacation destination that has it all
-                        , look no further than Kenya.Kenya is home to
-                        some of the most diverse and stunning landscapes, wildlife,
-                          and cultures in the world. Whether you want to explore the 
-                          savannah, the mountains, the coast, or the cities, Kenya has
-                          something for everyone. <br /> Here are eight regions you must visit
-                            in Kenya to experience its beauty and richness.
+                        To say you have travelled the whole of Uganda is to say you haveseen all the beautiful things nature has to offer.
+                        Few can boast of such a saemetn, beause few have managed to explore all the corners of the country, even the subtly hidden.
+                        We took the liberty of looking up a few places that if you visit, then you are on your way to seeing a significant part of Uganda.
                             <br /><br /><br />
-                            <span className="boldblog">1. Nairobi: </span> 
+                            <span className="boldblog">1. Kisoro: </span> 
                             <br />
-                            The capital and largest city of Kenya, <span className="highlight">
-                            Nairobi is a vibrant and cosmopolitan hub that offers a taste of modern Africa.</span> You 
+                            The Pride and Joy of The West, <span className="highlight">
+                            Kisoro is a vibrant and cosmopolitan hub that offers a taste of modern Africa.</span> You 
                             can visit museums, art galleries, markets, restaurants, 
                               and nightlife venues, or take a short drive to the Nairobi 
                               National Park, where you can see lions, giraffes, zebras, and more.
                               <br />
                               
                         </p>
-                        <img src={nai} alt="Nairobi East Africa Travel" srcset="" />
+                        <img src={first} alt="Kisoro Western Uganda Hills"/>
                         <p>
                           <br />
                             <span className="boldblog">2. Mombasa: </span> 
@@ -120,4 +115,5 @@ const Kenyan8Places = () => {
       </div>
     )
   }
-export default Kenyan8Places
+
+export default WesternUganda

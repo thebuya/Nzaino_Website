@@ -67,6 +67,7 @@ nav{
 flex-direction: row;
 justify-content: center;
 align-items: center;
+width: 200px;
 padding: 10px 18px;
 color: var(--green-B07);
 font-size: 15px;

@@ -1,5 +1,4 @@
 import React from 'react'
-import './blog.css'
 
 import headerimage from '../../Images/zanib.jpg';
 import nai from  '../../Images/mombasa4.jpg'
@@ -10,8 +9,11 @@ import FadingHeader from '../../Components/FadingHeader';
 import Immovableitems from './Immovableitems';
 
 
-const Kenyan8Places = () => {
-    const description = 'Welcome to Nzaino Blogs'; // Replace with your description
+
+
+
+const EA8Places = () => {
+    const description = 'Welcome to Western Uganda'; // Replace with your description
     return (
       <div className='blogContainer'>
   
@@ -19,7 +21,7 @@ const Kenyan8Places = () => {
             <FadingHeader image={headerimage} description={description}/>
   
             <div className='textAndTitle'>
-                  <h1 className="blogtitle">8 Regions you must visit in Kenya</h1>
+                  <h1 className="blogtitle">The Wonders of Western Uganda</h1>
   
                   <div className="textblog">
                         <p>
@@ -120,4 +122,5 @@ const Kenyan8Places = () => {
       </div>
     )
   }
-export default Kenyan8Places
+
+export default EA8Places

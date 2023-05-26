@@ -1,7 +1,7 @@
 import React from 'react';
 
 import HomeBlogSlide from '../../Components/HomeBlogSlide';
-import BookingForm from '../../Components/Booking';
+
 import NewsLetter from '../../Components/NewsLetter';
 import HomeMainSlide from '../../Components/HomeMainSlide';
 //import FadeHeader from '../../UI/FadeHeader';
@@ -77,7 +77,7 @@ const Home = () => {
 
         <HomeBlogSlide/>
         <NewsLetter/>
-        <BookingForm />
+   
     </div>
   );
 };

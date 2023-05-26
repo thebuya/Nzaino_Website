@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import './blogcard.css';
 import { TiArrowRight } from "react-icons/ti";
 
@@ -23,7 +25,10 @@ function BlogCard(props) {
             </div>
 
             <div className="call-to-actions">
-              <button className="readblog">Read Blog</button>
+             
+              <Link to={props.path}>
+                 <button className="readblog">Read Blog</button>
+              </Link>
               <button className="booktrip" onClick={scrollToSection}>Book Trip<TiArrowRight/> </button>
             </div>
         </div>

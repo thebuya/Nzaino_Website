@@ -400,18 +400,25 @@ margin: auto;
 }
 
 
-
-
-
-@media screen and (min-width: 1200px) {
-    .firstpart .showff{
-        margin-top: 14rem;
+/* Safari-specific styles 
+@media screen and (min-width: 1200px) and not all and (min-resolution: .001dpcm) {
+    .firstpart .showff {
+      margin-top: 8rem;
     }
+  }*/
+  
+  /* Default styles */
+  @media screen and (min-width: 1200px) {
+    .firstpart .showff {
+      margin-top: 7rem;
+    }
+  
     .firstpart .partners {
-        font-weight: 600;
-        padding-top: 1rem;
+      font-weight: 600;
+      padding-top: 2rem;
     }
-}
+  }
+
 @media screen and (max-width: 1200px) {
     .secondpart .who .left {
         width: 40%;
@@ -459,6 +466,7 @@ margin: auto;
     }
     .serveback {
         transform: scale(2);
+        top: 100%;
     }
 
 
@@ -568,6 +576,9 @@ margin: auto;
         align-items: center;
         margin-top: 6.5rem;
         }
+        .serveback{
+            top: 125%;
+        }
         .marquee--inner {
             animation: marquee 6s linear infinite;
         }
@@ -584,14 +595,17 @@ margin: auto;
                 margin-bottom: 0.75rem;
                 }
                 .firstpart .partners {
-                    margin-top: 0.5rem;
+                    margin-top: 1rem;
                     }
                     .firstpart .behind .logos .logoscroll {
                         margin-top: 9rem;
+                        bottom: -1rem;
                     }
-    .firstpart .behind .headerWords .mainwording {
-        font-size: 24px;
-    }
+                    .firstpart .behind .headerWords .mainwording {
+                        font-size: 24px;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                    }
     .secondpart .who .left .whotext
     , .paragraphs {
         line-height: 170%;

@@ -6,23 +6,23 @@ export const links = [
     },
     {
         name: "About Nzaino",
-        path: '/aboutus',
+        path: '/aboutnzaino',
     },
     {
         name: "Destinations",
-        path: '/destinations',
+        path: '/eastafricatraveldestinations',
     },
     {
         name: "Packages",
-        path: '/packages',
+        path: '/eastafricatravelpackages',
     },
     {
         name: "Car Hire ",
-        path: '/car',
+        path: '/ugandacarhire',
     },
     {
         name: "Blog",
-        path: '/blog',
+        path: '/ugandatravelblog',
     }
 ]
 
@@ -85,11 +85,11 @@ export const faqs =[
     {
         id : "8",
         question: "What is your cancellation policy ?",
-        answer: "If you cancel your booking more than 30 days"+
+        answer: "Depending on your trip itenary, if you cancel your booking more than 20 days"+
         " before the departure date, you will receive a full refund."+
-        " If you cancel between 10 and 30 days before the departure date,"+
-        " you will receive a 50% refund. If you cancel less than 10 days"+
-        " before the departure date, you will not receive any refund."
+        " If you cancel between 10 and 20 days before the departure date,"+
+        " you will receive a 75% refund. If you cancel less than 10 days"+
+        " before the departure date, you will get a 50% refund."
     },
     {
         id : "9",

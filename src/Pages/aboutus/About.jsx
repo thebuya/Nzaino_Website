@@ -19,7 +19,6 @@ import Backgroundserve from '../../Images/backgroundservices.jpg';
 import FadeHeader from '../../UI/FadeHeader';
 
 
-import BookingForm from '../../Components/Booking';
 
 import HomeReviewSlide from '../../Components/HomeReviewSlide';
 import AboutSectionsI from './AboutSectionsI';
@@ -82,7 +81,7 @@ const About = () => {
           </div>
 
 
-          <button className="nav-button contact">Contact us  </button>
+          {/** <button className="nav-button contact">Contact us  </button> */}
 
           <img src={Backgroundserve} className="BackBlog packageback serveback " alt="" />
       </div>
@@ -140,11 +139,6 @@ const About = () => {
           </div>
       </div>
 
-
-      
-
-
-      <BookingForm/>
 
     </section>
   )

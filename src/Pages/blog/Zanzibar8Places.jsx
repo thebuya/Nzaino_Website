@@ -1,5 +1,4 @@
 import React from 'react'
-import './blog.css'
 
 import headerimage from '../../Images/zanib.jpg';
 import nai from  '../../Images/mombasa4.jpg'
@@ -10,7 +9,10 @@ import FadingHeader from '../../Components/FadingHeader';
 import Immovableitems from './Immovableitems';
 
 
-const Kenyan8Places = () => {
+
+
+
+const Zanzibar8Places = () => {
     const description = 'Welcome to Nzaino Blogs'; // Replace with your description
     return (
       <div className='blogContainer'>
@@ -120,4 +122,5 @@ const Kenyan8Places = () => {
       </div>
     )
   }
-export default Kenyan8Places
+
+export default Zanzibar8Places

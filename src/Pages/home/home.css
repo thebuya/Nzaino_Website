@@ -39,7 +39,7 @@
     
     background: var(--green-B07);
   box-shadow: 0px 1px 30px 1px rgba(194, 232, 251, 0.28);
-  border-radius: 30px;
+  border-radius: 5px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -323,11 +323,21 @@ background-color: var(--green-003);
         .home-page .whoHeader{
           margin-top: 0rem;
         }
+        .reviewsslide .swiper-wrapper {
+          margin-top: 3rem;
+      }
         .buttonz .bookhome{
           display: block;
-          background: var(--green-A01);
+          background: #00640096;
           border: 1px solid var(--green-B07);
           color:var(--green-B07);
+          transition: all ease-in-out 500ms;
+        }
+        .buttonz .bookhome:hover{
+          background: #006400bf;
+        }
+        .buttonz .bookhome:active, .buttons .bookhome:active{
+          background: var(--green-A01);
         }
         .buttonz{
             position: absolute;

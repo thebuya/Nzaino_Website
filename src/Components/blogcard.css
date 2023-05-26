@@ -71,6 +71,7 @@
 .bloghighlight-card .main-highlighttext .highlight-title {
     font-weight: 600;
     font-size: 18px;
+    text-align: initial;
     line-height: 110%;
     margin-bottom: 0.25rem;
 }
