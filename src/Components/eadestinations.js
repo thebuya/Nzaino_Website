@@ -470,7 +470,7 @@ export const packages = [
 
     {
         id: "4",
-        image: kilimanjaro4,
+        image: kilimanjaro3,
         images : [
             kilimanjaro1,
             kilimanjaro2,

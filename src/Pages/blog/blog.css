@@ -51,7 +51,14 @@
 
 
 }
- 
+ .blogContainer .moveAbleItems .mainFade {
+    top: 0rem;
+}
+ .blogContainer .moveAbleItems .paragraphs {
+    text-align: left;
+    margin-left: 4rem;
+    margin-top: -2rem;
+}
 .immoveavleitems .recentblogs, 
 .immoveavleitems .popularblogs {
     max-width: 1200px;
@@ -125,6 +132,14 @@
 @media screen and (max-width: 550px){
 .blogContainer .main-image img {
     right: 110%;
+}
+.blogContainer .moveAbleItems .paragraphs {
+    margin-top: 3rem;
+    text-align: justify;
+    margin-left: 2rem;
+}
+.blogContainer .moveAbleItems .mainFade {
+    top: 4rem;
 }
 .blogContainer .moveAbleItems .blogsGrid{
     grid-template-columns: repeat(1, 1fr);

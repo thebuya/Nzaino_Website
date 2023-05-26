@@ -47,6 +47,7 @@ function App() {
                   <Route path='gorillatrekkingtips' element={<GorillaTrekTips/>}/>
                   <Route path='westernuganda' element={<WesternUganda/>}/>
                   <Route path='romanticgetaways' element={<Romantic8Places/>}/>
+                  <Route path='mountainclimbingtips' element={<Romantic8Places/>}/>
         </Routes>
       <BookingForm/>
       <Footer/>

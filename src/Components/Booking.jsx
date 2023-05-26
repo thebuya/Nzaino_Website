@@ -127,7 +127,7 @@ const [values, setValues] = useState({
                       <input
                       type="text"
                       name="destinationLocation"
-                      placeholder='e.g Murchison Falls Park'
+                      placeholder='e.g Mombasa'
                       value={values.destinationLocation}
                       onChange={onChange}
                       required
@@ -214,24 +214,26 @@ const [values, setValues] = useState({
               </div>
 
               <div className="pickContacts">
-              <label>
-                      Full Name
-                      <input
-                      type="text"
-                      name="travelerName"
-                      placeholder='e.g Kwizera Davis'
-                      value={values.travelerName}
-                      onChange={onChange}
-                      focused={focused.toString()}
-                      //className={validationErrors.travelerNameError ? 'error' : ''}
-                      required
-                      pattern="^[A-Za-z]+ [A-Za-z]+$"
-                      />
-                      {values.travelerName && !/^([A-Za-z]+\s[A-Za-z]+)$/.test(values.travelerName) && (
-                        <span className="errorMessage">Include a space between your names.</span>
-                      )}
+                     <label>
+                          Full Name
+                          <input
+                          type="text"
+                          name="travelerName"
+                          placeholder='e.g Kwizera Davis'
+                          value={values.travelerName}
+                          onChange={onChange}
+                          focused={focused.toString()}
+                          //className={validationErrors.travelerNameError ? 'error' : ''}
+                          required
+                          pattern="^[A-Za-z]+ [A-Za-z]+$"
+                          />
+                          {values.travelerName && !/^([A-Za-z]+\s[A-Za-z]+)$/.test(values.travelerName) && (
+                            <span className="errorMessage">Include a space between your names.</span>
+                          )}
                     </label>
+
                     <label>
+
                         Phone Number
                         <input
                           type="text"
@@ -246,7 +248,8 @@ const [values, setValues] = useState({
                         {values.travelerContact && !/^(\+[1-9]\d{9,14}|0\d{9,14})$/.test(values.travelerContact) && (
                           <span className="errorMessage">Please provide a valid phone number.</span>
                         )}
-                      </label>
+                    </label> 
+
               </div>
 
               <div className="specialRequests">

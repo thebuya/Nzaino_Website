@@ -2,6 +2,7 @@ import Zanzibar from '../Images/zanzibarblog.jpg' ;
 import Zanzibar2 from '../Images/Zanzibar.jpg' ;
 import Gorillatrekking from '../Images/bwindi4.jpg' ;
 import Rwenzori from '../Images/rwenzorimountains.jpg'
+import uganda from '../Images/elephants-crossing.jpg'
 //import serengeti5 from '../Images/serengeti.jpg'
 //import tarangire from '../Images/tarangire.jpg'
 import rwanda from '../Images/bwindi3.jpg'
@@ -25,6 +26,19 @@ import Kiso from '../Images/discoveruganda.jpg'
 export const blogs = [
     {
         id:1,
+        recent:true,
+        popular:false,
+        image: uganda,
+        path: "/ugandan8places",
+        location:"Queen Elizabeth National Park, Uganda",
+        heading:"8 Places To Visit In Uganda.",
+        paragraph:"The Pearl of Africa is a title Uganda undisputedly holds and everyone "+
+        "that visits, leaves agreeing to that." +
+        " Uganda has got a culture for giving, "+
+        "the land gives through its nature, and the people through their energy.",
+    },
+    {
+        id:2,
         recent:false,
         popular:true,
         image: Zanzibar,
@@ -32,61 +46,64 @@ export const blogs = [
         location:"The Coastal Beaches",
         heading:"8 Places To Visit In Zanzibar",
         paragraph:"The picturesque island located off the coast of Tanzania, offers a perfect escape from the hustle and bustle of city life. Zanzibar has something to offer for everyone. So pack your bags and head to Zanzibar for an unforgettable coastal vacation experience.",
-    
     },
-{
-    id:2,
-    recent:true,
-    popular:true,
-    image: Rwenzori,
-    path: "/ugandan8places",
-    location:"The Rwenzori Mountain, Uganda",
-    heading:"8 Places To Visit In Uganda.",
-    paragraph:"The ‘Mountains of the Moon’, as they are famously known, are a wonderland of snow-capped peaks and alpine lakes. From the rich biodiversity of the lower slopes to the majestic views of the summit, there’s no limit to the adventure and beauty that await you.",
-},
+   
 {
     id:3,
     recent:true,
     popular:false,
-    image: Kiso,
-    path: "/westernuganda",
-    location:"Kisoro",
-    heading:"The Wonders of Western Uganda.",
-    paragraph:"The 'Land of a Thousand Hills', is a country full of natural beauty and cultural richness. From the lush greenery of Nyungwe Forest to the sparkling waters of Lake Kivu, there's no shortage of stunning sights to explore",
+    image: tanzania,
+    path: "/tanzania8places",
+    location:"Mt. Kilimanjaro, Tanzania",
+    heading:"8 Places To Visit In Tanzania.",
+    paragraph:"Tanzania offers many amazing places"+
+    " for travelers who love nature and culture"+
+    ". One popular attractions is"+
+    " the Mountain Kilimanjaro [5,895 Metres] the "+
+    "highest mountain In Africa,.",
+
 },
+
 {
         id:4,
         recent:true,
-        popular:false,
+        popular:true,
         path: "/gorillatrekkingtips",
         image: Gorillatrekking,
         location:"Bwindi Impenetrable Forest, Rwanda & Uganda",
-        heading:"Our Tips To Gorilla Trekking",
+        heading:"6 Tips To Gorilla Trekking",
         paragraph:"To fully appreciate the majesty of the gorillas, you must approach the experience with an open heart and mind, ready to witness nature's beauty and power.",
 
     },
     {
         id:5,
         recent:true,
-        popular:true,
+        popular:false,
         image: Zanzibar2,
         path: "/EA8places",
         location:"Zanzibar",
-        heading:"The 8 Places To Visit In East Africa",
-        paragraph:"The picturesque island located off the coast of Tanzania, offers a perfect escape from the hustle and bustle of city life. Zanzibar has something to offer for everyone. So pack your bags and head to Zanzibar for an unforgettable coastal vacation experience.",
+        heading:"8 Places You Want To Visit In East Africa",
+        paragraph:"From the majestic River Nile and volcanoes, "+
+        "to the wildlife-rich national parks and reserves, "+
+        "to the colorful and vibrant cities of Nairobi,"+
+        " Kigali, and Kampala. East Africa has something "+
+        "for everyone. You can enjoy the scenic views,"+
+        " the cultural diversity, and the historical heritage"+
+        " of this region that is full of life and adventure",
     
     },
     {
         id:6,
         recent:true,
         popular:false,
-        image: tanzania,
-        path: "/tanzania8places",
-        location:"Mt. Kilimanjaro, Tanzania",
-        heading:"The 8 Places To Visit In Tanzania.",
-        paragraph:"The picturesque island located off the coast of Tanzania, offers a perfect escape from the hustle and bustle of city life. Zanzibar has something to offer for everyone. So pack your bags and head to Zanzibar for an unforgettable coastal vacation experience.",
-    
+        image: Kiso,
+        path: "/westernuganda",
+        location:"Kisoro",
+        heading:"The Wonders of Western Uganda.",
+        paragraph:"Within The Pearl of Africa, is another pearl, Western Uganda is blessed with natural beauty and cultural richness.  You can relax and enjoy the views of Lake Bunyonyi, which has lots of little islands and birds. You can also meet some of the coolest animals on the planet, the mountain gorillas, at Bwindi",
     },
+    
+
     {
         id:7,
         recent:true,
@@ -94,8 +111,11 @@ export const blogs = [
         image: Kenya,
         path: "/kenyan8places",
         location:"The Capital, Nairobi.",
-        heading:"The 8 Places To Visit While In Kenya.",
-        paragraph:"The picturesque island located off the coast of Tanzania, offers a perfect escape from the hustle and bustle of city life. Zanzibar has something to offer for everyone. So pack your bags and head to Zanzibar for an unforgettable coastal vacation experience.",
+        heading:"8 Places To Visit In Kenya.",
+        paragraph:"If you're looking for a vacation of all vibes, Kenya has it all"+
+       ". Kenya is home to "+
+        "some of the most diverse and stunning landscapes, wildlife,"+
+          "and it's night party life does not go unnoticed as well, in the world.",
     
     },
     
@@ -106,7 +126,7 @@ export const blogs = [
         image: rwanda,
         path: "/rwanda8places",
         location:"Volcano National Park, Rwanda",
-        heading:"The 8 Places To Visit In Rwanda.",
+        heading:"8 Places To Visit In Rwanda.",
         paragraph:"The 'Land of a Thousand Hills' is a country full of natural beauty in many ways, and cultural richness. From the lush greenery of Nyungwe Forest to the sparkling waters of Lake Kivu, there's no shortage of stunning sights to explore.",
     },
     
@@ -117,9 +137,23 @@ export const blogs = [
         image: romance,
         path: "/romanticgetaways",
         location:"Entebbe, Uganda.",
-        heading:"The Romantic GetAways of EastAfrica.",
-        paragraph:"The 'Land of a Thousand Hills' is a country full of natural beauty in many ways, and cultural richness. From the lush greenery of Nyungwe Forest to the sparkling waters of Lake Kivu, there's no shortage of stunning sights to explore.",
-    }
+        heading:"Our Top 6 Cozy GetAways of EastAfrica.",
+        paragraph:"Let's call it 'something nice'. These are the places"+
+        " that have something nice about them."+
+        " You can explore the beauty of nature"+
+        " that will stay in your memory forever."+
+        "",
+    },
+    {
+        id:10,
+        recent:true,
+        popular:true,
+        image: Rwenzori,
+        path: "/mountainclimbingtips",
+        location:"The Rwenzori Mountain, Uganda",
+        heading:"6 Things You Need To Climb Mountain Rwenzori.",
+        paragraph:"The ‘Mountains of the Moon’, as they are infamously known, are a wonderland of snow-capped peaks and alpine lakes. From the rich biodiversity of the lower slopes to the majestic views of the summit, there’s no limit to the adventure and beauty that await you.",
+    },
     
 ]
 
