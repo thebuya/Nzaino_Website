@@ -14,7 +14,7 @@ import BackgroundBlog from '../../Images/fadingpackage2.jpg';
 
 const Packages = () => {
   useEffect(() => {
-        document.title = 'Travel East Africas with Nzaino Packages | Nzain';
+        document.title = 'Travel East Africas with Nzaino Packages | Nzaino';
         document.querySelector('meta[name="description"]').setAttribute('content', 
           'Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer.'+
           'Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries.');
