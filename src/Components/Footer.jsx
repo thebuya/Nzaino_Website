@@ -101,12 +101,12 @@ const Footer = () => {
             <div className="link_container quick-links">
             <h2>Quick Links</h2>
                 <ul>
-                    <li><NavLink to="/aboutus" onClick={() => handleNavLinkClick('about us info.')}> <TiArrowRight/>About Nzaino</NavLink> </li>  
+                    <li><NavLink to="/aboutnzaino" onClick={() => handleNavLinkClick('about us info.')}> <TiArrowRight/>About Nzaino</NavLink> </li>  
                     <li> <NavLink to="/#Testimonials"onClick={() => handleNavLinkClick('our client reviews.')}><TiArrowRight/>Client Testimonials </NavLink></li>
-                    <li> <NavLink to="/packages#FAQS"onClick={() => handleNavLinkClick('frequently asked questions.')}><TiArrowRight/>Client Questions</NavLink></li>
-                    <li> <NavLink to="/aboutus#Services"onClick={() => handleNavLinkClick('our services.')}><TiArrowRight/>Our Services </NavLink></li>
-                    <li><NavLink to="/packages"onClick={() => handleNavLinkClick('packages on offer.')}> <TiArrowRight/>Our Travel Packages </NavLink></li>
-                    <li> <NavLink to="/destinations"onClick={() => handleNavLinkClick('the popular destinations.')}><TiArrowRight/>Popular Destinations</NavLink>  </li>
+                    <li> <NavLink to="/eastafricatravelpackages"onClick={() => handleNavLinkClick('frequently asked questions.')}><TiArrowRight/>Client Questions</NavLink></li>
+                    <li> <NavLink to="/aboutnzaino"onClick={() => handleNavLinkClick('our services.')}><TiArrowRight/>Our Services </NavLink></li>
+                    <li><NavLink to="/eastafricatravelpackages"onClick={() => handleNavLinkClick('packages on offer.')}> <TiArrowRight/>Our Travel Packages </NavLink></li>
+                    <li> <NavLink to="/eastafricatraveldestinations"onClick={() => handleNavLinkClick('the popular destinations.')}><TiArrowRight/>Popular Destinations</NavLink>  </li>
                     
                     
                 </ul>
@@ -115,12 +115,13 @@ const Footer = () => {
             <div className="link_container resources">
             <h2>Resources</h2>
                 <ul>
-                    <li> <NavLink to="/blog" onClick={() => handleNavLinkClick('travel blogs')}><TiArrowRight/>Travel Blog</NavLink></li>
+                    <li> <NavLink to="/uugandacarhire" onClick={() => handleNavLinkClick('cars for hire')}><TiArrowRight/>Cars For Hire</NavLink></li>
+                    <li> <NavLink to="/ugandatravelblog" onClick={() => handleNavLinkClick('travel blogs')}><TiArrowRight/>Travel Blog</NavLink></li>
                     <li> <a href='https://opencorporates.com/companies/ug/80020002502844' target="_blank" rel='noreferrer'> <TiArrowRight />Registration Status </a> </li>
                     
-                    <li> <NavLink to="/aboutus" onClick={() => handleNavLinkClick('our terms and conditions.')}><TiArrowRight/>Terms and Conditions</NavLink></li>
-                    <li> <NavLink to="/aboutus" onClick={() => handleNavLinkClick('insurance policy.')}><TiArrowRight/>Insurance Policy </NavLink></li>
-                    <li> <NavLink to="/aboutus" onClick={() => handleNavLinkClick('job opportunities')}><TiArrowRight/>Job opportunities </NavLink></li>
+                    <li> <NavLink to="/aboutnzaino" onClick={() => handleNavLinkClick('our terms and conditions.')}><TiArrowRight/>Terms and Conditions</NavLink></li>
+                    <li> <NavLink to="/aboutnzaino" onClick={() => handleNavLinkClick('insurance policy.')}><TiArrowRight/>Insurance Policy </NavLink></li>
+                    <li> <NavLink to="/aboutnzaino" onClick={() => handleNavLinkClick('job opportunities')}><TiArrowRight/>Job opportunities </NavLink></li>
                 </ul>
             </div>
 

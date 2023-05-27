@@ -110,7 +110,7 @@ const HomePackageSlide = () => {
             <img src={BackgroundBlog} className="BackBlog packageback " alt="" />
       </div>
       <button className="moredestinations">
-      <Link to="/packages" className='linkbutton'> View All Packages</Link>
+      <Link to="/eastafricapackages" className='linkbutton'> View All Packages</Link>
       </button>
 
       

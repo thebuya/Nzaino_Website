@@ -37,7 +37,7 @@ const HomeMainSlide = () => {
 
 
   const goToCarPage = () => {
-    navigate('/car'); // Navigate to the car page
+    navigate('/ugandacarhire'); // Navigate to the car page
   };
 
   const onAutoplayTimeLeft = (s, time, progress) => {

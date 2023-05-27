@@ -90,7 +90,7 @@ const HomePlaces = () => {
             <img src={BackgroundBlog} className="BackBlog destinback" alt="" />
       </div>
       <button className="moredestinations">
-      <Link to="/destinations" className='linkbutton'> View All Destinations</Link>
+      <Link to="/eastafricadestinations" className='linkbutton'> View All Destinations</Link>
       </button>
 
       
