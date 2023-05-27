@@ -14,12 +14,16 @@ import BackgroundBlog from '../../Images/fadingpackage2.jpg';
 
 const Packages = () => {
   useEffect(() => {
-    document.title = 'East African Travel Packages';
-  document.querySelector('meta[name="description"]').setAttribute('content', 
-  'Nzaino provides a catalogue of budget friendly travel packages from some of the best destinations and accommodations East Africa has to offer.'+
-  'Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries.');
-  document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
-  // You can also modify other meta tags or perform other SEO-related operations here if necessary
+        document.title = 'Travel East Africas with Nzaino Packages | Nzain';
+        document.querySelector('meta[name="description"]').setAttribute('content', 
+          'Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer.'+
+          'Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries.');
+        document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
+        document.querySelector('meta[name="twitter:image"]').setAttribute('content', headerimage);
+        document.querySelector('meta[name="twitter:description]').setAttribute('content', 'Learn About Nzaino Travels- Your Trusted guide to exploring East Africa. We offer a wide range of comprehensive services to enhance your travel experience. From reliable car rentals and expert trip planning to knowledgeable tour guides, seamless accommodation booking, and efficient document processing assistance, we have got you covered. Explore the beauty and diversity of East Africa with Nzaino as your trusted companion.');
+        document.querySelector('meta[property="og:description]').setAttribute('content', 'Learn About Nzaino Travels- Your Trusted guide to exploring East Africa. We offer a wide range of comprehensive services to enhance your travel experience. From reliable car rentals and expert trip planning to knowledgeable tour guides, seamless accommodation booking, and efficient document processing assistance, we have got you covered. Explore the beauty and diversity of East Africa with Nzaino as your trusted companion.');
+
+      // You can also modify other meta tags or perform other SEO-related operations here if necessary
   }, []);
 
 
