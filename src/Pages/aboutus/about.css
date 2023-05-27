@@ -614,6 +614,12 @@ margin: auto;
         text-align: justify;
         margin-bottom: 2rem;
     }
+    .carintro{
+        margin-bottom: -1rem;
+    }
+    .Packages .intropackage{
+        margin-bottom: -4rem;
+    }
     .secondpart .who .imagewho img {
         margin-top: 0rem;
         transform: scale(1.15);

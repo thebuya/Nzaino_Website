@@ -23,7 +23,7 @@ function FadingHeader(props) {
       <div className="main-image">
       <img
         src={props.image}
-        alt=""
+        alt={props.description}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       />

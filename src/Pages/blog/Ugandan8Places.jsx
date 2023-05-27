@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import headerimage from '../../Images/fadingelephants.jpg';
-import nai from  '../../Images/mombasa4.jpg'
+import kla from  '../../Images/kla.jpg'
+import gorilla from  '../../Images/gorilla.jpg'
+import bunyonyi from  '../../Images/bunyonyi.jpg'
 
 
 
@@ -11,114 +13,166 @@ import Immovableitems from './Immovableitems';
 
 
 const Ugandan8Places = () => {
-  const description = 'Welcome to Nzaino Blogs'; // Replace with your description
-  return (
-    <div className='blogContainer'>
+  useEffect(() => {
+    document.title = '8 Places you must visit in Uganda';
+    document.querySelector('meta[name="description"]').setAttribute('content', 'Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.');
+    document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
+    // You can also modify other meta tags or perform other SEO-related operations here if necessary
+    }, []);
+   
+  const description = 'Queen Elizabeth National Park'; // Replace with your description
+    return (
+      <div className='blogContainer'>
+  
+        <div className="moveableitems">
+            <FadingHeader image={headerimage} description={description}/>
+  
+            <div className='textAndTitle'>
+                  <h1 className="blogtitle">8 Places you must visit in Uganda</h1>
+  
+                  <div className="textblog">
+                        <p>
+                        Uganda, known as the "Pearl of Africa," offers a 
+                        remarkable blend of natural beauty, wildlife, partylife, and
+                         rich cultural heritage. Whether you seek adventure,
+                          wildlife encounters, wildnights, or serene landscapes, Uganda 
+                          has something to offer. Here are eight regions you 
+                          must visit in Uganda to experience its enchanting 
+                          treasures:
 
-      <div className="moveableitems">
-          <FadingHeader image={headerimage} description={description}/>
 
-          <div className='textAndTitle'>
-                <h1 className="blogtitle">8 Regions you must visit in Kenya</h1>
-
-                <div className="textblog">
-                      <p>
-                      If you're looking for a vacation destination that has it all
-                      , look no further than Kenya.Kenya is home to
-                      some of the most diverse and stunning landscapes, wildlife,
-                        and cultures in the world. Whether you want to explore the 
-                        savannah, the mountains, the coast, or the cities, Kenya has
-                        something for everyone. <br /> Here are eight regions you must visit
-                          in Kenya to experience its beauty and richness.
-                          <br /><br /><br />
-                          <span className="boldblog">1. Nairobi: </span> 
-                          <br />
-                          The capital and largest city of Kenya, <span className="highlight">
-                          Nairobi is a vibrant and cosmopolitan hub that offers a taste of modern Africa.</span> You 
-                          can visit museums, art galleries, markets, restaurants, 
-                            and nightlife venues, or take a short drive to the Nairobi 
-                            National Park, where you can see lions, giraffes, zebras, and more.
                             <br />
-                            
-                      </p>
-                      <img src={nai} alt="Nairobi East Africa Travel" srcset="" />
-                      <p>
-                        <br />
-                          <span className="boldblog">2. Mombasa: </span> 
-                          <br />
-                          The capital and largest city of Kenya, Nairobi is a
-                          vibrant and cosmopolitan hub that offers a taste of modern Africa.
-                            You can visit museums, art galleries, markets, restaurants, 
-                            and nightlife venues, or take a short drive to the Nairobi 
-                            National Park, where you can see lions, giraffes, zebras, and more.
                             <br />
-                            
-                      </p>
-
-                      <p>
-                      <br />
-                      Maasai Mara:
-                      If you want to witness the iconic wildlife of Kenya, Maasai
-                       Mara is a must-visit region. This world-renowned game reserve is famous for
-                        its annual wildebeest migration, where millions of animals cross the Mara River.
-                         Embark on a thrilling safari adventure to spot lions, elephants, cheetahs, zebras,
-                          and other majestic wildlife species roaming freely in their natural habitat.
-
-                      Amboseli National Park:
-                      Nestled at the foothills of Mount Kilimanjaro, Amboseli
-                       National Park offers breathtaking views of Africa's highest peak
-                       . It is known for its large herds of elephants and incredible opportunities
-                        for wildlife photography. Explore the vast savannahs, encounter diverse bird
-                         species, and witness the unique interactions between wildlife and the majestic
-                          backdrop of Mount Kilimanjaro.
-
-                      Lamu Island:
-                      For a tranquil and culturally rich experience, head to 
-                      Lamu Island. This UNESCO World Heritage Site is a hidden 
-                      gem, known for its well-preserved Swahili architecture,
-                       narrow streets, and traditional festivals. Explore the ancient Lamu
-                        Town, relax on pristine beaches, and immerse yourself in the island's 
-                        laid-back atmosphere.
-
-                      Lake Nakuru:
-                      Located in the Great Rift Valley, Lake Nakuru National 
-                      Park is a paradise for bird lovers. The lake is famous for
-                       its vast flocks of flamingos, creating a mesmerizing pink
-                        spectacle. Besides the vibrant birdlife, you can also spot rhinos,
-                         zebras, giraffes, and other wildlife in the park. Take a boat ride or 
-                         enjoy a hike around the lake for a memorable experience.
-
-                      Tsavo National Parks:
-                      Tsavo East and Tsavo West National Parks together 
-                      form one of the largest wildlife sanctuaries in the world.
-                       These parks offer diverse landscapes, including open plains, 
-                       volcanic hills, and dense forests. Explore the wildlife-rich areas,
-                        spot elephants, lions, buffaloes, and leopards, and marvel at the stunning 
-                        views of the Chyulu Hills.
-
-                      Samburu National Reserve:
-                      Located in northern Kenya, Samburu National Reserve 
-                      showcases a unique and arid landscape, home to a variety of
-                       wildlife species. Experience the beauty of the Ewaso Ng'iro River,
-                        spot rare animals like the reticulated giraffe and Grevy's zebra, and
-                         learn about the rich culture of the Samburu people who inhabit the region.
-
-                      By visiting these eight regions in Kenya, you'll have the
-                       opportunity to immerse yourself in the country's diverse landscapes,
-                        encounter incredible wildlife, and embrace the vibrant cultures that make
-                         Kenya a truly unforgettable destination for travelers.
+                            <span className="boldblog">1. Bwindi Impenetrable Forest: </span> 
+                            <br />
+                            Home to the endangered mountain gorillas, Bwindi Impenetrable Forest 
+                              is a UNESCO World Heritage Site that offers an extraordinary wildlife 
+                              experience. Trek through dense forests and witness these majestic 
+                              creatures up close, a once-in-a-lifetime encounter that will leave you 
+                              in awe of their beauty and grace.
+                            <br />
+                          </p>
+                          <img src={gorilla} alt="Gorilla Bwindi Impenetrable Forest" srcset="" />
+                              
+                        <p>
+                          <br />
+                          <span className="boldblog">2. Kampala: </span> 
+                          <br />
+                          We can't go any further without mentioning the capital,
+                          Kampala. Kampala is a bustling metropolis that blends modernity with 
+                            traditional charm. Explore the vibrant markets, 
+                            visit historical landmarks such as the Kasubi Tombs 
+                            and the Uganda Museum, and immerse yourself in the lively 
+                            nightlife and diverse cuisine of this vibrant city.
+                          <br />
+                        </p>
+                        <img src={kla} alt="Kampala East Africa Travel" srcset="" />
 
 
-                      </p>
-                </div>
-          </div>
+
+                        <p> 
+                            <br />
+                            <span className="boldblog">3. Queen Elizabeth National Park: </span> 
+                            <br />
+                                Located in southwestern Uganda, Queen Elizabeth National Park is 
+                                a haven for wildlife enthusiasts. Embark on thrilling game drives 
+                                to spot elephants, lions, buffaloes, and a variety of bird species. 
+                                Take a boat safari along the Kazinga Channel and witness hippos, 
+                                crocodiles, and numerous water birds in their natural habitat.
+                            <br />
+                        </p>
+                       
+
+
+                        <p> 
+                            <br />
+                            <span className="boldblog">4. Murchison Falls National Park: </span>  
+                            <br />
+                                  Spanning across the Nile River, Murchison Falls National 
+                                  Park offers breathtaking landscapes and abundant wildlife. 
+                                  Witness the dramatic Murchison Falls, where the Nile River 
+                                  plunges through a narrow gorge, creating a magnificent spectacle. 
+                                  Enjoy game drives, boat cruises, and spot wildlife such as elephants, 
+                                  giraffes, hippos, and Nile crocodiles.
+                            <br />
+                         </p>
+
+
+                         <p> 
+                            <br />
+                            <span className="boldblog">5. Lake Bunyonyi: </span> 
+                            <br />
+                                Known as the "Switzerland of Africa," Lake Bunyonyi is 
+                                a serene and picturesque destination. Surrounded by lush 
+                                hills and dotted with small islands, this tranquil lake is 
+                                the perfect place for relaxation and rejuvenation. Explore 
+                                the area by canoe, or participating in area games, or simply soak in the 
+                                natural beauty of this stunning location.
+                            <br />
+                          </p>
+                          <img src={bunyonyi} alt="Lake Bunyonyi, Uganda" srcset="" />
+
+                          <p> 
+                              <br />
+                              <span className="boldblog">6. Kidepo Vallery National Park: </span>
+                              <br />
+                                    For those seeking off-the-beaten-path adventures, Kidepo Valley National 
+                                    Park is a hidden gem. Located in the remote northeastern corner of Uganda, 
+                                    this park offers untouched wilderness and incredible wildlife encounters. 
+                                    Experience the vast open savannahs, spot lions, elephants, zebras, and 
+                                    giraffes, and revel in the stunning views of the Karamoja plains.
+                              <br />
+                          </p>
+
+                         <p> 
+                          <br />
+                            <span className="boldblog">7. Jinja: </span>
+                            <br />
+                            Situated along the shores of Lake Victoria, Jinja is the adventure
+                             capital of Uganda. It is renowned as the source of the Nile River 
+                             and offers a range of thrilling activities. Experience white-water 
+                             rafting, kayaking, bungee jumping, and quad biking. Explore the 
+                             scenic surroundings, visit the Source of the Nile, and enjoy the 
+                             vibrant atmosphere of this lively town.
+                          <br />
+                         </p>
+
+
+                         <p> 
+                            <br />
+                            <span className="boldblog">8. Entebbe: </span>
+                            <br />
+                              Located in northern Kenya, Samburu National Reserve 
+                              showcases a unique and arid landscape, home to a variety of
+                              wildlife species. Experience the beauty of the Ewaso Ng'iro River,
+                              spot rare animals like the reticulated giraffe and Grevy's zebra, and
+                              learn about the rich culture of the Samburu people who inhabit the region.
+                            <br />
+                           </p>
+
+                           <hr className='line' />
+                         <p> 
+                            <br />
+                            Be warned, by visiting these eight regions in Uganda, you'll discover
+                            a desire to finish off all the desitnationas in the Pearl. 
+                            You will have encountered the country's diverse captivating 
+                            wildlife, and immersed yourself in the warmth of its culture. 
+                            Uganda's natural wonders and unique experiences will leave an 
+                            indelible mark on your travel memories.
+                            <br />
+                         </p>
+                         <br />
+                         <br />
+                       
+                  </div>
+            </div>
+        </div>
+
+
+        <Immovableitems/>
+  
       </div>
-
-
-      <Immovableitems/>
-
-    </div>
-  )
-}
+    )
+  }
 
 export default Ugandan8Places

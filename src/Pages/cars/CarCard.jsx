@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import {MdOutlineClose} from 'react-icons/md'
 import {inputs} from '../../Components/cars'
 import Carinput from './Carinput'
@@ -9,7 +9,6 @@ import { GiPathDistance } from "react-icons/gi";
 // TbSettingsAutomation
 
 function CarCard(props)  {
-
 
 const[values, setValues] = useState({
     carname: props.carname, 

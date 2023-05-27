@@ -81,3 +81,8 @@ body {
 button{
   cursor: pointer;
 }
+.line{
+  border: 0.5px solid var(--greengrayhue-4);
+  width: 100%;
+  margin-top: 2rem;
+}

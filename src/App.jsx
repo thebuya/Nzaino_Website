@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+
 import './App.css';
 
 
@@ -23,6 +24,7 @@ import Zanzibar8Places from './Pages/blog/Zanzibar8Places';
 import GorillaTrekTips from './Pages/blog/GorillaTrekTips';
 import WesternUganda from './Pages/blog/WesternUganda';
 import Romantic8Places from './Pages/blog/Romantic8Places';
+import MountainClimbTips from './Pages/blog/MountainClimbTips';
 
 function App() {
   return (
@@ -47,7 +49,7 @@ function App() {
                   <Route path='gorillatrekkingtips' element={<GorillaTrekTips/>}/>
                   <Route path='westernuganda' element={<WesternUganda/>}/>
                   <Route path='romanticgetaways' element={<Romantic8Places/>}/>
-                  <Route path='mountainclimbingtips' element={<Romantic8Places/>}/>
+                  <Route path='mountainclimbingtips' element={<MountainClimbTips/>}/>
         </Routes>
       <BookingForm/>
       <Footer/>

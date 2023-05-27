@@ -43,7 +43,7 @@ const Immovableitems = () => {
   return (
     <div className="immoveableitems">
  
- <img src={Backgroundserve} className="BackBlog packageback serveback " alt="" />
+    <img src={Backgroundserve} className="BackBlog packageback serveback " alt="" />
     <div className="popularblogs">
     <h2 className="populartitle">Popular Blogs</h2>
         <Swiper 

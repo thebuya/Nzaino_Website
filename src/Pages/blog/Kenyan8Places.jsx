@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './blog.css'
 
 import headerimage from '../../Images/zanib.jpg';
-import nai from  '../../Images/mombasa4.jpg'
+import nai from  '../../Images/Kenya.jpeg'
+import mombasa from  '../../Images/mombasa4.jpg'
 
 
 
@@ -11,7 +12,14 @@ import Immovableitems from './Immovableitems';
 
 
 const Kenyan8Places = () => {
-    const description = 'Welcome to Nzaino Blogs'; // Replace with your description
+    const description = 'The Coast of Mombasa'; // Replace with your description
+    useEffect(() => {
+      document.title = '8 Regions you must visit in Kenya';
+      document.querySelector('meta[name="description"]').setAttribute('content', 'Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.');
+      document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
+      // You can also modify other meta tags or perform other SEO-related operations here if necessary
+      }, []);
+     
     return (
       <div className='blogContainer'>
   
@@ -24,7 +32,7 @@ const Kenyan8Places = () => {
                   <div className="textblog">
                         <p>
                         If you're looking for a vacation destination that has it all
-                        , look no further than Kenya.Kenya is home to
+                        , look no further than Kenya. Kenya is home to
                         some of the most diverse and stunning landscapes, wildlife,
                           and cultures in the world. Whether you want to explore the 
                           savannah, the mountains, the coast, or the cities, Kenya has
@@ -52,9 +60,9 @@ const Kenyan8Places = () => {
                               You can visit museums, art galleries, markets, restaurants, 
                               and nightlife venues, or take a short drive to the Nairobi 
                               National Park, where you can see lions, giraffes, zebras, and more.
-                              <br />
-                              
+                          <br />
                         </p>
+                        <img src={mombasa} alt="Mombasa East Africa Travel" srcset="" />
 
 
 
@@ -137,7 +145,7 @@ const Kenyan8Places = () => {
                             <br />
                            </p>
 
-
+                           <hr className='line' />
                          <p> 
                             <br />
                             By visiting these eight regions in Kenya, you'll have the

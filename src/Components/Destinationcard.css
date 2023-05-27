@@ -224,9 +224,13 @@ transition: all ease-in-out 600ms;
 }
 
 
+
 @media screen and (max-width: 550px){
     .upperpart .maini{
         height: 300px;
+    }
+    .upperpart .rightpart {
+        max-width: 75%;
     }
     .upperpart .maini, .upperpart .leftpart {
         border-radius: 0;

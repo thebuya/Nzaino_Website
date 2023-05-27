@@ -16,7 +16,13 @@ import FadeHeader from '../../UI/FadeHeader';
 
 
 const Blog = () => {
- 
+  useEffect(() => {
+    document.title = 'Travellers Blog';
+    document.querySelector('meta[name="description"]').setAttribute('content', 'Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.');
+    document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
+    // You can also modify other meta tags or perform other SEO-related operations here if necessary
+    }, []);
+   
   const description = 'Welcome to Nzaino Blogs'; // Replace with your description
 
   // Pagination state

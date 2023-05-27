@@ -13,6 +13,14 @@ import FadeHeader from '../../UI/FadeHeader';
 import BackgroundBlog from '../../Images/fadingpackage2.jpg';
 
 const Packages = () => {
+  useEffect(() => {
+    document.title = 'East African Travel Packages';
+  document.querySelector('meta[name="description"]').setAttribute('content', 
+  'Nzaino provides a catalogue of budget friendly travel packages from some of the best destinations and accommodations East Africa has to offer.'+
+  'Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries.');
+  document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
+  // You can also modify other meta tags or perform other SEO-related operations here if necessary
+  }, []);
 
 
   const [selectedFilter, setSelectedFilter] = useState(null);
@@ -68,7 +76,7 @@ const Packages = () => {
         fadingtitle = "Packages"
         cleartitle = "Choose Your Package" 
         /> 
-        <p className="whotext paragraphs">
+        <p className="whotext paragraphs intropackage">
                         At Nzaino, we understand that comfort and security
                          are essential for a memorable journey. 
                          That’s why we provide services that make it easy for you to

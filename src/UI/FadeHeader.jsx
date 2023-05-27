@@ -6,8 +6,8 @@ function FadeHeader(props) {
 
   return (
     <div className={`mainFade ${className}`}>
-      <h2 className="fadingTitle">{fadingtitle}</h2>
-      <h4 className="belowFade">{cleartitle}</h4>
+      <h1 className="fadingTitle">{fadingtitle}</h1>
+      <h2 className="belowFade">{cleartitle}</h2>
     </div>
   );
 }

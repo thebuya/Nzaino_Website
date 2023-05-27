@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+//import { Helmet } from 'react-helmet';
 import './about.css'
 
 import service from '../../Images/service1.png';
@@ -27,7 +28,12 @@ import AboutSectionsI from './AboutSectionsI';
 
 
 const About = () => {
-  
+  useEffect(() => {
+    document.title = 'About Nzaino - Your East African Guide';
+    document.querySelector('meta[name="description"]').setAttribute('content', 'Learn About Nzaino Travels- Your Trusted guide to exploring East Africa. We offer a wide range of comprehensive services to enhance your travel experience. From reliable car rentals and expert trip planning to knowledgeable tour guides, seamless accommodation booking, and efficient document processing assistance, we have got you covered. Explore the beauty and diversity of East Africa with Nzaino as your trusted companion.');
+    document.querySelector('meta[property="og:image"]').setAttribute('content', service2);
+  // You can also modify other meta tags or perform other SEO-related operations here if necessary
+  }, []);
   
 
 
@@ -49,7 +55,7 @@ const About = () => {
                            to experience the wildlife, the landscapes, the people, or you just want to get a ride,
                             we are here to help you discover the beauty of this continent with our catalogue of services
                             shown below. We understand that comfort and security
-                         are essential for a memorable journey. 
+                         are essential for a memorable journey. Contact us today and start your African adventure.
                         </p>
                     </div>
           </div>
@@ -83,7 +89,7 @@ const About = () => {
 
           {/** <button className="nav-button contact">Contact us  </button> */}
 
-          <img src={Backgroundserve} className="BackBlog packageback serveback " alt="" />
+          <img src={Backgroundserve} className="BackBlog packageback serveback " alt="East African Horizon" />
       </div>
 
       <HomeReviewSlide/>
@@ -96,13 +102,12 @@ const About = () => {
                           cleartitle = "Why You Should Travel With Nzaino"
                           />
                         <p className="whotext">
-                        We are passionate about connecting
-                         you with the best of East Africa and beyond. Whether
-                          you are looking for adventure, romance, business, or culture,
-                           we have the perfect travel package for you. We work with
+                        We are passionate about helping you travel within East Africa and beyond. Whether
+                          the tour you are looking for is for adventure, romance, business, or culture,
+                           we have the perfect tours and travel package for you. We work with
                             trusted partners all over East Africa to ensure 
-                            your safety and satisfaction. Join us and discover
-                             the wonders of this amazing region.
+                            your safety and satisfaction. Join us and experience
+                             the Wonders of East Africa.
                         </p>
                     </div>
           </div>
@@ -110,29 +115,29 @@ const About = () => {
           <div className="servicegrid">
               
               <div className="serve">
-                <img src={local} alt="" />
+                <img src={local} alt="East African Local Knowledge." />
                 <p className="service">Local Knowledge</p>
               </div>
               <div className="serve">
-                <img src={airportpick} alt="" />
+                <img src={airportpick} alt="Airport Transfers and Chauffering." />
                 <p className="service">Airport Transfer &amp; Chauffering</p>
               </div>
              
               <div className="serve">
-                <img src={staff} alt="" />
+                <img src={staff} alt="Experienced and Professional Staff." />
                 <p className="service">Experienced &amp; Professional Staff</p>
               </div>
 
               <div className="serve">
-                <img src={service4} alt="" />
+                <img src={service4} alt="Recommend Accommodation." />
                 <p className="service">Recommended Accommodation</p>
               </div>
               <div className="serve">
-                <img src={service} alt="" />
+                <img src={service} alt="Super Vehicles For Comfort and Safety." />
                 <p className="service">Super Vehicles For Comfort &amp; Safety</p>
               </div>
               <div className="serve">
-                <img src={service6} alt="" />
+                <img src={service6} alt="Cross Border Experience." />
                 <p className="service">Cross-Border Experience</p>
               </div>
 
@@ -141,6 +146,7 @@ const About = () => {
 
 
     </section>
+   
   )
 }
 
