@@ -109,9 +109,11 @@ const HomePackageSlide = () => {
             </Swiper>
             <img src={BackgroundBlog} className="BackBlog packageback " alt="" />
       </div>
-      <button className="moredestinations">
-      <Link to="/eastafricapackages" className='linkbutton'> View All Packages</Link>
-      </button>
+      
+        <Link to="/eastafricatravelpackages" className='linkbutton'> 
+           <button className="moredestinations"> View All Packages  </button>
+        </Link>
+    
 
       
     </>

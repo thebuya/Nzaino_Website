@@ -349,7 +349,7 @@ background-color: var(--green-003);
             justify-content: center;
         }
         .firstbutton{
-          width: 50%;
+          width: 75vw;
         }
         .home-page .secondpart .team .teamtitle{
           margin-top: 0rem;

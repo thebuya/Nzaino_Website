@@ -6,9 +6,8 @@ function Teamcard(props) {
   
     return (
       <div className='teamMemberCard' key={props.id}>
-          {/**  <img src={props.image} className="memberImage" alt="" /> */} 
+          {/**  <img src={props.image} className="memberImage" alt={props.name} /> */} 
             <div className="jobDiv" >
-                 
                  <h5 className="name">{props.name}</h5>
                  <p className="job">{props.job}</p> 
             </div>

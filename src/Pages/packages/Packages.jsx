@@ -19,15 +19,13 @@ const Packages = () => {
           'Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer.'+
           'Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries.');
         document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
-       
-
       // You can also modify other meta tags or perform other SEO-related operations here if necessary
   }, []);
 
 
   const [selectedFilter, setSelectedFilter] = useState(null);
 
-  const description = 'Queen Elizabeth National Park, Uganda'; // Replace with your description
+  const descriptioclearn = 'Queen Elizabeth National Park, Uganda'; // Replace with your description
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);

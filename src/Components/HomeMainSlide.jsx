@@ -1,7 +1,7 @@
 import React, { useRef }  from 'react'
 //import { useHistory } from 'react-router-dom'; // Import useHistory from react-router-dom
 import { useNavigate } from 'react-router-dom';
-
+import {Link} from 'react-router-dom'
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
@@ -54,9 +54,9 @@ const HomeMainSlide = () => {
 
   return (
     <div className="content-container">    
-      <p className="home-heading">
+      <h1 className="home-heading">
          Discover <span>The Wonders of East Africa</span> with our Tailor-Made Tours
-      </p>
+      </h1>
       <Swiper
   spaceBetween={30}
   centeredSlides={true}
@@ -123,13 +123,18 @@ const HomeMainSlide = () => {
       </Swiper>
 
       <div className="buttonz">
+        <a href="#bookingSection">
           <button className="firstbutton bookhome" onClick={scrollToSection}>
               <span>Book a Trip</span>
           </button>
+        </a>
+          
 
-          <button className="firstbutton" onClick={goToCarPage}>
-              <span>Hire a Car</span>
-          </button>
+          
+            <Link to="/ugandacarhire">
+                <button className="firstbutton" onClick={goToCarPage}> Hire a Car</button>
+            </Link>
+            
       </div>
 
       

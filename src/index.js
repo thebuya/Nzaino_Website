@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Helmet>
-          <meta property="og:site_name" content="Nzaino Travel Africa" />
+          <meta property="og:site_name" content="Nzaino Travel Africa Limited" />
     </Helmet>
 
     <App />

@@ -89,9 +89,11 @@ const HomePlaces = () => {
             </Swiper>
             <img src={BackgroundBlog} className="BackBlog destinback" alt="" />
       </div>
-      <button className="moredestinations">
-      <Link to="/eastafricadestinations" className='linkbutton'> View All Destinations</Link>
-      </button>
+      
+          <Link to="/eastafricatraveldestinations" className='linkbutton'> 
+               <button className="moredestinations">View All Destinations</button>
+          </Link>
+      
 
       
     </>
