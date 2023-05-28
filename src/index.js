@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Helmet } from 'react-helmet';
 
 import './index.css';
 import App from './App';
@@ -10,12 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Helmet>
-          <meta property="og:site_name" content="Nzaino Travel Africa Limited" />
-    </Helmet>
-
     <App />
-   
   </React.StrictMode>
 );
 

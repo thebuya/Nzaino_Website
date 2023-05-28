@@ -20,7 +20,7 @@ const Zanzibar8Places = () => {
     // You can also modify other meta tags or perform other SEO-related operations here if necessary
     }, []);
    
-  const description = 'Zanzaibar'; // Replace with your description
+  const description = 'Zanzibar'; // Replace with your description
      return (
       <div className='blogContainer'>
   

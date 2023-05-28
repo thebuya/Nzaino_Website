@@ -1,4 +1,5 @@
-import React, {useEffect} from 'react'
+import React  from 'react'
+import { Helmet } from 'react-helmet';
 
 import { ugandaPlaces, kenyaPlaces, tanzaniaPlaces, rwandaPlaces } from '../../Components/eadestinations';
 import Destinationcard from '../../Components/Destinationcard';
@@ -22,15 +23,26 @@ import HomeReviewSlide from '../../Components/HomeReviewSlide';
 
 
 const Destinations = () => {
-  useEffect(() => {
-  document.title = 'East African Destinations';
-  document.querySelector('meta[name="description"]').setAttribute('content', 'Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!');
-  document.querySelector('meta[property="og:image"]').setAttribute('content', SlideImage4);
+ // useEffect(() => {
+ // document.title = 'East African Destinations';
+ // document.querySelector('meta[name="description"]').setAttribute('content', 'Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!');
+  //document.querySelector('meta[property="og:image"]').setAttribute('content', SlideImage4);
   // You can also modify other meta tags or perform other SEO-related operations here if necessary
-  }, []);
+ // }, []);
 
   return (
     <>
+     <Helmet>
+            <title>East African Destinations</title>
+            <meta name="description" content="Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!" />
+            <meta property="og:title" content="East African Destinations" />
+            <meta property="og:description" content="Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!" />
+            <meta property="og:image" content={SlideImage4} />
+            {/* Add other meta tags if needed */}
+      </Helmet>
+
+
+      
       <div className="main-image">
         <img src={SlideImage4} alt="" />
       </div>

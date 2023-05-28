@@ -1,5 +1,5 @@
-import React,{useEffect} from 'react'
-//import { Helmet } from 'react-helmet';
+import React from 'react'
+import { Helmet } from 'react-helmet';
 import './about.css'
 
 import service from '../../Images/service1.png';
@@ -28,17 +28,17 @@ import AboutSectionsI from './AboutSectionsI';
 
 
 const About = () => {
-  useEffect(() => {
-    document.title = 'About Us | Nzaino - Trusted Tours and Travel Agency in East Africa.';
-    document.querySelector('meta[name="description"]').setAttribute('content', 'Learn About Nzaino Travels- Your Trusted guide to exploring East Africa. We offer a wide range of comprehensive services to enhance your travel experience. From reliable car rentals and expert trip planning to knowledgeable tour guides, seamless accommodation booking, and efficient document processing assistance, we have got you covered. Explore the beauty and diversity of East Africa with Nzaino as your trusted companion.');
-    document.querySelector('meta[property="og:image"]').setAttribute('content', service2);
-  // You can also modify other meta tags or perform other SEO-related operations here if necessary
-  }, []);
-  
-
-
   return (
     <section className="aboutPage">
+       <Helmet>
+            <title>About Us | Nzaino - Trusted Tours and Travel Agency in East Africa.</title>
+            <meta name="description" content="Learn About Nzaino Travels- Your Trusted guide to exploring East Africa. We offer a wide range of comprehensive services to enhance your travel experience. From reliable car rentals and expert trip planning to knowledgeable tour guides, seamless accommodation booking, and efficient document processing assistance, we have got you covered. Explore the beauty and diversity of East Africa with Nzaino as your trusted companion." />
+            <meta property="og:title" content="About Us | Nzaino - Trusted Tours and Travel Agency in East Africa." />
+            <meta property="og:description" content="Learn About Nzaino Travels- Your Trusted guide to exploring East Africa. We offer a wide range of comprehensive services to enhance your travel experience. From reliable car rentals and expert trip planning to knowledgeable tour guides, seamless accommodation booking, and efficient document processing assistance, we have got you covered. Explore the beauty and diversity of East Africa with Nzaino as your trusted companion." />
+            <meta property="og:image" content={service2} />
+            {/* Add other meta tags if needed */}
+      </Helmet>
+      
      
       <AboutSectionsI/>
 

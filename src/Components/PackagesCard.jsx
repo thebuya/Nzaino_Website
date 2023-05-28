@@ -28,43 +28,41 @@ function PackagesCard(props) {
 
     return (
         <div className='packagesCard' key={props.id}>
-            <div className="imageCaption">
-              {/**  <img src={props.image} alt="destination" className='packagesImage' />*/}
-              <img
-          src={props.images[currentImageIndex]}
-          alt="destination"
-          className='packagesImage'
-        />
-        <button className="prevButton" onClick={handleSwipeLeft}><TiArrowLeft /></button>
-        <button className="nextButton" onClick={handleSwipeRight}><TiArrowRight /></button>
-        <p className="caption">{props.caption}</p>
-            </div>
+                <div className="imageCaption">
+                      {/**  <img src={props.image} alt="destination" className='packagesImage' />*/}
+                      <img
+                        src={props.images[currentImageIndex]}
+                        alt={props.caption}
+                        className='packagesImage'
+                      />
+                      <button className="prevButton" onClick={handleSwipeLeft}><TiArrowLeft /></button>
+                      <button className="nextButton" onClick={handleSwipeRight}><TiArrowRight /></button>
+                      <p className="caption">{props.caption}</p>
+                </div>
 
-
-             <div className="packagesText">
-                <h2 className="packageTitle">{props.title}</h2>
-                <h4 className="themeActivities">{props.activities}</h4>
+                <div className="packagesText">
+                    <h2 className="packageTitle">{props.title}</h2>
+                    <h4 className="themeActivities">{props.activities}</h4>
 
                 <div className="middlecolumns">
                     <div className="pricePeople">
-                        <h1 className="packagePrice">{props.price}</h1>
+                        <h3 className="packagePrice">{props.price}</h3>
                         <p className="packagePeople">{props.people}</p>
                         <h5 className="daysNights"><CiClock1/>{props.duration}</h5>
                         <h6 className="availability"><CiCalendarDate/>{props.availability}</h6>
                     </div>
 
                     <div className="miniItenary">
-                        <h5 className="highlights">Inclusive</h5>
+                        <h4 className="highlights">Inclusive</h4>
                         <ul>{highlights}</ul>
                     </div> 
                 </div>
 
                 
 
-             </div>
+                </div>
 
-             <button className="bookpackage" onClick={scrollToSection}>Book Trip <TiArrowRight/> </button>
-
+                <button className="bookpackage" onClick={scrollToSection}>Book Trip <TiArrowRight/> </button>
         </div>
     );
   }

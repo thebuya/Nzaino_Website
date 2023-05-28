@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react'
-
+import React from 'react'
+import { Helmet } from 'react-helmet';
 
 import './car.css'
 import {availablecars} from '../../Components/cars'
@@ -12,15 +12,19 @@ import BackgroundCar from '../../Images/carback.jpg';
 //
 
 const Car = () => {
-  useEffect(() => {
-    document.title = 'Car Hiring';
-  document.querySelector('meta[name="description"]').setAttribute('content', 'Are you need of a car for a few days, or even weeks?, Contact Nzaino Travel Africa Limited today for all your travel needs. Our friendly team is ready to assist you with trip bookings, inquiries, and more. Get in touch now!')
-  document.querySelector('meta[property="og:image"]').setAttribute('content', SlideImage4);
-  
-  // You can also modify other meta tags or perform other SEO-related operations here if necessary
-  }, []);
+
   return (
     <div>
+       <Helmet>
+            <title>Car Hiring | Nzaino Travel</title>
+            <meta name="description" content="Are you need of a car for a few days, or even weeks?, Contact Nzaino Travel Africa Limited today for all your travel needs. Our friendly team is ready to assist you with trip bookings, inquiries, and more. Get in touch now!" />
+            <meta property="og:title" content="Car Hiring | Nzaino Travel" />
+            <meta property="og:description" content="Are you need of a car for a few days, or even weeks?, Contact Nzaino Travel Africa Limited today for all your travel needs. Our friendly team is ready to assist you with trip bookings, inquiries, and more. Get in touch now!" />
+            <meta property="og:image" content={SlideImage4} />
+            {/* Add other meta tags if needed */}
+      </Helmet>
+
+
       <div className="main-image carhead">
         <img src={SlideImage4} alt="" />
       </div>
@@ -31,12 +35,12 @@ const Car = () => {
                         cleartitle = "Nzaino Cars"
                         /> 
                         <p className="paragraphs carintro">
-                         If you are looking for a car to take you on your own travel 🚗,
-                         at Nzaino we avail to you a catalogue of cars ranging from
+                         If you are looking for a car to hire for your own travel.🚗,
+                         At Nzaino we offer a catalogue of cars ranging from
                          8 seaters to a more cozy 4 seater. You have the option of 
-                         having a designated driver or taking yourself on an adevnture. 
-                         All you have to do is fill in the form on the book now sheet, 
-                         or contact us directly for immediate response.
+                         having a designated driver or taking yourself on an adevnture.  
+                         <span className="highlight"> Click Book Car & fill in the form</span>,  
+                        or contact us directly for immediate response.
                         </p>
       </div>
 
@@ -47,7 +51,7 @@ const Car = () => {
                 {...car}
                />
         ))}
-         <img src={BackgroundCar} className="CarBack" alt="" />
+         <img src={BackgroundCar} className="CarBack" alt="East African Road." />
       </div>
 
       

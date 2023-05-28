@@ -322,6 +322,7 @@ background-color: var(--green-003);
       @media screen and (max-width: 900px) {
         .home-page .whoHeader{
           margin-top: 0rem;
+          margin-left: initial;
         }
         .reviewsslide .swiper-wrapper {
           margin-top: 3rem;

@@ -1,5 +1,4 @@
-
-.firstpart{
+.firstpart {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -9,7 +8,8 @@
     padding-top: 6rem;
     overflow-x: clip;
 }
-.firstpart .showff{
+
+.firstpart .showff {
     width: 80%;
     position: absolute;
     z-index: 2;
@@ -18,7 +18,7 @@
     flex-direction: column;
 }
 
-.firstpart .ontop{
+.firstpart .ontop {
     height: -webkit-fit-content;
     width: 100%;
     background: var(--green-002);
@@ -32,25 +32,29 @@
     padding-bottom: 2rem;
     grid-template-columns: repeat(4, 1fr);
 }
-.firstpart .showff .ontop .stat{
+
+.firstpart .showff .ontop .stat {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
- .firstpart .showff .ontop .stat h4{
+
+.firstpart .showff .ontop .stat h4 {
     position: relative;
     font-size: 60px;
     color: var(--greengrayhue-1);
     line-height: 140%;
-    }
- .firstpart .showff .ontop .stat p{
+}
+
+.firstpart .showff .ontop .stat p {
     position: relative;
     font-size: 15px;
     text-align: center;
     color: var(--greengrayhue-2);
- }
+}
+
 .firstpart .partners {
     font-weight: 600;
     font-size: 18px;
@@ -71,20 +75,23 @@
 
 
 
-.firstpart .behind{
+.firstpart .behind {
     display: flex;
     flex-direction: column;
 }
+
 .firstpart .main-image {
     width: 100vw;
     height: 500px;
     overflow: hidden;
     position: relative;
 }
-.firstpart .main-image img{
+
+.firstpart .main-image img {
     margin-top: -5.7rem;
 }
-.firstpart .behind .headerWords{
+
+.firstpart .behind .headerWords {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -92,7 +99,8 @@
     justify-content: center;
     align-items: center;
 }
-.firstpart .behind .headerWords .mainwording{
+
+.firstpart .behind .headerWords .mainwording {
     width: 100%;
     font-weight: 400;
     margin-bottom: 10rem;
@@ -104,11 +112,13 @@
     padding-left: 2rem;
     padding-right: 2rem;
 }
-.firstpart .behind .headerWords .mainwording span{
+
+.firstpart .behind .headerWords .mainwording span {
     font-weight: 700;
     line-height: 140%;
     color: var(--green-002);
 }
+
 .firstpart .behind .logos {
     box-sizing: border-box;
     width: 100%;
@@ -120,22 +130,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .firstpart .behind .logos .logoscroll {
+}
+
+.firstpart .behind .logos .logoscroll {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-   /* width: 400%; /* Adjust the width to accommodate duplicated images */
+    /* width: 400%; /* Adjust the width to accommodate duplicated images */
 
 
-   margin-top: 4rem;
-   bottom: 0.5rem;
+    margin-top: 4rem;
+    bottom: 0.5rem;
     white-space: nowrap;
     overflow: hidden;
-  }
-  .firstpart .behind .logos .logoscroll img {
+}
+
+.firstpart .behind .logos .logoscroll img {
     position: relative;
     width: 200px;
     margin-left: 1rem;
@@ -143,33 +154,40 @@
     margin-bottom: 1rem;
 
     display: inline-block;
-  margin: 0 24.7px;
-  transition: all .2s ease-out;
-  }
-  .firstpart .behind .logos .logoscroll img:hover {
+    margin: 0 24.7px;
+    transition: all .2s ease-out;
+}
+
+.firstpart .behind .logos .logoscroll img:hover {
     transform: scale(1.2);
     opacity: .5;
-  }
-  .marquee--inner {
+}
+
+.marquee--inner {
     display: block;
     width: 200%;
     position: absolute;
     animation: marquee 20s linear infinite;
-  }
-  
-  .marquee--inner:hover {
+}
+
+.marquee--inner:hover {
     animation-play-state: paused;
-  }
-  
-  .marquee--inner span {
+}
+
+.marquee--inner span {
     float: left;
     width: auto;
-  }
-  
-  @keyframes marquee {
-    0% { left: 0; }
-    100% { left: -100%; }
-  }
+}
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
 
 
 
@@ -201,7 +219,7 @@
 
 
 
-.secondpart{
+.secondpart {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -212,23 +230,29 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.secondpart .who{
+
+.secondpart .who {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
 }
+
 .secondpart .who .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Align content to the left */
-    width: 50%; /* Adjust the width as needed */
-    margin-right: 7rem; /* Add margin for spacing */
-  }
-.secondpart .who .left .whotext
-, .paragraphs{
+    align-items: flex-start;
+    /* Align content to the left */
+    width: 50%;
+    /* Adjust the width as needed */
+    margin-right: 7rem;
+    /* Add margin for spacing */
+}
+
+.secondpart .who .left .whotext,
+.paragraphs {
     text-align: left;
     margin-left: 4rem;
     margin-top: 2rem;
@@ -237,23 +261,29 @@
     max-width: 600px;
     color: var(--greengrayhue-1);
     min-width: 250px;
-font-weight: 400;
-font-size: 16px;
+    font-weight: 400;
+    font-size: 16px;
 }
-.secondpart .who .imagewho{
-    
+
+.secondpart .who .imagewho {
+
     height: 270px;
-  flex: 1; /* Allow the image to expand to fill remaining space */
+    flex: 1;
+    /* Allow the image to expand to fill remaining space */
 }
-.secondpart .who .imagewho img{
+
+.secondpart .who .imagewho img {
     width: 100%;
     mix-blend-mode: darken;
-    height: 100%; /* Make the image fill its container */
-    object-fit: cover; /* Maintain aspect ratio and cover container */
+    height: 100%;
+    /* Make the image fill its container */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover container */
     margin-top: 5rem;
     transform: scale(1.5);
 }
-.secondpart .team{
+
+.secondpart .team {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -261,14 +291,16 @@ font-size: 16px;
     align-items: center;
     margin-top: 3.5rem;
 }
-.secondpart .team .teamtitle{
+
+.secondpart .team .teamtitle {
     font-weight: 600;
     font-size: 24px;
     line-height: 54px;
     color: var(--green-A01);
     margin-bottom: 1.5rem;
 }
-.secondpart .team .teamswiper{
+
+.secondpart .team .teamswiper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -276,30 +308,34 @@ font-size: 16px;
     margin-left: 2rem;
     margin-right: 2rem;
 }
-.secondpart .team .caption{
+
+.secondpart .team .caption {
     font-weight: 400;
-font-size: 15px;
-max-width: 800px;
+    font-size: 15px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-padding-right: 1rem;
-padding-left: 1rem;
-line-height: 22px;
-text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    line-height: 22px;
+    text-align: center;
 }
 
-.teamswiper .swiper-wrapper{
+.teamswiper .swiper-wrapper {
     padding-bottom: 3rem;
     justify-content: end;
     width: fit-content;
-  
+
 }
-.teamswiper .swiper-pagination{
+
+.teamswiper .swiper-pagination {
     top: 17rem;
 }
-.teamswiper .swiper, .teamswiper .swiper-container {
+
+.teamswiper .swiper,
+.teamswiper .swiper-container {
     overflow: inherit;
 }
 
@@ -339,25 +375,29 @@ text-align: center;
     overflow: hidden;
 }
 
-.missionsec{
+.missionsec {
     background: #f6fff6;
     margin-bottom: 0;
     padding-bottom: 4rem;
     border-bottom: 1px solid #e3e3e3;
 }
-.servicessection .who{
+
+.servicessection .who {
     justify-content: flex-start;
 }
+
 .servicessection .fadingTitle {
     color: #d9e1d9;
 }
-.servicessection .contact{
+
+.servicessection .contact {
     margin-right: auto;
     margin-left: auto;
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
-.servicessection .servicegrid{
+
+.servicessection .servicegrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: -webkit-fill-available;
@@ -368,30 +408,34 @@ text-align: center;
     margin-right: auto;
     margin-top: 2rem;
 }
-.servicessection .servicegrid .serve{
+
+.servicessection .servicegrid .serve {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 153px;
-height: 151px;
-margin: auto;
+    height: 151px;
+    margin: auto;
 }
-.servicessection .servicegrid .serve img{
+
+.servicessection .servicegrid .serve img {
 
     width: 180px;
 }
-.servicessection .servicegrid .serve p{
+
+.servicessection .servicegrid .serve p {
     font-weight: 600;
     font-size: 15px;
     line-height: 150%;
     width: max-content;
-    
+
     text-align: center;
-    
+
     color: #002800;
 }
-.serveback{
+
+.serveback {
     position: absolute;
     /* mix-blend-mode: darken; */
     z-index: -1;
@@ -406,64 +450,72 @@ margin: auto;
       margin-top: 8rem;
     }
   }*/
-  
-  /* Default styles */
-  @media screen and (min-width: 1200px) {
+
+/* Default styles */
+@media screen and (min-width: 1200px) {
     .firstpart .showff {
-      margin-top: 7rem;
+        margin-top: 7rem;
     }
-  
+
     .firstpart .partners {
-      font-weight: 600;
-      padding-top: 2rem;
+        font-weight: 600;
+        padding-top: 2rem;
     }
-  }
+}
 
 @media screen and (max-width: 1200px) {
     .secondpart .who .left {
         width: 40%;
         margin-right: 7rem;
     }
+
     .servicessection .who .left {
         width: auto;
         margin-right: 0;
     }
+
     .secondpart .who .left .whotext {
         font-size: 15px;
     }
-    .servicessection .servicegrid .serve p{
+
+    .servicessection .servicegrid .serve p {
         width: fit-content;
         font-size: 13px;
     }
 }
+
 @media screen and (max-width: 900px) {
     .firstpart .behind .logos .logoscroll img {
         position: relative;
         width: 120px;
-      }
+    }
 
 
-    .firstpart .ontop{
+    .firstpart .ontop {
         align-items: center;
         padding-top: 0.5rem;
         padding-bottom: 1rem;
         grid-template-columns: repeat(2, 1fr);
     }
-.firstpart .showff .ontop .stat{
-    align-items: center;
-}
- .firstpart .showff .ontop .stat h4{
-    font-size: 48px;
+
+    .firstpart .showff .ontop .stat {
+        align-items: center;
     }
- .firstpart .showff .ontop .stat p{
-    font-size: 13px;
- }
+
+    .firstpart .showff .ontop .stat h4 {
+        font-size: 48px;
+    }
+
+    .firstpart .showff .ontop .stat p {
+        font-size: 13px;
+    }
 
     .firstpart .behind .headerWords .mainwording {
         margin-top: 0rem;
         font-size: 33px;
-       
+
     }
+
     .serveback {
         transform: scale(2);
         top: 100%;
@@ -476,48 +528,57 @@ margin: auto;
         margin-top: 0;
         margin-bottom: 0rem;
     }
+
     .missionsec .servicegrid {
         margin-bottom: 5rem;
     }
-  
+
     .servicessection .servicegrid .serve {
         margin-bottom: 0.5rem;
         margin-top: 0.5rem;
     }
-    .firstpart{
+
+    .firstpart {
         padding-top: 2rem;
     }
-    .firstpart .behind .headerWords .mainwording span{
-       
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+
+    .firstpart .behind .headerWords .mainwording span {
+
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
     }
+
     .firstpart .main-image img {
         margin-top: 0;
         width: inherit;
     }
-    .secondpart .who{
+
+    .secondpart .who {
         flex-direction: column;
         align-items: baseline;
         width: 100%;
     }
-    .secondpart .who .left .whotext
-    , .paragraphs {
+
+    .secondpart .who .left .whotext,
+    .paragraphs {
         font-size: 14px;
         margin-top: 3rem;
     }
-    .servicessection .contact{
+
+    .servicessection .contact {
         display: block;
     }
+
     .secondpart .who .left {
         width: 100%;
         margin-right: auto;
-    margin-left: auto;
+        margin-left: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .secondpart .who .imagewho img {
         width: 100%;
         mix-blend-mode: darken;
@@ -526,6 +587,7 @@ margin: auto;
         margin-top: -4rem;
         transform: scale(.85);
     }
+
     .secondpart .who .imagewho {
         flex: 1 1;
         display: flex;
@@ -534,97 +596,122 @@ margin: auto;
         justify-content: center;
         margin: auto;
     }
+
     .secondpart .team {
         margin-top: 0;
     }
-    .secondpart .team .caption{
-    font-size: 14px;
-    line-height: 140%;
+
+    .secondpart .team .caption {
+        font-size: 14px;
+        line-height: 140%;
     }
+
     .teamswiper .swiper-wrapper {
         padding-bottom: 2rem;
     }
+
     .servicessection .who .left .whotext {
-    text-align: left;
-    margin-left: initial;
+        text-align: left;
+        margin-left: initial;
+    }
+
+    .servicessection {
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .missionsec {
+        background: #f6fff6;
+        margin-bottom: 3rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e3e3e387;
+    }
+
+    .firstpart .partners {
+        margin-top: 1rem;
+    }
+
+    .firstpart .behind .logos .logoscroll {
+        margin-top: 4rem;
+    }
 }
-.servicessection {
-    margin-top: 1rem;
-     margin-bottom: 0rem; 
-}
-.missionsec{
-    background: #f6fff6;
-    margin-bottom: 3rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #e3e3e387;
-}
-.firstpart .partners {
-    margin-top: 1rem;
-}
-.firstpart .behind .logos .logoscroll {
-    margin-top: 4rem;
-}
-}
+
 @media screen and (max-width: 750px) {
     .firstpart .main-image img {
         height: 100%;
-        width:auto;
+        width: auto;
     }
 }
+
 @media screen and (max-width: 600px) {
     .firstpart .showff {
         align-items: center;
         margin-top: 6.5rem;
-        }
-        .serveback{
-            top: 125%;
-        }
-        .marquee--inner {
-            animation: marquee 6s linear infinite;
-        }
-        .firstpart .ontop {
-            align-items: center;
-            width: -webkit-fit-content;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            padding-top: 0;
-            padding-bottom: 0.5rem;
-            grid-template-columns: repeat(1, 1fr);
-            }
-            .firstpart .showff .ontop .stat {
-                margin-bottom: 0.75rem;
-                }
-                .firstpart .partners {
-                    margin-top: 1rem;
-                    }
-                    .firstpart .behind .logos .logoscroll {
-                        margin-top: 9rem;
-                        bottom: -1rem;
-                    }
-                    .firstpart .behind .headerWords .mainwording {
-                        font-size: 24px;
-                        padding-left: 0.5rem;
-                        padding-right: 0.5rem;
-                    }
-    .secondpart .who .left .whotext
-    , .paragraphs {
+    }
+    .servicessection .servicegrid .serve img{
+        width: 145px;
+    }
+
+    .serveback {
+        top: 125%;
+    }
+
+    .marquee--inner {
+        animation: marquee 6s linear infinite;
+    }
+
+    .firstpart .ontop {
+        align-items: center;
+        width: -webkit-fit-content;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0;
+        padding-bottom: 0.5rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .firstpart .showff .ontop .stat {
+        margin-bottom: 0.75rem;
+    }
+
+    .firstpart .partners {
+        margin-top: 1rem;
+    }
+
+    .firstpart .behind .logos .logoscroll {
+        margin-top: 9rem;
+        bottom: -1rem;
+    }
+
+    .firstpart .behind .headerWords .mainwording {
+        font-size: 24px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .secondpart .who .left .whotext,
+    .paragraphs {
         line-height: 170%;
         margin-left: 2rem;
         margin-right: 2rem;
         text-align: justify;
         margin-bottom: 2rem;
     }
-    .carintro{
+
+    .carintro {
         margin-bottom: -1rem;
     }
-    .Packages .intropackage{
+
+    .Packages .intropackage {
         margin-bottom: -4rem;
     }
+
     .secondpart .who .imagewho img {
         margin-top: 0rem;
         transform: scale(1.15);
     }
 }
+
 @media screen and (max-width: 475px) {
     .servicessection .servicegrid {
         grid-template-columns: repeat(2, 1fr);

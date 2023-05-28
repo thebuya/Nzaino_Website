@@ -310,6 +310,9 @@ transition: all ease-in-out 500ms;
     .carCards{
         grid-template-columns: repeat(1, 1fr);
     }
+    .carShow .infographs div{
+        margin-right: 0.25rem;
+    }
 
 .carCard .bookCar{
     font-size: 14px;

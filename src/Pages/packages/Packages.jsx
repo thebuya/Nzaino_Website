@@ -1,4 +1,5 @@
 import React, { useState, useEffect  }  from 'react'
+import { Helmet } from 'react-helmet';
 import './packages.css'
 
 import headerimage from '../../Images/nana.jpg';
@@ -13,19 +14,19 @@ import FadeHeader from '../../UI/FadeHeader';
 import BackgroundBlog from '../../Images/fadingpackage2.jpg';
 
 const Packages = () => {
-  useEffect(() => {
-        document.title = 'Travel East Africas with Nzaino Packages | Nzaino';
-        document.querySelector('meta[name="description"]').setAttribute('content', 
-          'Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer.'+
-          'Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries.');
-        document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
+ // useEffect(() => {
+       // document.title = 'Travel East Africas with Nzaino Packages | Nzaino';
+       // document.querySelector('meta[name="description"]').setAttribute('content', 
+       //   'Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer.'+
+       //   'Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries.');
+    //    document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
       // You can also modify other meta tags or perform other SEO-related operations here if necessary
-  }, []);
+ // }, []);
 
 
   const [selectedFilter, setSelectedFilter] = useState(null);
 
-  const descriptioclearn = 'Queen Elizabeth National Park, Uganda'; // Replace with your description
+  const description = 'Queen Elizabeth National Park, Uganda'; // Replace with your description
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
@@ -71,6 +72,16 @@ const Packages = () => {
 
   return (
     <div className='Packages'>
+      <Helmet>
+            <title>Travel East Africas with Nzaino Packages | Nzaino</title>
+            <meta name="description" content="Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer. Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries." />
+            <meta property="og:title" content="Travel East Africas with Nzaino Packages | Nzaino" />
+            <meta property="og:description" content="Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer. Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries." />
+            <meta property="og:image" content={headerimage} />
+            {/* Add other meta tags if needed */}
+      </Helmet>
+
+
         <FadingHeader image={headerimage} description={description}/>
         <FadeHeader className="PackHeader"
         fadingtitle = "Packages"
@@ -82,7 +93,7 @@ const Packages = () => {
                          That’s why we provide services that make it easy for you to
                           explore the rich and diverse cultures of Africa. Whether you want
                            to experience the wildlife, the landscapes, or the people,
-                            we are here to help you discover the beauty of this continent.
+                            we are here to help you <span className="highlight">discover the beauty of the motherland</span>.
         </p>
 
               {/* Pagination */}

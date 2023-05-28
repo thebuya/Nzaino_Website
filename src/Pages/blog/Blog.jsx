@@ -1,4 +1,5 @@
 import  React, { useEffect, useState }from 'react'
+import { Helmet } from 'react-helmet';
 import './blog.css'
 
 import { blogs } from '../../Components/blogreel';
@@ -16,14 +17,7 @@ import FadeHeader from '../../UI/FadeHeader';
 
 
 const Blog = () => {
-  useEffect(() => {
-    document.title = 'Travellers Blog';
-    document.querySelector('meta[name="description"]').setAttribute('content', 'Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.');
-    document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
-    // You can also modify other meta tags or perform other SEO-related operations here if necessary
-    }, []);
-   
-  const description = 'Welcome to Nzaino Blogs'; // Replace with your description
+  const description = 'Welcome to Nzaino Traveller Blogs'; // Replace with your description
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
@@ -60,6 +54,15 @@ const Blog = () => {
 
   return (
     <div className='blogContainer'>
+       <Helmet>
+            <title>Nzaino Travellers Blog | East African Tours and Travel Tips</title>
+            <meta name="description" content="Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries." />
+            <meta property="og:title" content="Nzaino Travellers Blog | East African Tours and Travel Tips" />
+            <meta property="og:description" content="Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries." />
+            <meta property="og:image" content={headerimage} />
+            {/* Add other meta tags if needed */}
+      </Helmet>
+
         <div className="moveAbleItems">
             <FadingHeader image={headerimage} description={description}/>
             <FadeHeader className="PackHeader"
@@ -69,7 +72,7 @@ const Blog = () => {
             <p className="whotext paragraphs">
             If like us, you need to make your due diligence by researching about the destination
             or travel experience more, we have you covered. For each of our trips, we endeavour
-              to document and write about it so that you can learn about the dos and donts, or 
+              to <span className="highlight"> document and write about it</span> so that you can learn about the dos and donts, or 
               better yet so that you know the exact destination you can’t miss out on during your adventures.
             </p>
 
