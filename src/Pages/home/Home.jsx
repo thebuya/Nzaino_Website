@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import HomeBlogSlide from '../../Components/HomeBlogSlide';
 
 import NewsLetter from '../../Components/NewsLetter';
@@ -16,28 +15,26 @@ import HomePackageSlide from '../../Components/HomePackageSlide';
 
 
 import who from '../../Images/van.jpg';
-//import siteimage from '../../Images/bwindi3.jpg';
-import ogimage from '../../Images/ogImage-home.jpg';
 import FadeHeader from '../../UI/FadeHeader';
 import TeamSlide from '../../Components/TeamSlide';
 
+import ogimage from '../../Images/seoimages/og-home.jpg';
+import twitterimage from '../../Images/seoimages/twitter-home.jpg';
+import SEO from '../../Components/SE0';
+
 
 const Home = () => {
-
+  const seoProps = {
+    title: "Nzaino Travel Africa Limited - Home",
+    seodescription: "Welcome to Nzaino Travel Africa Limited, your guide to discovering the wonders of East Africa. We offer trips, and car hires along a wide range of services for an unforgettable African adventure.",
+    ogimage: ogimage,
+    twitterimage: twitterimage,
+    keywords: 'Affordable Travel Packages, Uganda Car Hiring, East African Travel Destinations, Tours and Travel Services'
+  };
 
   return (
     <div className='home-page'>
-       <Helmet>
-            <title>Nzaino Travel Africa Limited - Home</title>
-            <meta name="description" content="Welcome to Nzaino Travel Africa Limited, your guide to discovering the wonders of East Africa. We offer trips, and car hires along a wide range of services for an unforgettable African adventure." />
-            <meta property="og:title" content="Nzaino Travel Africa Limited - Home" />
-            <meta property="og:description" content="Welcome to Nzaino Travel Africa Limited, your guide to discovering the wonders of East Africa. We offer trips, and car hires along a wide range of services for an unforgettable African adventure." />
-            <meta property="og:image" content={ogimage} />
-            {/* Add other meta tags if needed */}
-      </Helmet>
-
-
-
+         <SEO {...seoProps}/>
 
 
         <HomeMainSlide/>

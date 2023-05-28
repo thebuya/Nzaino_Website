@@ -87,7 +87,7 @@ const HomeBlogSlide = () => {
                           </SwiperSlide>
                           ))}
             </Swiper>
-            <img src={BackgroundBlog} className="BackBlog " alt="" />
+            <img src={BackgroundBlog} className="BackBlog " alt="The Zanzibar Coast" />
       </div>
     </>
   )

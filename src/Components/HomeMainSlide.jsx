@@ -79,38 +79,38 @@ const HomeMainSlide = () => {
 
         
         <SwiperSlide>
-        <img className='SlideImage6' src={SlideImage10} alt="" />
+        <img className='SlideImage6' src={SlideImage10} alt="Lodges in Volcano National Park, Rwanda" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className='SlideImage4' src={SlideImage2} alt="" />
+        <img className='SlideImage4' src={SlideImage2} alt="Gorilla In Bwindi Impenetrable Forest" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className='SlideImage5' src={SlideImage3} alt="" />
+        <img className='SlideImage5' src={SlideImage3} alt="Mountain" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className='SlideImage3' src={SlideImage9} alt="" />
+        <img className='SlideImage3' src={SlideImage9} alt="Lions in East African Parks" />
         </SwiperSlide> 
         
         
         
         <SwiperSlide>
-        <img className='SlideImage1' src={SlideImage} alt="" />
+        <img className='SlideImage1' src={SlideImage} alt="Oldest rain forest in Rwanda" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className='SlideImage7' src={SlideImage4} alt="" />
+        <img className='SlideImage7' src={SlideImage4} alt="Zanzibar Coast" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='SlideImage8' src={SlideImage5} alt="" />
+          <img className='SlideImage8' src={SlideImage5} alt="East African Game Park" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='SlideImage9' src={SlideImage6} alt="" />
+          <img className='SlideImage9' src={SlideImage6} alt="Serengeti National Park" />
         </SwiperSlide>
         
         <SwiperSlide>
-          <img className='SlideImage2' src={SlideImage8} alt="" />
+          <img className='SlideImage2' src={SlideImage8} alt="Children at The Zanzibar Beach" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='SlideImage10' src={SlideImage7} alt="" />
+          <img className='SlideImage10' src={SlideImage7} alt="The hills of Western Uganda" />
         </SwiperSlide>
        
         
@@ -123,15 +123,13 @@ const HomeMainSlide = () => {
       </Swiper>
 
       <div className="buttonz">
-        <a href="#bookingSection">
-          <button className="firstbutton bookhome" onClick={scrollToSection}>
-              <span>Book a Trip</span>
-          </button>
+        <a href="#bookingSection" aria-label='Book a trip around or within East Africa with Nzaino'>
+          <button className="firstbutton bookhome" onClick={scrollToSection}>Book a Trip</button>
         </a>
           
 
           
-            <Link to="/ugandacarhire">
+            <Link to="/ugandacarhire" aria-label='Hire a car to travel with'>
                 <button className="firstbutton" onClick={goToCarPage}> Hire a Car</button>
             </Link>
             

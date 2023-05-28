@@ -108,7 +108,7 @@ const [values, setValues] = useState({
             Book <span>Your</span> Trip
         </h1>
 
-        <img className='imageBehindCard mobilesOnly' src={BackgroundImage1} alt="" />
+        <img className='imageBehindCard mobilesOnly' src={BackgroundImage1} alt='Bwindi Impenetrable Forest as the background' />
 
 
      <form className="bookingForm" onSubmit={handleSubmit} onChange={onChange}
@@ -274,7 +274,7 @@ const [values, setValues] = useState({
     
     
     </form>
-    <img className='imageBehindCard' src={BackgroundImage1} alt="" />
+    <img className='imageBehindCard' src={BackgroundImage1} alt='Bwindi Impenetrable Forest as the background' />
     </section>
     
   );

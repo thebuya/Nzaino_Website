@@ -87,10 +87,10 @@ const HomePlaces = () => {
 
 
             </Swiper>
-            <img src={BackgroundBlog} className="BackBlog destinback" alt="" />
+            <img src={BackgroundBlog} className="BackBlog destinback" alt="East African Game Park" />
       </div>
       
-          <Link to="/eastafricatraveldestinations" className='linkbutton'> 
+          <Link to="/eastafricatraveldestinations" className='linkbutton' aria-label="View all East African travel destinations."> 
                <button className="moredestinations">View All Destinations</button>
           </Link>
       

@@ -39,7 +39,8 @@ export const faqs =[
         id : "2",
         question: "What is the process of booking a tour ?",
         answer: "To book a tour with us, you can either fill out"+
-        " the online form on our website or call us at +256-772-525-312."+
+        " the online form on our website or  "+
+        "<a href='tel:+256772-525-312' target='_blank' rel='noreferrer' aria-label=' call nzaino at +256-772-525-312'> call us at +256-772-525-312</a>."+
         " We will confirm your booking and send you an"+
         " invoice with the payment details."
     },
@@ -59,7 +60,9 @@ export const faqs =[
         question: "How much are your trips ?",
         answer: "Our trips vary in price depending on the destination,"+
         " duration, and package type. You can find the prices"+
-        " of our trips on our website(packages section) or contact us for a customized quote."
+        " of our trips on our website ("+
+        "<a href='/eastafricatravelpackages' target='_blank' rel='noreferrer' aria-label='Find an affordable travel package around East Africa'>packages section</a>). "+
+        "or contact us for a customized quote."
     },
     {
         id : "5",

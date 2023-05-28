@@ -419,10 +419,10 @@ background-color: var(--green-003);
         opacity: 1;
     }
 
-      .fade {
-        top: 5rem;
-        margin-left: 2rem;
-    }
+    .fade {
+      top: 5rem;
+      margin-left: 2rem;
+  }
       .destinfade{
         top: 3.5rem;
     }
@@ -475,6 +475,9 @@ line-height: 170%;
 padding: 1rem;
 top: 12rem;
 width: 100vw;
+}
+.fade {
+  margin-left: 0rem;
 }
   .home-page .blogs-on-homepage .swiper-button-next:hover, 
   .home-page .blogs-on-homepage .swiper-button-prev:hover{

@@ -13,7 +13,7 @@ function BlogCard(props) {
     <div className='bloghighlights'>
         <div className="bloghighlight-card" key={props.id}>
           <div className="bloghighlight-image">
-          <img src={props.image} alt={props.location + props.heading} className='b-image' />
+          <img src={props.image} alt={props.location} className='b-image' />
           </div>
             
             <p className="label">{props.location}</p>
@@ -25,7 +25,7 @@ function BlogCard(props) {
 
             <div className="call-to-actions">
              
-              <Link to={props.path}>
+              <Link to={props.path} aria-label={`Read ${props.heading}`}>
                  <button className="readblog">Read Blog</button>
               </Link>
               <button className="booktrip" onClick={scrollToSection}>Book Trip <TiArrowRight/> </button>

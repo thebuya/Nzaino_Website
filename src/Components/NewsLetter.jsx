@@ -77,12 +77,12 @@ const NewsLetter = () => {
             {errorMessage && <p className="error">{errorMessage}</p>}
             {successMessage && <p className="success">{successMessage}</p>}
           </div>
-          <button type="submit" className="subscribeButton">
+          <button aria-label='Subscribe to Nzaino NewsLetter' type="submit" className="subscribeButton">
             Subscribe
           </button>
         </form>
       </div>
-      <img src={BackgroundBlog} className="BackBlog subscribeback" alt="" />
+      <img src={BackgroundBlog} className="BackBlog subscribeback" alt="Aerial view of Zanzibar Coast" />
     </section>
   );
 };

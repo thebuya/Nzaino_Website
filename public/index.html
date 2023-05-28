@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favi.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-   
-    <meta property="og:site_name" content="Nzaino Travel Africa Limited" />
-   
-    <meta property="og:image" content="https://www.nzaino.com/og-image.jpg" />
-    <meta property="og:url" content="https://www.nzaino.com/"/>
-    <meta name="twitter:title" content="Nzaino Travel Africa - Car Hiring | Trip Planning" />
-    <meta name="twitter:image" content="https://www.nzaino.com/twitter-image.jpg" />
 
-    
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <title>Nzaino Travel Africa</title>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/favi.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <meta property="og:site_name" content="Nzaino Travel Africa Limited" />
+
+  <meta property="og:image" content="https://www.nzaino.com/og-image.jpg" />
+  <meta property="og:url" content="https://www.nzaino.com/" />
+  <meta name="twitter:title" content="Nzaino Travel Africa - Car Hiring | Trip Planning" />
+  <meta name="twitter:image" content="https://www.nzaino.com/twitter-image.jpg" />
 
 
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+  <title>Nzaino Travel Africa</title>
 
 
 
-    <script type="application/ld+json">
+
+
+
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": "Nzaino Travel Africa Limited",
-        "url": "https://www.nzainotravelafrica.co.ug/",
-        "logo": "https://www.nzaino.com/logo.png",
+        "legalName": "Nzaino Travel Africa Limited",
+        "url": "https://www.nzainotravelafrica.com/",
+        "logo": "%PUBLIC_URL%/logo.png",
         "description": "Nzaino Travel Africa is a team of passionate and knowledgeable travel experts who love to create unforgettable safaris “into the heart of Africa”. Our vision is to inspire you with the beauty and diversity of the MotherLand. Whether you are looking for adventure, business, romance, culture, or ",
         "location": {
           "@type": "Place",
           "name": "East Africa",
-          "hasMap": "https://www.example.com/maps/venue-map",
+          "hasMap": "https://www.google.com/maps/@0.3280632,32.61689,16z?entry=ttu",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Kampala City",
@@ -74,7 +76,49 @@
           "telephone": "+256752755256",
           "jobTitle": "Founder, CEO"
         },
-
+        "employee": [
+  {
+    "@type": "Person",
+    "name": "Morris Higenyi",
+    "jobTitle": "Web Developer",
+    "url": "http://www.artbybuya.com",
+    "telephone": "+256783909668"
+  },
+  {
+    "@type": "Person",
+    "name": "Davis Kwizera Nkurunziza",
+    "jobTitle": "Head of Marketing",
+    "telephone": "+256754159752"
+  },
+  {
+    "@type": "Person",
+    "name": "Daniella Kamikaze",
+    "jobTitle": "Head of Accounts",
+    "telephone": "+256786657314"
+  }
+],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "Car Renting",
+              "url": "https://www.nzainotravelafrica.com/ugandacarhire"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Trip Planning",
+              "url": "https://www.nzainotravelafrica.com/eastafricatravelpackages"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Travel Blogging",
+              "url": "https://www.nzainotravelafrica.com/ugandatravelblog"
+            }
+          ]
+        },
+        "keywords": "tours, travel, Uganda, East Africa, Africa, car hires",
 
         "sameAs": [
           "https://www.facebook.com/nzainotravelafrica",
@@ -134,24 +178,47 @@
 {
   "@type": "ReserveAction",
   "name": "Book a Tour",
-  "url": "https://www.nzainotravelafrica.co.ug/eastafricatravelpackages"
+  "url": "https://www.nzainotravelafrica.com/eastafricatravelpackages"
 },
 {
   "@type": "ReserveAction",
   "name": "Hire a Car",
   "target": {
     "@type": "EntryPoint",
-    "urlTemplate": "https://www.nzainotravelafrica.co.ug/ugandacarhire"
+    "urlTemplate": "https://www.nzainotravelafrica.com/ugandacarhire"
   }
 }
-]
+],
+"tourBookingPage": "https://www.nzainotravelafrica.com/eastafricatravelpackages",
+"containsPlace": [
+    {
+      "@type": "Place",
+      "name": "Kampala"
+    },
+    {
+      "@type": "Place",
+      "name": "Kisoro"
+    },
+    {
+      "@type": "Place",
+      "name": "Entebbe"
+    }
+  ],
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "East Africa"
+  },
+  "telephone": "+256772525312",
+  "paymentAccepted": "Cash, Credit Card, Bank Transfer"
 }
       </script>
-      
 
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
 </html>

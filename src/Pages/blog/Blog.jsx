@@ -1,10 +1,8 @@
 import  React, { useEffect, useState }from 'react'
-import { Helmet } from 'react-helmet';
 import './blog.css'
 
 import { blogs } from '../../Components/blogreel';
 import headerimage from '../../Images/bloghead.jpg';
-import ogimage from '../../Images/ogImage-blog.jpg';
 
 import NewsLetter from '../../Components/NewsLetter';
 import Backgroundserve from '../../Images/fadingpackage.jpg';
@@ -15,6 +13,9 @@ import FadingHeader from '../../Components/FadingHeader';
 import BlogCard from '../../Components/Blog-Card';
 import FadeHeader from '../../UI/FadeHeader';
 
+import ogimage from '../../Images/seoimages/og-blog.jpg';
+import twitterimage from '../../Images/seoimages/twitter-blog.jpg';
+import SEO from '../../Components/SE0';
 
 
 const Blog = () => {
@@ -51,18 +52,19 @@ const Blog = () => {
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
-
+  const seoProps = {
+    title: "Nzaino Travellers Blog | East African Tours and Travel Tips",
+    seodescription: "Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.",
+    ogimage: ogimage,
+    twitterimage: twitterimage,
+    keywords: 'Travellers Blog, Travel blog, Popular ugandan travel blog, Travel Services'
+  };
 
   return (
+   
+  
     <div className='blogContainer'>
-       <Helmet>
-            <title>Nzaino Travellers Blog | East African Tours and Travel Tips</title>
-            <meta name="description" content="Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries." />
-            <meta property="og:title" content="Nzaino Travellers Blog | East African Tours and Travel Tips" />
-            <meta property="og:description" content="Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries." />
-            <meta property="og:image" content={ogimage} />
-            {/* Add other meta tags if needed */}
-      </Helmet>
+      <SEO {...seoProps}/>
 
         <div className="moveAbleItems">
             <FadingHeader image={headerimage} description={description}/>

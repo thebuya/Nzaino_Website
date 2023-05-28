@@ -18,7 +18,7 @@ function FAQItem(props) {
                             <h5 className="question" > {props.question} </h5>
                             {isAnswerVisible ? (<FaChevronUp onClick={toggleAnswerVisibility} />) : (<FaChevronDown onClick={toggleAnswerVisibility} />)}
                         </div>
-                        {isAnswerVisible && ( <p className="answer">{props.answer}</p> )}
+                        {isAnswerVisible && ( <p className="answer"  dangerouslySetInnerHTML={{ __html: props.answer }}></p> )}
                 </div>
 
 

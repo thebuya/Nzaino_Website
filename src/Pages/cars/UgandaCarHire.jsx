@@ -1,28 +1,27 @@
 import React from 'react'
-import { Helmet } from 'react-helmet';
 
 import './car.css'
 import {availablecars} from '../../Components/cars'
+import ogimage from '../../Images/seoimages/og-car.jpg';
+import twitterimage from '../../Images/seoimages/twitter-car.jpg';
+import SEO from '../../Components/SE0';
 
 import SlideImage4 from '../../Images/carz.jpg'
 import FadeHeader from '../../UI/FadeHeader'
 import CarCard from './CarCard'
 import BackgroundCar from '../../Images/carback.jpg';
-//import BackgroundCar from '../../Images/carbehing2.jpg';
-//
 
 const Car = () => {
-
+  const seoProps = {
+    title: "Car Hiring | Nzaino Travel",
+    seodescription: "Are you need of a car for a few days, or even weeks?, Contact Nzaino Travel Africa Limited today for all your travel needs. Our friendly team is ready to assist you with trip bookings, inquiries, and more. Get in touch now!",
+    ogimage: ogimage,
+    twitterimage: twitterimage,
+    keywords: 'Affordable travel packages, Cheap African tours, Zanzibar tour, Ugandan tours, rwandan tours, African tours'
+  };
   return (
     <div>
-       <Helmet>
-            <title>Car Hiring | Nzaino Travel</title>
-            <meta name="description" content="Are you need of a car for a few days, or even weeks?, Contact Nzaino Travel Africa Limited today for all your travel needs. Our friendly team is ready to assist you with trip bookings, inquiries, and more. Get in touch now!" />
-            <meta property="og:title" content="Car Hiring | Nzaino Travel" />
-            <meta property="og:description" content="Are you need of a car for a few days, or even weeks?, Contact Nzaino Travel Africa Limited today for all your travel needs. Our friendly team is ready to assist you with trip bookings, inquiries, and more. Get in touch now!" />
-            <meta property="og:image" content={SlideImage4} />
-            {/* Add other meta tags if needed */}
-      </Helmet>
+       <SEO {...seoProps}/>
 
 
       <div className="main-image carhead">

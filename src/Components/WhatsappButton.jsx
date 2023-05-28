@@ -3,7 +3,7 @@ import { FaWhatsapp} from "react-icons/fa";
 import './backtotop.css'
 
 const WhatsAppButton = () => {
-    const message = encodeURIComponent('Hey Nzaino Travels 👋🏾,'); // Encode the message
+    const message = encodeURIComponent('Hey Nzaino Travels, I was just on your website.'); // Encode the message
 
   return (
     <a

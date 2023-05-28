@@ -27,6 +27,7 @@ const BackToTopButton = () => {
           className="back-to-top-button"
           onClick={handleBackToTop}
           title="Back to Top"
+          aria-label="Go Back to Top of Screen"
         >
 
           &uarr;

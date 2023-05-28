@@ -62,7 +62,7 @@ function PackagesCard(props) {
 
                 </div>
 
-                <button className="bookpackage" onClick={scrollToSection}>Book Trip <TiArrowRight/> </button>
+                <button className="bookpackage" onClick={scrollToSection} aria-label={`Book The ${props.title} trip package`}>Book Trip <TiArrowRight/> </button>
         </div>
     );
   }

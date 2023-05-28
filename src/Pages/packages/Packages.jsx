@@ -1,9 +1,11 @@
 import React, { useState, useEffect  }  from 'react'
-import { Helmet } from 'react-helmet';
 import './packages.css'
 
 import headerimage from '../../Images/nana.jpg';
-import ogimage from '../../Images/ogImage-travel.jpg';
+import ogimage from '../../Images/seoimages/og-packages.jpg';
+import twitterimage from '../../Images/seoimages/twitter-packages.jpg';
+import SEO from '../../Components/SE0';
+
 import FadingHeader from '../../Components/FadingHeader';
 import {faqs} from '../../Components/destinations'
 
@@ -15,18 +17,7 @@ import FadeHeader from '../../UI/FadeHeader';
 import BackgroundBlog from '../../Images/fadingpackage2.jpg';
 
 const Packages = () => {
- // useEffect(() => {
-       // document.title = 'Travel East Africas with Nzaino Packages | Nzaino';
-       // document.querySelector('meta[name="description"]').setAttribute('content', 
-       //   'Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer.'+
-       //   'Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries.');
-    //    document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
-      // You can also modify other meta tags or perform other SEO-related operations here if necessary
- // }, []);
-
-
   const [selectedFilter, setSelectedFilter] = useState(null);
-
   const description = 'Queen Elizabeth National Park, Uganda'; // Replace with your description
 
   // Pagination state
@@ -70,17 +61,24 @@ const Packages = () => {
   useEffect(() => {
     setCurrentPage(1);
   }, [selectedFilter]);
+  const seoProps = {
+    title: "Affordable East African Tour Packages | Nzaino",
+    seodescription: "Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer. Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries.",
+    ogimage: ogimage,
+    twitterimage: twitterimage,
+    keywords: 'Affordable travel packages, Cheap African tours, Zanzibar tour, Ugandan tours, rwandan tours, African tours'
+  };
+
+
+
+
+
+
+
 
   return (
     <div className='Packages'>
-      <Helmet>
-            <title>Travel East Africas with Nzaino Packages | Nzaino</title>
-            <meta name="description" content="Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer. Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries." />
-            <meta property="og:title" content="Travel East Africas with Nzaino Packages | Nzaino" />
-            <meta property="og:description" content="Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer. Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries." />
-            <meta property="og:image" content={ogimage} />
-            {/* Add other meta tags if needed */}
-      </Helmet>
+      <SEO {...seoProps}/>
 
 
         <FadingHeader image={headerimage} description={description}/>

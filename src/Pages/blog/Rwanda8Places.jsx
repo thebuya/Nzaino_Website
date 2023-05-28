@@ -1,5 +1,4 @@
 import React from 'react'
-import { Helmet } from 'react-helmet';
 import headerimage from '../../Images/packagesHeader.jpg';
 import nai from  '../../Images/mombasa4.jpg'
 
@@ -9,22 +8,25 @@ import FadingHeader from '../../Components/FadingHeader';
 import Immovableitems from './Immovableitems';
 
 
+import ogimage from '../../Images/seoimages/og-blog.jpg';
+import twitterimage from '../../Images/seoimages/twitter-blog.jpg';
+import SEO from '../../Components/SE0';
+
+
 
 const Rwanda8Places = () => {
- 
+  const seoProps = {
+    title: " 8 Places you must visit While in Rwanda | Nzaino Travel Africa Tips",
+    seodescription: "Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.",
+    ogimage: ogimage,
+    twitterimage: twitterimage,
+    keywords: 'Travellers Blog, Travel blog, Popular ugandan travel blog, Travel Services'
+  };
    
     const description = 'Lodges In Volcanoes National Park'; // Replace with your description
     return (
       <div className='blogContainer'>
-
-      <Helmet>
-            <title>Nzaino Travel Blog - 8 Places you must visit While in Rwanda </title>
-            <meta name="description" content="Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries." />
-            <meta property="og:title" content="Nzaino Travel Blog - 8 Places you must visit While in Rwanda" />
-            <meta property="og:description" content="Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries." />
-            <meta property="og:image" content={headerimage} />
-            {/* Add other meta tags if needed */}
-      </Helmet>
+           <SEO {...seoProps}/>
   
         <div className="moveableitems">
             <FadingHeader image={headerimage} description={description}/>

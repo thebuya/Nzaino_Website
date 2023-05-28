@@ -1,11 +1,18 @@
-.linker{
+.linker, .quote a, .answer a{
     color: var(--green-B03);
     text-decoration: underline;
   
   }
-.linker:hover{
+.linker:hover, .quote a:hover, .answer a:hover{
     color: var(--green-B04);
     text-decoration: none;
+  }
+.linker:focus, .quote a:focus, .answer a:focus{
+    color: var(--green-B04);
+    text-decoration: none;
+  }
+.linker:active, .quote a:active, .answer a:active{
+    color: var(--green-A01);
   }
   .questionsContainer{
     display: flex;

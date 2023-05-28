@@ -17,7 +17,7 @@ function PlacesCard(props)  {
   return (
     <div className='cardWButton' key={props.id}>
             <div className="placesCard">
-                <img src={props.image} className="placeImg" alt={props.description}/>
+                <img src={props.image} className="placeImg" alt={props.name}/>
                 <div className="placeInformation">
                     <h3 className="placeName">{props.name}</h3>
                     <ul className='placeActivities'> {activities} </ul>
@@ -25,9 +25,7 @@ function PlacesCard(props)  {
             </div>
 
             <div className="buttons">
-                <button onClick={scrollToSection} className="bookAPlace"> Book Trip <TiArrowRight/>  </button>
-             { /*<Link to="/destinations" className="readAPlace"> View Details...</Link>*/}
-            {/**     <button className="readAPlace"> View Details...</button> */}
+                <button onClick={scrollToSection} aria-label={`Book a Trip to ${props.name}`} className="bookAPlace"> Book Trip <TiArrowRight/>  </button>
             </div>
     </div>
   )

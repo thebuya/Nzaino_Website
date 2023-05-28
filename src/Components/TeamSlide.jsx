@@ -38,11 +38,7 @@ const TeamSlide = () => {
 
   return (
     <>
-    {/** 
-    <FadeHeader
-        fadingtitle = "Blog"
-        cleartitle = "Travellers Blog"
-      />  */}
+    
         
       <div className="blogo">
             <Swiper 

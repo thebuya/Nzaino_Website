@@ -65,7 +65,9 @@ body {
   background-color: var(--green-002);
   letter-spacing: 0.01rem;
 }
-
+a{
+  cursor: pointer;
+}
 
 .swiper-button-next, .swiper-button-prev{
   color: var(--green-B07);

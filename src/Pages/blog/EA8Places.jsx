@@ -1,8 +1,12 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 
 import headerimage from '../../Images/Zanzibarfader.jpg';
 import nai from  '../../Images/mombasa4.jpg'
 
+
+import ogimage from '../../Images/seoimages/og-blog.jpg';
+import twitterimage from '../../Images/seoimages/twitter-blog.jpg';
+import SEO from '../../Components/SE0';
 
 
 import FadingHeader from '../../Components/FadingHeader';
@@ -13,16 +17,17 @@ import Immovableitems from './Immovableitems';
 
 
 const EA8Places = () => {
-  useEffect(() => {
-    document.title = '8 Places You Want To Visit In East Africa';
-    document.querySelector('meta[name="description"]').setAttribute('content', 'Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.');
-    document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
-    // You can also modify other meta tags or perform other SEO-related operations here if necessary
-    }, []);
-   
+  const seoProps = {
+    title: "8 Places You Want To Visit In East Africa | Nzaino Travel Africa Tips",
+    seodescription: "Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.",
+    ogimage: ogimage,
+    twitterimage: twitterimage,
+    keywords: 'Travellers Blog, Travel blog, Popular ugandan travel blog, Travel Services'
+  };
   const description = 'Zanzibar, Tanzania'; // Replace with your description
   return (
     <div className='blogContainer'>
+       <SEO {...seoProps}/>
 
       <div className="moveableitems">
           <FadingHeader image={headerimage} description={description}/>

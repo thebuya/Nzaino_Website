@@ -1,10 +1,8 @@
 import React  from 'react'
-import { Helmet } from 'react-helmet';
 
 import { ugandaPlaces, kenyaPlaces, tanzaniaPlaces, rwandaPlaces } from '../../Components/eadestinations';
 import Destinationcard from '../../Components/Destinationcard';
 import SlideImage4 from '../../Images/Zanzibarfader.jpg' ;
-import ogimage from '../../Images/ogImage-destination.jpg' ;
 import './destinations.css'
 
 
@@ -20,7 +18,9 @@ import "swiper/css/navigation";
 
 import { Pagination, Navigation } from 'swiper';
 import HomeReviewSlide from '../../Components/HomeReviewSlide';
-
+import ogimage from '../../Images/seoimages/og-destination.jpg';
+import twitterimage from '../../Images/seoimages/twitter-destination.jpg';
+import SEO from '../../Components/SE0';
 
 
 const Destinations = () => {
@@ -30,22 +30,23 @@ const Destinations = () => {
   //document.querySelector('meta[property="og:image"]').setAttribute('content', SlideImage4);
   // You can also modify other meta tags or perform other SEO-related operations here if necessary
  // }, []);
+ const seoProps = {
+  title: "Nzaino | East African Destinations",
+  seodescription: "Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!",
+  ogimage: ogimage,
+  twitterimage: twitterimage,
+  keywords: 'Travellers Blog, Travel blog, Popular ugandan travel blog, Travel Services'
+};
 
   return (
     <>
-     <Helmet>
-            <title>East African Destinations</title>
-            <meta name="description" content="Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!" />
-            <meta property="og:title" content="East African Destinations" />
-            <meta property="og:description" content="Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!" />
-            <meta property="og:image" content={ogimage} />
-            {/* Add other meta tags if needed */}
-      </Helmet>
+    <SEO {...seoProps}/>
+     
 
 
       
       <div className="main-image">
-        <img src={SlideImage4} alt="" />
+        <img src={SlideImage4} alt="Zanzibar Coa" />
       </div>
 
       <h5 className='below-main'><span>Discover</span> East Africas Hidden Gems.</h5>

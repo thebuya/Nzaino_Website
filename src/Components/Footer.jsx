@@ -45,10 +45,10 @@ const Footer = () => {
     <footer>
         <div className="links_container">
             <div className="link_container location">
-                <Link to="/" className='logo footer-logo'>
+                <Link to="/" className='logo footer-logo' aria-label="Go To Nzaino Home Page">
                     <img src={Logo} alt="Nzaino Travel Africa Logo"/>
                 </Link>
-                <Link to="/" className='logo2 footer-logo'>
+                <Link to="/" className='logo2 footer-logo' aria-label="Go To Nzaino Home Page">
                     <img src={Logo} alt="Nzaino Travel Africa Logo"/>
                 </Link>
                 <p>
@@ -62,18 +62,18 @@ const Footer = () => {
                 <h2>Our Contacts:</h2>
                 <div className="footer-icons">
                 <ul>
-                    <li><a  rel='noreferrer' href="https://wa.me/256772525312" target="_blank" >
+                    <li><a aria-label='Visit Nzaino on Whatsapp' rel='noreferrer' href="https://wa.me/256772525312" target="_blank" >
                     <FaWhatsapp/>
                         </a>
                     </li>
-                    <li><a  rel='noreferrer' href="https://facebook.com" target="_blank" >
+                    <li><a aria-label='Visit Nzaino on facebook' rel='noreferrer' href="https://facebook.com" target="_blank" >
                     <TfiFacebook/>
                         </a>
                     </li>
-                    <li> <a  rel='noreferrer' href="https://twitter.com" target="_blank" >
+                    <li> <a aria-label='Visit Nzaino on twitter' rel='noreferrer' href="https://twitter.com" target="_blank" >
                     <TiSocialTwitter/>
                         </a></li>
-                    <li><a  rel='noreferrer' target="_blank" href="https://www.instagram.com" >
+                    <li><a aria-label='Visit Nzaino on instagram' rel='noreferrer' target="_blank" href="https://www.instagram.com" >
                     <TfiInstagram/>
                         </a>
                     </li>
@@ -101,12 +101,11 @@ const Footer = () => {
             <div className="link_container quick-links">
             <h2>Quick Links</h2>
                 <ul>
-                    <li><NavLink to="/aboutnzaino" onClick={() => handleNavLinkClick('about us info.')}> <TiArrowRight/>About Nzaino</NavLink> </li>  
+                    <li> <NavLink to="/uugandacarhire" onClick={() => handleNavLinkClick('cars for hire')}><TiArrowRight/>Cars For Hire</NavLink></li>
                     <li> <NavLink to="/#Testimonials"onClick={() => handleNavLinkClick('our client reviews.')}><TiArrowRight/>Client Testimonials </NavLink></li>
                     <li> <NavLink to="/eastafricatravelpackages"onClick={() => handleNavLinkClick('frequently asked questions.')}><TiArrowRight/>Client Questions</NavLink></li>
                     <li> <NavLink to="/aboutnzaino"onClick={() => handleNavLinkClick('our services.')}><TiArrowRight/>Our Services </NavLink></li>
                     <li><NavLink to="/eastafricatravelpackages"onClick={() => handleNavLinkClick('packages on offer.')}> <TiArrowRight/>Our Travel Packages </NavLink></li>
-                    <li> <NavLink to="/eastafricatraveldestinations"onClick={() => handleNavLinkClick('the popular destinations.')}><TiArrowRight/>Popular Destinations</NavLink>  </li>
                     
                     
                 </ul>
@@ -115,13 +114,14 @@ const Footer = () => {
             <div className="link_container resources">
             <h2>Resources</h2>
                 <ul>
-                    <li> <NavLink to="/uugandacarhire" onClick={() => handleNavLinkClick('cars for hire')}><TiArrowRight/>Cars For Hire</NavLink></li>
-                    <li> <NavLink to="/ugandatravelblog" onClick={() => handleNavLinkClick('travel blogs')}><TiArrowRight/>Travel Blog</NavLink></li>
-                    <li> <a href='https://opencorporates.com/companies/ug/80020002502844' target="_blank" rel='noreferrer'> <TiArrowRight />Registration Status </a> </li>
                     
+                    <li> <NavLink to="/ugandatravelblog" onClick={() => handleNavLinkClick('travel blogs')}><TiArrowRight/>Travel Blog</NavLink></li>
+                    <li> <a href='https://opencorporates.com/companies/ug/80020002502844' target="_blank" rel='noreferrer' aria-label='View Nzainos Legal Registraton Status'> <TiArrowRight />Registration Status </a> </li>
+
                     <li> <NavLink to="/aboutnzaino" onClick={() => handleNavLinkClick('our terms and conditions.')}><TiArrowRight/>Terms and Conditions</NavLink></li>
-                    <li> <NavLink to="/aboutnzaino" onClick={() => handleNavLinkClick('insurance policy.')}><TiArrowRight/>Insurance Policy </NavLink></li>
-                    <li> <NavLink to="/aboutnzaino" onClick={() => handleNavLinkClick('job opportunities')}><TiArrowRight/>Job opportunities </NavLink></li>
+
+                    <li> <NavLink to="/eastafricatraveldestinations"onClick={() => handleNavLinkClick('the popular destinations.')}><TiArrowRight/>Popular Destinations</NavLink>  </li>
+                    <li> <NavLink to="/aboutnzaino"onClick={() => handleNavLinkClick('about nzaino.')}><TiArrowRight/>About Nzaino</NavLink>  </li>
                 </ul>
             </div>
 
@@ -133,6 +133,7 @@ const Footer = () => {
             <p className="footer-architect">Site-Architect: <span>
                 <a href="https://www.artbybuya.com/about.html"
                 target="_blank" rel='noreferrer'
+                aria-label='View the web developers site'
                 > Buya
                 </a>
                 </span>
