@@ -53,10 +53,10 @@ const About = () => {
                          
                          At Nzaino, we provide services that make it easy for you to
                           explore the rich and diverse cultures of Africa. Whether you want
-                           to experience the wildlife, the landscapes, the people, or you just want to get a ride,
+                           to experience the wildlife, the landscapes, the people, or you just want to   <a href="/ugandacarhire" className='linker' aria-label='Find a car to hire for your travels.'> get a ride</a>,
                             we are here to help you discover the beauty of this continent with our catalogue of services
                             shown below. We understand that comfort and security
-                         are essential for a memorable journey. Contact us today and start your African adventure.
+                         are essential for a memorable journey. Contact us today and <a href="/eastafricatraveldestinations" className='linker' aria-label='Find an exciting East African destination for travel.'> start your African adventure</a>.
                         </p>
                     </div>
           </div>
@@ -64,7 +64,9 @@ const About = () => {
           <div className="servicegrid">
               <div className="serve">
                 <img src={service} alt="" />
-                <p className="service">Car-Rentals and Chauffering</p>
+                <p className="service">
+                <a href="/ugandacarhire" className='linker' aria-label='Find a car to hire for your travels.'> Car-Rentals and Chauffering</a> 
+                </p>
               </div>
               <div className="serve">
                 <img src={service3} alt="" />
@@ -105,9 +107,9 @@ const About = () => {
                         <p className="whotext">
                         We are passionate about helping you travel within East Africa and beyond. Whether
                           the tour you are looking for is for adventure, romance, business, or culture,
-                           we have the perfect tours and travel package for you. We work with
+                           we have  <a href="/eastafricatravelpackages" className='linker' aria-label='Find an affordable East African travel package.'> the perfect tours and travel packages</a> for you. We work with
                             trusted partners all over East Africa to ensure 
-                            your safety and satisfaction. Join us and experience
+                            your safety and satisfaction. Contact us and experience
                              the Wonders of East Africa.
                         </p>
                     </div>
@@ -135,7 +137,9 @@ const About = () => {
               </div>
               <div className="serve">
                 <img src={service} alt="Super Vehicles For Comfort and Safety." />
-                <p className="service">Super Vehicles For Comfort &amp; Safety</p>
+                <p className="service">
+                  <a href="/ugandacarhire" className='linker' aria-label='Find a car to hire for your travels.'> Super Vehicles For Comfort &amp; Safety</a> 
+                </p>
               </div>
               <div className="serve">
                 <img src={service6} alt="Cross Border Experience." />

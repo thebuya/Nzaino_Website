@@ -35,11 +35,11 @@ const Car = () => {
                         cleartitle = "Nzaino Cars"
                         /> 
                         <p className="paragraphs carintro">
-                         If you are looking for a car to hire for your own travel.🚗,
-                         At Nzaino we offer a catalogue of cars ranging from
+                         Perhaps you are looking for a car to hire for your own travel🚗,
+                          at Nzaino we offer a catalogue of cars ranging from
                          8 seaters to a more cozy 4 seater. You have the option of 
                          having a designated driver or taking yourself on an adevnture.  
-                         <span className="highlight"> Click Book Car & fill in the form</span>,  
+                         <span className="highlight"> Click Book Car below & fill in the form</span>,  
                         or contact us directly for immediate response.
                         </p>
       </div>

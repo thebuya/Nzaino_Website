@@ -122,11 +122,11 @@ const AboutSectionsI = () => {
                     <p className="whotext">
                     Nzaino Travel Africa is more than just a tour and travel agency.
                     We are a team of passionate and knowledgeable experts
-                    who love to create unforgettable safaris 
+                    who love to create   <a href="/eastafricatravelpackages" className='linker' aria-label='Find an affordable East Africa travel package.'> unforgettable safaris </a>
                     “into the heart of Africa”. Our vision is to inspire you with the
                       beauty and diversity of this amazing continent. 
-                      Whether you are looking for adventure, business, romance, culture, or wildlife,
-                      we have something for everyone. We tailor each safari 
+                      Whether you are looking for adventure, business, romance, culture, or wildlife
+                     <span className="highlight">, we have something for everyone</span>. We tailor each safari 
                       to your personal preferences and interests, ensuring that you have
                         the best experience possible. Join us and discover the wonders
                         of Africa with Nzaino Travel Africa.
@@ -134,7 +134,7 @@ const AboutSectionsI = () => {
                 </div>
 
                 <div className="imagewho">
-                  <img src={who} alt="" />
+                  <img src={who} alt="Nzaino Team" />
                 </div>
           </div>
 
@@ -145,7 +145,7 @@ const AboutSectionsI = () => {
                 <TeamSlide/>
                 <p className="caption">
                 A special mention to all our friends all around East
-                 Africa who offer their guide and support on our tours. 
+                 Africa who offer their guide and support on <a href="/eastafricatraveldestinations" className='linker' aria-label='Find an exciting East Africa travel destination.'> our tours</a>. 
                  They are a crucial part of our team. 👏🏾
                 </p>
               </div>

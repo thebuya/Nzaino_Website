@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import { ugandaPlaces, kenyaPlaces, tanzaniaPlaces, rwandaPlaces } from '../../Components/eadestinations';
 import Destinationcard from '../../Components/Destinationcard';
 import SlideImage4 from '../../Images/Zanzibarfader.jpg' ;
+import ogimage from '../../Images/ogImage-destination.jpg' ;
 import './destinations.css'
 
 
@@ -37,7 +38,7 @@ const Destinations = () => {
             <meta name="description" content="Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!" />
             <meta property="og:title" content="East African Destinations" />
             <meta property="og:description" content="Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!" />
-            <meta property="og:image" content={SlideImage4} />
+            <meta property="og:image" content={ogimage} />
             {/* Add other meta tags if needed */}
       </Helmet>
 

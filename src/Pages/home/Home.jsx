@@ -16,7 +16,8 @@ import HomePackageSlide from '../../Components/HomePackageSlide';
 
 
 import who from '../../Images/van.jpg';
-import siteimage from '../../Images/bwindi3.jpg';
+//import siteimage from '../../Images/bwindi3.jpg';
+import ogimage from '../../Images/ogImage-home.jpg';
 import FadeHeader from '../../UI/FadeHeader';
 import TeamSlide from '../../Components/TeamSlide';
 
@@ -31,7 +32,7 @@ const Home = () => {
             <meta name="description" content="Welcome to Nzaino Travel Africa Limited, your guide to discovering the wonders of East Africa. We offer trips, and car hires along a wide range of services for an unforgettable African adventure." />
             <meta property="og:title" content="Nzaino Travel Africa Limited - Home" />
             <meta property="og:description" content="Welcome to Nzaino Travel Africa Limited, your guide to discovering the wonders of East Africa. We offer trips, and car hires along a wide range of services for an unforgettable African adventure." />
-            <meta property="og:image" content={siteimage} />
+            <meta property="og:image" content={ogimage} />
             {/* Add other meta tags if needed */}
       </Helmet>
 
@@ -53,8 +54,8 @@ const Home = () => {
                         /> 
                         <p className="whotext">
                         Nzaino Travel Africa is more than just a tour and travel agency.
-                        We are a team of passionate and knowledgeable experts
-                        who love to create unforgettable safaris 
+                        We are a team of passionate and knowledgeable travel experts
+                        who love to create <a href="/eastafricatravelpackages" className='linker' aria-label='Find an affordable East Africa travel package.'> unforgettable safaris </a>
                         “into the heart of Africa ✨”. Our vision is to inspire you with the
                           beauty and diversity of this amazing continent. 
                           Whether you are looking for adventure, business, romance, culture, or wildlife,
@@ -66,7 +67,7 @@ const Home = () => {
                     </div>
 
                     <div className="imagewho">
-                      <img src={who} alt="" />
+                      <img src={who} alt="Nzaino Team" />
                     </div>
               </div>
 
@@ -76,13 +77,13 @@ const Home = () => {
                   <div className="teamswiper">
                     <TeamSlide/> 
                     <p className="caption">
-                    A special mention to all our friends all around East
-                    Africa who offer their guide and support on our tours. 
-                    They are a crucial part of our team. 👏🏾
+                      A special mention to all our friends all around East
+                      Africa who offer their guide and support on <a href="/eastafricatraveldestinations" className='linker' aria-label='Find an exciting East Africa travel destination.'> our tours</a>. 
+                      They are a crucial part of our team. 👏🏾
                     </p>
                   </div>
               </div>
-        </div>
+      </div>
         <HomePlaces /> {/** Destinations */}
         <HomeReviewSlide />
 

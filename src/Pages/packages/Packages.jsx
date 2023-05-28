@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import './packages.css'
 
 import headerimage from '../../Images/nana.jpg';
+import ogimage from '../../Images/ogImage-travel.jpg';
 import FadingHeader from '../../Components/FadingHeader';
 import {faqs} from '../../Components/destinations'
 
@@ -77,7 +78,7 @@ const Packages = () => {
             <meta name="description" content="Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer. Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries." />
             <meta property="og:title" content="Travel East Africas with Nzaino Packages | Nzaino" />
             <meta property="og:description" content="Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer. Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries." />
-            <meta property="og:image" content={headerimage} />
+            <meta property="og:image" content={ogimage} />
             {/* Add other meta tags if needed */}
       </Helmet>
 
@@ -88,46 +89,49 @@ const Packages = () => {
         cleartitle = "Choose Your Package" 
         /> 
         <p className="whotext paragraphs intropackage">
-                        At Nzaino, we understand that comfort and security
+                        At Nzaino, we understand that comfort 😌 and security
                          are essential for a memorable journey. 
-                         That’s why we provide services that make it easy for you to
-                          explore the rich and diverse cultures of Africa. Whether you want
-                           to experience the wildlife, the landscapes, or the people,
-                            we are here to help you <span className="highlight">discover the beauty of the motherland</span>.
+                         We have taken the liberty of curating a catalogue of 
+                         <span className="highlight"> travel packages that  make it easy for you </span>
+                        to travel the rich and diverse cultures of Africa. Whether you want
+                           to experience the wildlife, the landscapes, or the people. We understand that sometimes the budget can be an issue
+                           and as a result you can go through some of our more budget friendly packages.
+                            We are here to help you discover the beauty ✨ of the motherland.
+                            Choose a package below and contact us, or <a href="/ugandacarhire" className='linker' aria-label='Find a car to hire for your travels.'>hire a car</a> for personal travels.
         </p>
 
               {/* Pagination */}
               <div className="packagesPagination upper">
-              <button
-  className={selectedFilter === null ? 'active' : ''}
-  onClick={() => setSelectedFilter(null)}
->
-  All
-</button>
-<button
-  className={selectedFilter === 300 ? 'active' : ''}
-  onClick={() => setSelectedFilter(300)}
->
-  &lt; $300
-</button>
-<button
-  className={selectedFilter === 700 ? 'active' : ''}
-  onClick={() => setSelectedFilter(700)}
->
-  &lt; $700
-</button>
-<button
-  className={selectedFilter === 1000 ? 'active' : ''}
-  onClick={() => setSelectedFilter(1000)}
->
-  &lt; $1000
-</button>
-<button
-  className={selectedFilter === 2000 ? 'active' : ''}
-  onClick={() => setSelectedFilter(2000)}
->
-  &lt; $2000
-</button>
+                    <button
+                        className={selectedFilter === null ? 'active' : ''}
+                        onClick={() => setSelectedFilter(null)}
+                      >
+                        All
+                    </button>
+                    <button
+                      className={selectedFilter === 300 ? 'active' : ''}
+                      onClick={() => setSelectedFilter(300)}
+                    >
+                      &lt; $300
+                    </button>
+                    <button
+                      className={selectedFilter === 700 ? 'active' : ''}
+                      onClick={() => setSelectedFilter(700)}
+                    >
+                      &lt; $700
+                    </button>
+                    <button
+                      className={selectedFilter === 1000 ? 'active' : ''}
+                      onClick={() => setSelectedFilter(1000)}
+                    >
+                      &lt; $1000
+                    </button>
+                    <button
+                      className={selectedFilter === 2000 ? 'active' : ''}
+                      onClick={() => setSelectedFilter(2000)}
+                    >
+                      &lt; $2000
+                    </button>
               </div>
 
               <div className="packagesContainer" >

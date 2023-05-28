@@ -34,11 +34,15 @@
         margin-bottom: 2rem;
     }
     .quoteCard{
-        margin-top: 3rem;
+        margin-top:3rem;
     }
     .mainFade{
         height: 90px;
         top: 4rem;
+        margin-left: 0;
+    }
+    .packagehomefade{
+        margin-left: 2rem;
     }
 }
   @media screen and (max-width: 600px) {

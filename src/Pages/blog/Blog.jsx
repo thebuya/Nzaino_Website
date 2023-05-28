@@ -4,6 +4,7 @@ import './blog.css'
 
 import { blogs } from '../../Components/blogreel';
 import headerimage from '../../Images/bloghead.jpg';
+import ogimage from '../../Images/ogImage-blog.jpg';
 
 import NewsLetter from '../../Components/NewsLetter';
 import Backgroundserve from '../../Images/fadingpackage.jpg';
@@ -59,7 +60,7 @@ const Blog = () => {
             <meta name="description" content="Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries." />
             <meta property="og:title" content="Nzaino Travellers Blog | East African Tours and Travel Tips" />
             <meta property="og:description" content="Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries." />
-            <meta property="og:image" content={headerimage} />
+            <meta property="og:image" content={ogimage} />
             {/* Add other meta tags if needed */}
       </Helmet>
 
@@ -72,8 +73,9 @@ const Blog = () => {
             <p className="whotext paragraphs">
             If like us, you need to make your due diligence by researching about the destination
             or travel experience more, we have you covered. For each of our trips, we endeavour
-              to <span className="highlight"> document and write about it</span> so that you can learn about the dos and donts, or 
-              better yet so that you know the exact destination you can’t miss out on during your adventures.
+              to <span className="highlight"> document and write about it ✍🏾</span> so that you can learn about the dos and donts, or 
+              better yet so that you know the exact destination you can’t miss out on during your adventures.💫 
+              Read a blog and book a trip, or <a href="/ugandacarhire" className='linker' aria-label='Find a car to hire for your travels.'>  get a car</a> and <a href="/eastafricatravelpackages" className='linker' aria-label='Find an affordable travel package.'>go on a travel</a>. 
             </p>
 
             <div className="blogsGrid">

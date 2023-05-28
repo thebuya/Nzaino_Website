@@ -535,9 +535,9 @@ export const packages = [
         caption: "Bwindi Impenetrable Forest, Uganda",
         title: "Gorilla Trekking 🦍",
         activities: "Hiking / WildLife-Photography / Batwa Forest Experience / BirdWatching / Safari Tours",
-        price: "$1100",
+        price: "$200",
         people: "per person",
-        duration: "2 days | 3 nights",
+        duration: "3 days | 4 nights",
         highlights: [
             "Transport",
             "Guide Fees",

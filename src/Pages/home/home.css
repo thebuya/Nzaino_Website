@@ -421,6 +421,7 @@ background-color: var(--green-003);
 
       .fade {
         top: 5rem;
+        margin-left: 2rem;
     }
       .destinfade{
         top: 3.5rem;

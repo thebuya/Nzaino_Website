@@ -6,9 +6,7 @@ import PackagesCard from './PackagesCard';
 
 import FadeHeader from '../UI/FadeHeader';
 import {Link} from 'react-router-dom'
-//import BackgroundBlog from '../Images/fadingpackage2.jpg';
 import BackgroundBlog from '../Images/fadingelephants.jpg';
-//import BackgroundBlog from '../Images/fadedestiny.jpg';
 
 
 import 'swiper/css/pagination';
@@ -48,14 +46,15 @@ const HomePackageSlide = () => {
         className="packagehomefade"
       /> 
        <p className="whotext paragraphs paratext">
-       If you dream of exploring East Africa on a budget, 
-       Nzaino Travels has the perfect packages for you. 
+       If you have a dream of exploring East Africa on a budget, 
+       Nzaino Travels has <a href="/eastafricatravelpackages" className='linker' aria-label='Find an afffordable travel package for East africa.'>the perfect packages</a> for you. 
        We offer great deals on flights 🛩 accommodation 🏕 and
         activities in various destinations. We also assist with
-        all the details for you, from planning to booking 
-        to insurance. Swipe our offers below and 
-        contact us today. Let us help you
-         travel more and spend less.
+        all the itenary details for you, from planning to booking 
+        to insurance. Have a swipe at some of our offers below and 
+        contact us today. Let us help you 
+        
+         <span className="highlight"> travel more and spend less</span>.
         </p>
         
       <div className="blogo packagehomeslide">
@@ -110,7 +109,7 @@ const HomePackageSlide = () => {
             <img src={BackgroundBlog} className="BackBlog packageback " alt="" />
       </div>
       
-        <Link to="/eastafricatravelpackages" className='linkbutton'> 
+        <Link to="/eastafricatravelpackages" className='linkbutton' aria-label='View all East African Travel Packages Nzaino Has To Offer.'>
            <button className="moredestinations"> View All Packages  </button>
         </Link>
     

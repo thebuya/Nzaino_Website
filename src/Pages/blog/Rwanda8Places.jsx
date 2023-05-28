@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react'
-
+import React from 'react'
+import { Helmet } from 'react-helmet';
 import headerimage from '../../Images/packagesHeader.jpg';
 import nai from  '../../Images/mombasa4.jpg'
 
@@ -11,16 +11,20 @@ import Immovableitems from './Immovableitems';
 
 
 const Rwanda8Places = () => {
-  useEffect(() => {
-    document.title = '8 Places you must visit While in Rwanda ';
-    document.querySelector('meta[name="description"]').setAttribute('content', 'Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.');
-    document.querySelector('meta[property="og:image"]').setAttribute('content', headerimage);
-    // You can also modify other meta tags or perform other SEO-related operations here if necessary
-    }, []);
+ 
    
     const description = 'Lodges In Volcanoes National Park'; // Replace with your description
     return (
       <div className='blogContainer'>
+
+      <Helmet>
+            <title>Nzaino Travel Blog - 8 Places you must visit While in Rwanda </title>
+            <meta name="description" content="Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries." />
+            <meta property="og:title" content="Nzaino Travel Blog - 8 Places you must visit While in Rwanda" />
+            <meta property="og:description" content="Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries." />
+            <meta property="og:image" content={headerimage} />
+            {/* Add other meta tags if needed */}
+      </Helmet>
   
         <div className="moveableitems">
             <FadingHeader image={headerimage} description={description}/>
