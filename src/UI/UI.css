@@ -1,4 +1,4 @@
-.mainFade{
+.mainFade {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -9,11 +9,12 @@
 }
 
 
-.fadingTitle{
+.fadingTitle {
     font-size: 85px;
-    color:#F0F2F0;
+    color: #F0F2F0;
 }
-.belowFade{
+
+.belowFade {
     color: var(--green-A01);
     font-size: 24px;
     position: relative;
@@ -24,37 +25,42 @@
 
 
 @media screen and (max-width: 900px) {
-    .fadingTitle{
+    .fadingTitle {
         font-size: 60px;
     }
-    .belowFade{
-        
+
+    .belowFade {
+
         bottom: 3rem;
         text-align: center;
         margin-bottom: 2rem;
     }
-    .quoteCard{
-        margin-top:3rem;
+
+    .quoteCard {
+        margin-top: 3rem;
     }
-    .mainFade{
+
+    .mainFade {
         height: 90px;
         top: 4rem;
         margin-left: 2rem;
     }
-    .packagehomefade{
+
+    .packagehomefade {
         margin-left: 2rem;
     }
 }
-  @media screen and (max-width: 600px) {
-    .mainFade{
+
+@media screen and (max-width: 600px) {
+    .mainFade {
         align-items: center;
         margin-left: 0rem;
     }
 }
 
-@media screen and (max-width: 500px){
-.fadingTitle {
-    font-size: 46px;
-    margin-bottom: 0.5rem;
-}
+@media screen and (max-width: 500px) {
+    .fadingTitle {
+        font-size: 46px;
+        margin-bottom: 0.5rem;
+    }
 }

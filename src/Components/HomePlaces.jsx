@@ -35,6 +35,15 @@ const HomePlaces = () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleLinkClick = () => {
+    scrollToTop();
+  };
+
+  
 
   return (
     <>
@@ -90,7 +99,13 @@ const HomePlaces = () => {
             <img src={BackgroundBlog} className="BackBlog destinback" alt="East African Game Park" />
       </div>
       
-          <Link to="/eastafricatraveldestinations" className='linkbutton' aria-label="View all East African travel destinations."> 
+          <Link to="/eastafricatraveldestinations" 
+          className='linkbutton'
+          aria-label="View all East African travel destinations."
+          onClick={() => {
+            handleLinkClick();
+          }}
+          > 
                <button className="moredestinations">View All Destinations</button>
           </Link>
       

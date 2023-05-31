@@ -1,12 +1,14 @@
-import React  from 'react'
+import React from "react";
 
-import { ugandaPlaces, kenyaPlaces, tanzaniaPlaces, rwandaPlaces } from '../../Components/eadestinations';
-import Destinationcard from '../../Components/Destinationcard';
-import SlideImage4 from '../../Images/Zanzibarfader.jpg' ;
-import './destinations.css'
-
-
-
+import {
+  ugandaPlaces,
+  kenyaPlaces,
+  tanzaniaPlaces,
+  rwandaPlaces,
+} from "../../Components/eadestinations";
+import Destinationcard from "../../Components/Destinationcard";
+import SlideImage4 from "../../Images/Zanzibarfader.jpg";
+import "./destinations.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,64 +18,60 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Pagination, Navigation } from 'swiper';
-import HomeReviewSlide from '../../Components/HomeReviewSlide';
-import ogimage from '../../Images/seoimages/og-destination.jpg';
-import twitterimage from '../../Images/seoimages/twitter-destination.jpg';
-import SEO from '../../Components/SE0';
-
+import { Pagination, Navigation } from "swiper";
+import HomeReviewSlide from "../../Components/HomeReviewSlide";
+import ogimage from "../../Images/seoimages/og-destination.jpg";
+import twitterimage from "../../Images/seoimages/twitter-destination.jpg";
+import SEO from "../../Components/SE0";
 
 const Destinations = () => {
- // useEffect(() => {
- // document.title = 'East African Destinations';
- // document.querySelector('meta[name="description"]').setAttribute('content', 'Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!');
+  // useEffect(() => {
+  // document.title = 'East African Destinations';
+  // document.querySelector('meta[name="description"]').setAttribute('content', 'Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!');
   //document.querySelector('meta[property="og:image"]').setAttribute('content', SlideImage4);
   // You can also modify other meta tags or perform other SEO-related operations here if necessary
- // }, []);
- const seoProps = {
-  title: "Nzaino | East African Destinations",
-  seodescription: "Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!",
-  ogimage: ogimage,
-  twitterimage: twitterimage,
-  keywords: 'Travellers Blog, Travel blog, Popular ugandan travel blog, Travel Services'
-};
+  // }, []);
+  const seoProps = {
+    title: "Nzaino | East African Destinations",
+    seodescription:
+      "Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!",
+    ogimage: ogimage,
+    twitterimage: twitterimage,
+    keywords:
+      "Travellers Blog, Travel blog, Popular ugandan travel blog, Travel Services",
+  };
 
   return (
     <>
-    <SEO {...seoProps}/>
-     
+      <SEO {...seoProps} />
 
-
-      
       <div className="main-image">
         <img src={SlideImage4} alt="Zanzibar Coa" />
       </div>
 
-      <h5 className='below-main'><span>Discover</span> East Africas Hidden Gems.</h5>
+      <h5 className="below-main">
+        <span>Discover</span> East Africas Hidden Gems.
+      </h5>
 
       <div className="nextto-belowmain">
-        <h2 className="fadingtitle">
-          Destinations
-        </h2>
-        <h4 className="below-fadetitle">
-          Uganda
-        </h4>
+        <h2 className="fadingtitle">Destinations</h2>
+        <h3 className="below-fadetitle">Uganda</h3>
       </div>
 
       <div className="desintations-container">
-      <Swiper className=" mySwiper ugandan-destinations-cards"
-      slidesPerView={1}
-      spaceBetween={30}
-      loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Pagination, Navigation]}
-      >
-
-            {ugandaPlaces.map(places => (
-              <SwiperSlide key={places.id}>
+        <Swiper
+          className=" mySwiper ugandan-destinations-cards"
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+        >
+          {ugandaPlaces.map((places) => (
+            <SwiperSlide key={places.id}>
               <Destinationcard
                 key={places.id}
                 image={places.image}
@@ -89,31 +87,26 @@ const Destinations = () => {
                 activity3={places.activity3}
                 activity4={places.activity4}
               />
-              </SwiperSlide>
-            ))}
-
-      </Swiper>
-      <div className="nextto-belowmain">
-        <h2 className="fadingtitle">
-          Destinations
-        </h2>
-        <h4 className="below-fadetitle">
-          Kenya
-        </h4>
-      </div>
-      <Swiper className=" mySwiper kenyan-destinations-cards"
-      slidesPerView={1}
-      spaceBetween={30}
-      loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Pagination, Navigation]}
-      >
-
-{kenyaPlaces.map(places => (
-              <SwiperSlide key={places.id}>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="nextto-belowmain">
+          <h2 className="fadingtitle">Destinations</h2>
+          <h3 className="below-fadetitle">Kenya</h3>
+        </div>
+        <Swiper
+          className=" mySwiper kenyan-destinations-cards"
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+        >
+          {kenyaPlaces.map((places) => (
+            <SwiperSlide key={places.id}>
               <Destinationcard
                 key={places.id}
                 image={places.image}
@@ -129,32 +122,27 @@ const Destinations = () => {
                 activity3={places.activity3}
                 activity4={places.activity4}
               />
-              </SwiperSlide>
-            ))}
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="nextto-belowmain">
+          <h2 className="fadingtitle">Destinations</h2>
+          <h3 className="below-fadetitle">Tanzania</h3>
+        </div>
 
-      </Swiper>
-      <div className="nextto-belowmain">
-        <h2 className="fadingtitle">
-          Destinations
-        </h2>
-        <h4 className="below-fadetitle">
-          Tanzania
-        </h4>
-      </div>
-
-      <Swiper className=" mySwiper kenyan-destinations-cards"
-      slidesPerView={1}
-      spaceBetween={30}
-      loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Pagination, Navigation]}
-      >
-
-            {tanzaniaPlaces.map(places => (
-              <SwiperSlide key={places.id}>
+        <Swiper
+          className=" mySwiper kenyan-destinations-cards"
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+        >
+          {tanzaniaPlaces.map((places) => (
+            <SwiperSlide key={places.id}>
               <Destinationcard
                 key={places.id}
                 image={places.image}
@@ -170,33 +158,27 @@ const Destinations = () => {
                 activity3={places.activity3}
                 activity4={places.activity4}
               />
-              </SwiperSlide>
-            ))}
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-      </Swiper>
-
-
-      <div className="nextto-belowmain">
-        <h2 className="fadingtitle">
-          Destinations
-        </h2>
-        <h4 className="below-fadetitle">
-          Rwanda
-        </h4>
-      </div>
-      <Swiper className=" mySwiper kenyan-destinations-cards"
-      slidesPerView={1}
-      spaceBetween={30}
-      loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Pagination, Navigation]}
-      >
-
-            {rwandaPlaces.map(places => (
-              <SwiperSlide key={places.id}>
+        <div className="nextto-belowmain">
+          <h2 className="fadingtitle">Destinations</h2>
+          <h3 className="below-fadetitle">Rwanda</h3>
+        </div>
+        <Swiper
+          className=" mySwiper kenyan-destinations-cards"
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+        >
+          {rwandaPlaces.map((places) => (
+            <SwiperSlide key={places.id}>
               <Destinationcard
                 key={places.id}
                 image={places.image}
@@ -212,16 +194,14 @@ const Destinations = () => {
                 activity3={places.activity3}
                 activity4={places.activity4}
               />
-              </SwiperSlide>
-            ))}
-
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
-      <HomeReviewSlide/>
-
+      <HomeReviewSlide />
     </>
-  )
-}
+  );
+};
 
-export default Destinations
+export default Destinations;

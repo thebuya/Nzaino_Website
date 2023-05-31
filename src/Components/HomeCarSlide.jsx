@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from "react";
 
-import { blogs } from "./blogreel";
-import BlogCard from "./Blog-Card";
+import { availablecars } from "../Components/cars";
+import CarCard from "../Pages/cars/CarCard";
 //import BackgroundBlog from '../Images/Zanzibarfade.jpg' ;
-import BackgroundBlog from "../Images/fadingZanzibar.jpg";
+import BackgroundBlog from "../Images/carback.jpg";
 
 import FadeHeader from "../UI/FadeHeader";
+
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
@@ -15,7 +16,7 @@ import "swiper/css";
 
 import { Pagination, Navigation } from "swiper";
 
-const HomeBlogSlide = () => {
+const HomeCarSlide = () => {
   const swiperRef = useRef(null);
 
   useEffect(() => {
@@ -36,15 +37,27 @@ const HomeBlogSlide = () => {
     };
   }, []);
 
+
+
   return (
     <>
       <FadeHeader
-        fadingtitle="Blog"
-        cleartitle="Travellers Blog"
-        className="fade"
+        fadingtitle="Car Hiring"
+        cleartitle="Nzaino Cars"
+        className="fade carfade"
       />
 
-      <div className="blogo">
+<p className="whotext paragraphs paratext">
+       Maybe you want to explore Africa at your own pace and comfort? If yes, then you’ll
+        love our car hiring service at Nzaino. We have a wide range of cars to
+        suit your travel needs and preferences. You may choose to have a professional
+        driver or drive yourself on an adventure.<span className="highlight"> Booking is easy and
+        convenient</span>. Just click on Book Car and fill in the form, or contact us
+        directly for a quick response.
+        
+      </p>
+
+      <div className="blogo packagehomeslide carhomeslide">
         <Swiper
           ref={swiperRef}
           className=" mySwiper blogs-on-homepage "
@@ -60,7 +73,7 @@ const HomeBlogSlide = () => {
           breakpoints={{
             // For screens larger than 900px
             1100: {
-              slidesPerView: 3,
+              slidesPerView: 2,
             },
             // For screens between 500px and 900px
             700: {
@@ -72,19 +85,13 @@ const HomeBlogSlide = () => {
             },
           }}
         >
-          {blogs.map((blogs) => (
-            <SwiperSlide key={blogs.id}>
-              <BlogCard
-                key={blogs.id}
-                image={blogs.image}
-                location={blogs.location}
-                paragraph={blogs.paragraph}
-                heading={blogs.heading}
-                path={blogs.path}
-              />
+          {availablecars.map((car) => (
+            <SwiperSlide key={car.id}>
+              <CarCard key={car.id} {...car} />
             </SwiperSlide>
           ))}
         </Swiper>
+
         <img
           src={BackgroundBlog}
           className="BackBlog "
@@ -95,4 +102,4 @@ const HomeBlogSlide = () => {
   );
 };
 
-export default HomeBlogSlide;
+export default HomeCarSlide;

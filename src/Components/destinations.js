@@ -61,7 +61,7 @@ export const faqs =[
         answer: "Our trips vary in price depending on the destination,"+
         " duration, and package type. You can find the prices"+
         " of our trips on our website ("+
-        "<a href='/eastafricatravelpackages' target='_blank' rel='noreferrer' aria-label='Find an affordable travel package around East Africa'>packages section</a>). "+
+        "packages section). "+
         "or contact us for a customized quote."
     },
     {

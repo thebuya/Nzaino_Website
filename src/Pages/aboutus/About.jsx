@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./about.css";
 
 import service from "../../Images/service1.png";
@@ -35,6 +36,14 @@ const About = () => {
     keywords: "Trusted African Travel, Safe tours and travel, Travel Services",
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleLinkClick = () => {
+    scrollToTop();
+  };
+
   return (
     <section className="aboutPage">
       <SEO {...seoProps} />
@@ -54,26 +63,32 @@ const About = () => {
               explore the rich and diverse cultures of Africa. Whether you want
               to experience the wildlife, the landscapes, the people, or you
               just want to{" "}
-              <a
-                href="/ugandacarhire"
+              <Link
+               to="/ugandacarhire"
                 className="linker"
-                aria-label="Find a car to hire for your travels."
+                aria-label="Find a car to hire for your east african travels."
+                onClick={() => {
+                  handleLinkClick();
+                }}
               >
                 {" "}
                 get a ride
-              </a>
+              </Link>
               , we are here to help you discover the beauty of this continent
               with our catalogue of services shown below. We understand that
               comfort and security are essential for a memorable journey.
               Contact us today and{" "}
-              <a
-                href="/eastafricatraveldestinations"
+              <Link
+                to="/eastafricatraveldestinations"
                 className="linker"
                 aria-label="Find an exciting East African destination for travel."
+                onClick={() => {
+                  handleLinkClick();
+                }}
               >
                 {" "}
                 start your African adventure
-              </a>
+              </Link>
               .
             </p>
           </div>
@@ -83,14 +98,17 @@ const About = () => {
           <div className="serve">
             <img src={service} alt="Car-Rentals and Chauffering" />
             <p className="service">
-              <a
-                href="/ugandacarhire"
+              <Link
+                to="/ugandacarhire"
                 className="linker"
-                aria-label="Find a car to hire for your travels."
+                aria-label="Find a car to hire for your east african travels."
+                onClick={() => {
+                  handleLinkClick();
+                }}
               >
                 {" "}
                 Car-Rentals and Chauffering
-              </a>
+              </Link>
             </p>
           </div>
           <div className="serve">
@@ -133,14 +151,17 @@ const About = () => {
               We are passionate about helping you travel within East Africa and
               beyond. Whether the tour you are looking for is for adventure,
               romance, business, or culture, we have{" "}
-              <a
-                href="/eastafricatravelpackages"
+              <Link
+                to="/eastafricatravelpackages"
                 className="linker"
                 aria-label="Find an affordable East African travel package."
+                onClick={() => {
+                  handleLinkClick();
+                }}
               >
                 {" "}
                 the perfect tours and travel packages
-              </a>{" "}
+              </Link>{" "}
               for you. We work with trusted partners all over East Africa to
               ensure your safety and satisfaction. Contact us and experience the
               Wonders of East Africa.
@@ -170,14 +191,17 @@ const About = () => {
           <div className="serve">
             <img src={service} alt="Super Vehicles For Comfort and Safety." />
             <p className="service">
-              <a
-                href="/ugandacarhire"
+              <Link
+               to="/ugandacarhire"
                 className="linker"
-                aria-label="Find a car to hire for your travels."
+                aria-label="Find a car to hire for your east african travels in east africa."
+                onClick={() => {
+                  handleLinkClick();
+                }}
               >
                 {" "}
                 Super Vehicles For Comfort &amp; Safety
-              </a>
+              </Link>
             </p>
           </div>
           <div className="serve">

@@ -1,5 +1,6 @@
 import React from 'react'
 import { RiDoubleQuotesL } from "react-icons/ri";
+
 import './reviewcard.css'
 
 function ReviewCard(props)  {

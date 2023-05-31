@@ -1,4 +1,4 @@
-.NewsLetter{
+.NewsLetter {
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -11,34 +11,39 @@
     margin-bottom: 3rem;
     overflow-x: clip;
 }
-.NewsLetter .subscribing{
+
+.NewsLetter .subscribing {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.NewsLetter .subscribing form{
+
+.NewsLetter .subscribing form {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: auto;
 }
-.NewsLetter .subscribing .inputWerror{
+
+.NewsLetter .subscribing .inputWerror {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-right: 1.5rem;
-    
+
 }
-.NewsLetter .subscribing .inputWerror .error{
+
+.NewsLetter .subscribing .inputWerror .error {
     font-size: 13px;
     color: red;
     line-height: 150%;
     width: 300px;
     text-align: -webkit-center;
 }
-.NewsLetter .subscribing  .success{
+
+.NewsLetter .subscribing .success {
     font-size: 13px;
     color: green;
     margin-top: 5px;
@@ -47,7 +52,8 @@
     width: 300px;
     text-align: -webkit-center;
 }
-.NewsLetter .subscribing input{
+
+.NewsLetter .subscribing input {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -55,7 +61,7 @@
     align-items: center;
     padding: 12px 9px;
     font-size: 14px;
-line-height: 150%;
+    line-height: 150%;
     color: var(--greengrayhue-1);
     letter-spacing: 0.012rem;
     width: 300px;
@@ -65,7 +71,8 @@ line-height: 150%;
     background: #F4F7F4;
     box-shadow: inset 5px 5px 14px #d9dcd9, inset -5px -5px 14px #ffffff;
 }
-.NewsLetter .title{
+
+.NewsLetter .title {
     font-weight: 600;
     width: 90%;
     font-size: 24px;
@@ -73,17 +80,19 @@ line-height: 150%;
     text-align: center;
     padding-bottom: 0.5rem;
     color: var(--green-003);
-    
+
 }
-.NewsLetter .subscribing input::placeholder{
+
+.NewsLetter .subscribing input::placeholder {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: var(  --greengrayhue-2);
+    color: var(--greengrayhue-2);
     margin-left: 0.25rem;
-    
+
 }
-.NewsLetter .subscribing button{
+
+.NewsLetter .subscribing button {
     margin-left: 0.25rem;
     display: flex;
     flex-direction: row;
@@ -100,11 +109,14 @@ line-height: 150%;
     color: var(--green-B07);
     font-size: 15px;
     font-weight: 500;
-    line-height: 150%;}
-.NewsLetter .subscribing button:hover{
+    line-height: 150%;
+}
+
+.NewsLetter .subscribing button:hover {
     background: var(--green-B04);
 }
-.NewsLetter .subscribeback{
+
+.NewsLetter .subscribeback {
     position: absolute;
     width: 100%;
     z-index: -2;
@@ -115,25 +127,31 @@ line-height: 150%;
 
 
 @media screen and (max-width: 600px) {
-    .NewsLetter .subscribing,  .NewsLetter .subscribing form{
+
+    .NewsLetter .subscribing,
+    .NewsLetter .subscribing form {
         flex-direction: column;
     }
-    .NewsLetter .subscribing input{
+
+    .NewsLetter .subscribing input {
         margin-right: 0;
         border-radius: 30px;
     }
-    .NewsLetter .subscribing button{
+
+    .NewsLetter .subscribing button {
         width: 100%;
         margin-top: 0.5rem;
         margin-left: 0;
         border-radius: 30px;
     }
-    .NewsLetter .subscribeback{
+
+    .NewsLetter .subscribeback {
         margin-bottom: 1rem;
         transform: scale(3);
         opacity: 1;
     }
+
     .NewsLetter .subscribing .inputWerror {
         margin-right: 0rem;
-        }
+    }
 }

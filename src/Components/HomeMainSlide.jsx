@@ -130,7 +130,7 @@ const HomeMainSlide = () => {
 
           
             <Link to="/ugandacarhire" aria-label='Hire a car to travel with'>
-                <button className="firstbutton" onClick={goToCarPage}> Hire a Car</button>
+                <button className="firstbutton hirecarbutton" onClick={goToCarPage}> Hire a Car</button>
             </Link>
             
       </div>

@@ -124,13 +124,13 @@ const Footer = () => {
           </div>
           <ul>
             <li>
-              <a href="tel:+256772-525-312" target="_blank" rel="noreferrer">
+            <a href="tel:+256772-525-312" target="_blank" rel="noreferrer">
                 <BsTelephone />
                 Call +256772525312
               </a>
             </li>
             <li>
-              <a href="tel:+256752-755-256" target="_blank" rel="noreferrer">
+            <a href="tel:+256752-755-256" target="_blank" rel="noreferrer">
                 <BsTelephone />
                 Call +256752755256
               </a>
@@ -155,7 +155,7 @@ const Footer = () => {
             <li>
               {" "}
               <NavLink
-                to="/uugandacarhire"
+                to="/ugandacarhire"
                 onClick={() => {
                     handleLinkClick();
                   }}
@@ -247,7 +247,7 @@ const Footer = () => {
             <li>
               {" "}
               <NavLink
-                to="/"
+                to="/nzainotermsandconditions"
                 onClick={() => {
                     scrollToTop();
                   }}

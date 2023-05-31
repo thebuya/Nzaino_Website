@@ -12,12 +12,13 @@ function SEO(props) {
             <meta property="og:image" content={props.ogimage} />
             <meta property="og:image:alt" content={props.title} />
             <meta property="og:url" content={window.location.href} />
+
             {/* Twitter meta tags */}
             <meta name="twitter:title" content={props.title} />
             <meta name="twitter:description" content={props.seodescription} />
             <meta name="twitter:image" content={props.twitterimage} />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:creator" content="@ich_bin_buya" />
+            <meta name="twitter:creator" content="@ich_bin_buya" /> 
             <meta name="twitter:image:alt" content={props.title} />
 
             {/* Add other meta tags if needed */}
@@ -26,7 +27,7 @@ function SEO(props) {
             <meta name="robots" content="index, follow" />
             <meta property="og:locale" content="en_UG" />
             <meta name="language" content="en-UG" />
-           {/**<meta name="twitter:site" content="@yourtwitterhandle" />  */} 
+           {/**<meta name="twitter:site" content="@nzainotwitterhandle" />  */} 
   </Helmet>
   )
 }

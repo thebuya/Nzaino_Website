@@ -78,6 +78,7 @@ const Navbar = () => {
         >
           <img src={Logo} alt="Nzaino Travel Africa Logo" />
         </Link>
+
         <Link
           to="/aboutnzaino"
           className="logo logo2"
@@ -89,9 +90,8 @@ const Navbar = () => {
         >
           <img src={Logo} alt="Nzaino Travel Africa Logo" />
         </Link>
-        <ul
-          className={`nav__links ${isNavShowing ? "show__nav" : "hide__nav"}`}
-        >
+
+        <ul className={`nav__links ${isNavShowing ? "show__nav" : "hide__nav"}`} >
           {links.map(({ name, path }, index) => {
             return (
               <li key={index}>
@@ -99,10 +99,10 @@ const Navbar = () => {
                   to={path}
                   aria-label={`Go to ${name} page`}
                   className={({ isActive }) => (isActive ? "active-nav" : "")}
-                  onClick={()=>{
+                  onClick={() => {
                     setIsNavShowing((prev) => !prev);
                     handleNavLinkClick();
-                }}
+                  }}
                 >
                   {name}
                 </NavLink>
@@ -110,20 +110,22 @@ const Navbar = () => {
             );
           })}
         </ul>
+
         <button
           className="nav-button"
           onClick={scrollToSection}
           aria-label="Book a trip with Nzaino"
-        >
-          Book a trip
-          <CiPaperplane />
+        > 
+            Book a trip <CiPaperplane />
         </button>
+
         <button
           className="nav__toggle-btn"
           onClick={() => setIsNavShowing((prev) => !prev)}
         >
           {isNavShowing ? <MdOutlineClose /> : <RxHamburgerMenu />}
         </button>
+
       </div>
     </nav>
   );

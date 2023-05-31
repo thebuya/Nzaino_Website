@@ -10,7 +10,9 @@
 
 
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,24 +22,38 @@
   list-style: none;
 
 }
-:root{
-  /*COLORS VARIABLES*/
-  --green-A01: #006400; /*DefaultState - */
-  --green-002: #F9FDF9;  /*Background - */ 
-  --green-003: #002800; /* DarkModeBG - */
 
-  --green-B01: #014101; /**/
-  --green-B02: #005300; /**/
-  --green-B03: #0D980D; /**/
-  --green-B04: #27CA27; /**/
-  --green-B05: #6BE56B; /**/
-  --green-B06: #C3FAC3; /**/
+:root {
+  /*COLORS VARIABLES*/
+  --green-A01: #006400;
+  /*DefaultState - */
+  --green-002: #F9FDF9;
+  /*Background - */
+  --green-003: #002800;
+  /* DarkModeBG - */
+
+  --green-B01: #014101;
+  /**/
+  --green-B02: #005300;
+  /**/
+  --green-B03: #0D980D;
+  /**/
+  --green-B04: #27CA27;
+  /**/
+  --green-B05: #6BE56B;
+  /**/
+  --green-B06: #C3FAC3;
+  /**/
   --green-B07: #F4F7F4;
 
-  --greengrayhue-1: #2B2F2B; /**/
-  --greengrayhue-2: #616661; /**/
-  --greengrayhue-3: #8F978F; /**/
-  --greengrayhue-4: #CCD3CC; /**/
+  --greengrayhue-1: #2B2F2B;
+  /**/
+  --greengrayhue-2: #616661;
+  /**/
+  --greengrayhue-3: #8F978F;
+  /**/
+  --greengrayhue-4: #CCD3CC;
+  /**/
 
 
 
@@ -45,9 +61,9 @@
 
   /*FONTS*/
 
-  --smallest: 11px; 
-  --smallscreen-paragraph: 13px; 
-  --mediumscreen-paragraph: 14.5px; 
+  --smallest: 11px;
+  --smallscreen-paragraph: 13px;
+  --mediumscreen-paragraph: 14.5px;
   --largescreen-paragraph: 16px;
   --extralargescreen-paragraph: 18px;
   --extraextralargescreen-paragraph: 24px;
@@ -55,9 +71,11 @@
 
 
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -65,25 +83,31 @@ body {
   background-color: var(--green-002);
   letter-spacing: 0.01rem;
 }
-a{
+
+a {
   cursor: pointer;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
   color: var(--green-B07);
   /*display: none;*/
 }
-.swiper-pagination-bullet{
+
+.swiper-pagination-bullet {
   border: 1px solid white;
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
   background: #27CA27;
   border: 1px solid white;
 }
-button{
+
+button {
   cursor: pointer;
 }
-.line{
+
+.line {
   border: 0.5px solid var(--greengrayhue-4);
   width: 100%;
   margin-top: 2rem;

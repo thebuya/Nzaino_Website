@@ -41,7 +41,7 @@
     justify-content: center;
 }
 
-.firstpart .showff .ontop .stat h4 {
+.firstpart .showff .ontop .stat h3 {
     position: relative;
     font-size: 60px;
     color: var(--greengrayhue-1);
@@ -502,7 +502,7 @@
         align-items: center;
     }
 
-    .firstpart .showff .ontop .stat h4 {
+    .firstpart .showff .ontop .stat h3 {
         font-size: 48px;
     }
 
@@ -646,12 +646,31 @@
     }
 }
 
+
+@media screen and (min-width: 601px) and (max-width: 661px) {
+
+    .secondpart .who .left .whotext,
+    .paragraphs {
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }ç
+    
+    .blogContainer .paragraphs {
+        padding-left: 0rem;
+        padding-right: 1rem;
+    }
+}
+
+
+
+
 @media screen and (max-width: 600px) {
     .firstpart .showff {
         align-items: center;
         margin-top: 6.5rem;
     }
-    .servicessection .servicegrid .serve img{
+
+    .servicessection .servicegrid .serve img {
         width: 145px;
     }
 

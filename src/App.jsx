@@ -25,6 +25,7 @@ import GorillaTrekTips from './Pages/blog/GorillaTrekTips';
 import WesternUganda from './Pages/blog/WesternUganda';
 import Romantic8Places from './Pages/blog/Romantic8Places';
 import MountainClimbTips from './Pages/blog/MountainClimbTips';
+import NzainoTerms from './Components/NzainoTerms';
 
 function App() {
   return (
@@ -38,6 +39,8 @@ function App() {
                   <Route path='eastafricatravelpackages' element={<Packages/>}/>
                   <Route path='ugandacarhire' element={<Car/>}/>
                   <Route path='ugandatravelblog' element={<Blog/>}/>
+                  
+                  <Route path='nzainotermsandconditions' element={<NzainoTerms/>}/>
 
                   {/** The Below are Blogs */}
                   <Route path='kenyan8places' element={<Kenyan8Places/>}/>

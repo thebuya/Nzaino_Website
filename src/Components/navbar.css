@@ -1,9 +1,11 @@
-nav{
+nav {
   position: fixed;
   z-index: 4;
 
   width: -webkit-fill-available;
-}.banner{
+}
+
+.banner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,47 +14,55 @@ nav{
   padding: 0.5rem 2rem;
   background-color: var(--green-003);
   color: var(--green-B06);
-  
+
 }
+
 .banner svg {
   margin: 0px 4px 0px 9px;
 }
+
 .banner a {
   color: var(--green-002);
   display: flex;
   align-items: center;
 }
+
 .banner .call,
-.banner .email{
+.banner .email {
   font-size: 13px;
   align-items: center;
   display: flex;
   justify-content: space-evenly;
 }
-.logo img{
+
+.logo img {
   width: 80px;
   margin-left: 2rem;
   cursor: pointer;
 }
-.logo{
+
+.logo {
   display: none;
 }
-.logo2{
+
+.logo2 {
   display: block;
 }
-.container{
+
+.container {
   display: flex;
   flex-direction: row;
   position: relative;
   justify-content: space-between;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
- 
+
 }
-.nav__container{
+
+.nav__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- /* padding: 0.5rem 0;*/
+  /* padding: 0.5rem 0;*/
   position: relative;
   color: var(--green-003);
   align-items: center;
@@ -62,39 +72,104 @@ nav{
   box-shadow: 0px 0px 4px #6B6D6B;
   z-index: 3;
 }
-.nav-button{
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: var(--green-B06);
+  color: var(--green-003);
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/**/
+.nav-button {
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-width: 200px;
-padding: 10px 18px;
-color: var(--green-B07);
-font-size: 15px;
-height: 44px;
-margin-right: 2rem;
-cursor: pointer;
-background: var(--green-B03);
-box-shadow: 0px 1px 30px 1px rgba(194, 232, 251, 0.28);
-border-radius: 3px;
-transition: all ease-in-out 500ms;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 18px;
+  color: var(--green-B07);
+  font-size: 15px;
+  height: 44px;
+  margin-right: 2rem;
+  cursor: pointer;
+  background: var(--green-B03);
+  box-shadow: 0px 1px 30px 1px rgba(194, 232, 251, 0.28);
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
 
 }
-.nav-button:hover{
+
+.nav-button:hover {
   background: var(--green-B04);
 }
-.nav-button:active{
+
+.nav-button:active {
   box-shadow: inset 0px 1px 30px 1px rgba(0, 40, 0, 0.71);
 }
-.nav-button svg{
+
+.nav-button svg {
   margin-left: 6px;
 }
-.nav__links{
+
+.nav__links {
   display: flex;
   flex-direction: row;
 }
-.nav__links li a{
-  padding: 0rem 1.2rem ;
+
+.nav__links li a {
+  padding: 0rem 1.2rem;
   width: max-content;
   display: flex;
   cursor: pointer;
@@ -102,7 +177,8 @@ transition: all ease-in-out 500ms;
   color: var(--green-003);
   transition: all ease-in-out 500ms;
 }
-.nav__links li a:hover{
+
+.nav__links li a:hover {
   color: var(--green-B03);
 }
 
@@ -110,13 +186,14 @@ transition: all ease-in-out 500ms;
 
 
 
-.nav__links .active-nav{
+.nav__links .active-nav {
   position: relative;
-  font-weight:500;
+  font-weight: 500;
   color: var(--green-B03);
 }
-.active-nav::after{
- /* content: '';*/
+
+.active-nav::after {
+  /* content: '';*/
   display: block;
   width: 1.2rem;
   height: 1.2rem;
@@ -124,11 +201,12 @@ transition: all ease-in-out 500ms;
   background: red;
   left: calc(50% - 0.6rem);
   transform: rotate(45deg);
-  margin-top: 2rem ;
+  margin-top: 2rem;
 }
-.nav__toggle-btn{
+
+.nav__toggle-btn {
   display: none;
-  
+
 }
 
 
@@ -140,84 +218,95 @@ transition: all ease-in-out 500ms;
 
 
 @media screen and (max-width: 900px) {
-  .logo{
+  .logo {
     display: block;
   }
-.logo2{
-  display: none;
+
+  .logo2 {
+    display: none;
+  }
+
+
+
+
+  .hide__nav {
+    display: none;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .banner p {
+    display: none;
+  }
+
+  .banner {
+    padding: 0.5rem 5rem;
+  }
+
+
+
+
+  .nav__toggle-btn {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+
+  .nav__toggle-btn svg {
+    color: var(--green-A01);
+  }
+
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    box-shadow: -1px 2px 4px 0px #35343454;
+    /* box-shadow: -2rem 2rem 5rem rgba(0,0,0,0.4); */
+  }
+
+  /* .active-nav, .active-nav::after{
+      display: none;
+  }*/
+  .nav__links li {
+    height: 3.5rem;
+    width: 100%;
+    padding-top: 1rem;
+    cursor: pointer;
+
+  }
+
+  .nav__container {
+    background: var(--green-B07);
+  }
+
+  .show__nav {
+    display: flex;
+    background: var(--green-002);
+    border-radius: 0px 0 0px 3px;
+  }
 }
 
 
 
 
-  .hide__nav{
-      display: none;
-    }
-     .nav-button{
-      display: none;
-     }
-     .banner p{
-      display: none;
-     }
-     .banner{
-      padding: 0.5rem 5rem;
-     }
-
- 
-    
-  
-  .nav__toggle-btn{
-      display: inline-block;
-      background: transparent;
-      font-size: 1.8rem;
-      cursor: pointer;
-      margin-right: 2rem;
-  }
-  .nav__toggle-btn svg{
-      color: var(--green-A01);
-  }
-  .nav__links{
-      position: absolute;
-      top: 100%;
-      right: 0;
-      flex-direction: column;
-      box-shadow: -1px 2px 4px 0px #35343454;
-     /* box-shadow: -2rem 2rem 5rem rgba(0,0,0,0.4); */
-  }
- /* .active-nav, .active-nav::after{
-      display: none;
-  }*/
-  .nav__links li{
-    height: 3.5rem;
-    width: 100%;
-    padding-top: 1rem;
-    cursor: pointer;
-   
-  }
-  .nav__container{
-    background: var(--green-B07);
-  }
-  .show__nav{
-    display: flex;
-    background: var(--green-002);
-    border-radius: 0px 0 0px 3px;
-    }
-  }
-
-
-
-
-  @media screen and (max-width: 550px) {
-    .banner {
-      padding: 0.5rem 0.55rem;
+@media screen and (max-width: 550px) {
+  .banner {
+    padding: 0.5rem 0.55rem;
 
   }
-  .banner a{
+
+  .banner a {
     font-size: 11px;
   }
+}
+
+@media screen and (max-width: 550px) {
+  .banner svg {
+    margin: 0.125rem;
   }
-  @media screen and (max-width: 550px) {
-    .banner svg {
-      margin: 0.125rem;
-  }
-  }
+}

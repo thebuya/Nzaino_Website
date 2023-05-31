@@ -242,7 +242,7 @@ export const reviews= [
         " the guides were knowledgeable and friendly, and the accommodation was comfortable and clean. "+
         "We saw so many beautiful places and animals, and learned a lot about the culture and history of Kisoro. "+
         "<span class='highlight'>We highly recommend Nzaino to anyone looking for a  </span> "+
-        "<a href='/eastafricatravelpackages' aria-label='Find affordable travel packages around East Africa'>memorable and affordable travel experience in East Africa</a>.",
+        "<Link to='/eastafricatravelpackages' aria-label='Find affordable travel packages around East Africa'>memorable and affordable travel experience in East Africa</Link>.",
         client: "Kabura Harriet",
     },
     

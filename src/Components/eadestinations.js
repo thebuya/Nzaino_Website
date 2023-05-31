@@ -388,6 +388,7 @@ export const rwandaPlaces = [
 export const packages = [
     {
         id: "1",
+        country: "Kenya",
         image: serengeti5,
         images : [
             serengeti5,
@@ -400,7 +401,7 @@ export const packages = [
         caption: "Serengeti Park, Kenya",
         title: "Witness the Great Migration",
         activities: "Hot Air Balloon Safaris / Game Drives / Masai Village Visit / Safari Tours",
-        price: "$1200",
+        price: "$750",
         people: "per person",
         duration: "3 days | 4 nights",
         highlights: [
@@ -417,6 +418,7 @@ export const packages = [
 
     {
         id: "2",
+        country: "Uganda",
         image: Rwenzori,
         images : [
             Rwenzori,
@@ -429,7 +431,7 @@ export const packages = [
         caption: "Mt Rwenzori, Uganda",
         title: "Mountains of the Moon 🏔",
         activities: "Mountain Climbing / Hiking / Bird watching / Cultural encounters / Scenic photography",
-        price: "$600",
+        price: "$300",
         people: "per person",
         duration: "2 days | 3 nights",
         highlights: [
@@ -443,6 +445,7 @@ export const packages = [
     },
     {
         id: "3",
+        country: "Tanzania",
         image: zanzibar1,
         images : [
             zanzibar1,
@@ -470,6 +473,7 @@ export const packages = [
 
     {
         id: "4",
+        country: "Tanzania",
         image: kilimanjaro3,
         images : [
             kilimanjaro1,
@@ -496,6 +500,7 @@ export const packages = [
     },
     {
         id: "5",
+        country: "Kenya",
         image: hellsgate2,
         images : [
             hellsgate2,
@@ -523,6 +528,7 @@ export const packages = [
     },
     {
         id: "6",
+        country: "Uganda",
         image: Gorillatrekking,
         images : [
             Gorillatrekking,
@@ -553,6 +559,7 @@ export const packages = [
 
     {
         id: "7",
+        country: "Rwanda",
         image: vnp,
         images : [
             vnp,

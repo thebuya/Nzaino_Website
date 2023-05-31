@@ -35,9 +35,9 @@ const Car = () => {
                         /> 
                         <p className="paragraphs carintro">
                          Perhaps you are looking for a car to hire for your own travel🚗,
-                          at Nzaino we offer a catalogue of cars ranging from
+                         at Nzaino we offer a catalogue of cars ranging from 
                          8 seaters to a more cozy 4 seater. You have the option of 
-                         having a designated driver or taking yourself on an adevnture.  
+                         having a designated driver or taking yourself on an adventure.  
                          <span className="highlight"> Click Book Car below & fill in the form</span>,  
                         or contact us directly for immediate response.
                         </p>
@@ -46,11 +46,15 @@ const Car = () => {
       <div className="carCards">
         {availablecars.map((car) => (
                <CarCard
-                key={car.id}
-                {...car}
+               key={car.id}
+               {...car}
                />
         ))}
-         <img src={BackgroundCar} className="CarBack" alt="East African Road." />
+        <img
+            src={BackgroundCar}
+            className="BackBlog packageback serveback " //CarBack
+            alt="East African Road."
+          />
       </div>
 
       

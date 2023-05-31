@@ -1,99 +1,122 @@
-.linker, .quote a, .answer a{
-    color: var(--green-B03);
-    text-decoration: underline;
-  
-  }
-.linker:hover, .quote a:hover, .answer a:hover{
-    color: var(--green-B04);
-    text-decoration: none;
-  }
-.linker:focus, .quote a:focus, .answer a:focus{
-    color: var(--green-B04);
-    text-decoration: none;
-  }
-.linker:active, .quote a:active, .answer a:active{
-    color: var(--green-A01);
-  }
-  .questionsContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-    margin-left: auto;
-    margin-right: auto;
-   
-    
+.linker,
+.quote a,
+.answer a {
+  color: var(--green-B03);
+  text-decoration: underline;
+
 }
-.questionsmapped{
-    display: flex;
-    flex-direction: column;
+
+.linker:hover,
+.quote a:hover,
+.answer a:hover {
+  color: var(--green-B04);
+  text-decoration: none;
+}
+
+.linker:focus,
+.quote a:focus,
+.answer a:focus {
+  color: var(--green-B04);
+  text-decoration: none;
+}
+
+.linker:active,
+.quote a:active,
+.answer a:active {
+  color: var(--green-A01);
+}
+
+.questionsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.questionsmapped {
+  display: flex;
+  flex-direction: column;
 }
 
 
-.packagesContainer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: auto; /* Updated */
-  margin-right: auto; /* Updated */
+.packagesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: auto;
+  /* Updated */
+  margin-right: auto;
+  /* Updated */
   margin-bottom: 0.5rem;
-  justify-content: center; /* Added */
-  align-items: center; /* Added */
+  justify-content: center;
+  /* Added */
+  align-items: center;
+  /* Added */
 }
 
-.Packages .mainFade{
-    top: 1.5rem;
+.Packages .mainFade {
+  top: 1.5rem;
 }
 
-.Packages{
-    overflow-x: clip;
+.Packages {
+  overflow-x: clip;
 }
 
 
 
 
-.Packages .packageback{
-    width: 100VW;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.75;
+.Packages .packageback {
+  width: 100VW;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.75;
 }
-.packagesPagination{
-    display: flex;
-    justify-content: center;
-    margin-top: 1.25rem;
-    margin-bottom: 2rem;
-  }
-  .upper{
-    margin-top: 6rem;
-    margin-bottom: 0;
+
+.packagesPagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.upper {
+  margin-top: 6rem;
+  margin-bottom: 0;
 
 }
-  
-  .packagesPagination button {
-    padding: 8px 16px;
-    margin: 0 4px;
-    background-color: transparent;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  .packagesPagination button:hover{
-    background-color: #01410122;
-  }
-  .packagesPagination button.active {
-    background-color: var(--green-B01);
-    color: #fff;
-  }
- 
-  
- .Packages .paragraphs {
-    margin-top: 0;
-} 
-  
-  
-  
+.pricepagination{
+margin-top: 1rem;
+}
+.packagesPagination button {
+  padding: 8px 16px;
+  margin: 0 4px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.packagesPagination button:hover {
+  background-color: #01410122;
+}
+
+.packagesPagination button.active {
+  background-color: var(--green-B01);
+  color: #fff;
+}
+
+
+.Packages .paragraphs {
+  margin-top: 0;
+}
+
+
+
 
 
 
@@ -101,41 +124,45 @@
 
 
 @media screen and (max-width: 1000px) {
-    .questionsContainer{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 2rem;
-    }
-    .packagesContainer{
+  .questionsContainer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .packagesContainer {
     grid-template-columns: repeat(2, 1fr);
-}
+  }
 
 }
 
 
 
 @media screen and (max-width: 630px) {
-    .packagesContainer{
+  .packagesContainer {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 3rem;
-}
-.Packages{
+  }
+
+  .Packages {
     overflow-x: clip;
-}
-.Packages .mainFade{
+  }
+
+  .Packages .mainFade {
     top: 0.5rem;
     margin-bottom: 1rem;
-}
+  }
 
 
 }
 
-@media screen and (max-width: 450px){
-    .Packages .mainFade {
-        top: 2.5rem;
-    }
-    .upper button{
-        padding: 6px 8px;
-        margin: 0 4px;
-    }
-    }
+@media screen and (max-width: 450px) {
+  .Packages .mainFade {
+    top: 2.5rem;
+  }
+
+  .upper button {
+    padding: 6px 8px;
+    margin: 0 4px;
+  }
+}

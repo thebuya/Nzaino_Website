@@ -1,5 +1,6 @@
 .carCards{
     max-width: 1500px;
+    width: 100%;
     justify-items: center;
     overflow: hidden;
     margin: auto;
@@ -29,6 +30,16 @@ transition: all ease-in-out 500ms;
 
 
 
+
+.carhomeslide .carCard{
+    overflow: hidden;
+}
+.carhomeslide .carCard .pricingInfo{
+    text-align: initial;
+}
+.carhomeslide .mySwiper{
+    padding-bottom: 4rem;
+}
 
 
 .carShow{
@@ -309,9 +320,20 @@ transition: all ease-in-out 500ms;
 @media screen and (max-width: 900px){
     .carCards{
         grid-template-columns: repeat(1, 1fr);
+        overflow-x: hiddennp;
     }
     .carShow .infographs div{
         margin-right: 0.25rem;
+    }
+    .carhomeslide .blogs-on-homepage .swiper-wrapper {
+        padding-bottom: 0rem;
+    }
+    .carCards .serveback{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    .carCards .CarBack{
+        width: 100%;
     }
 
 .carCard .bookCar{
