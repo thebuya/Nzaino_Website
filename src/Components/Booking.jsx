@@ -39,8 +39,6 @@ const [values, setValues] = useState({
     //Just For Just
   console.log("re-rendered")
 
-
-
   const handleSubmit = (e)=> {
     e.preventDefault();
 
@@ -69,10 +67,6 @@ const [values, setValues] = useState({
 
   };
 
-
-
-
-
   //Captures What Someone is Typing
   const onChange = (e) => {
     const { name, value } = e.target;
@@ -83,9 +77,6 @@ const [values, setValues] = useState({
     }));
   };
   console.log(values);
-
-
-
 
 
   //So error appears only when needed, <---

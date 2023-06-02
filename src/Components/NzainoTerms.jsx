@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./nzainoterms.css";
 import ogimage from "../Images/seoimages/og-blog.jpg";
 import twitterimage from "../Images/seoimages/twitter-blog.jpg";
@@ -46,6 +47,13 @@ const NzainoTerms = () => {
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleLinkClick = () => {
+    scrollToTop();
+  };
   return (
     <div className="TermsAndConditions">
       <SEO {...seoProps} />
@@ -143,8 +151,27 @@ const NzainoTerms = () => {
               <br />
               <br />
               1.1 Nzaino offers a range of services to help you explore and
-              discover the beauty of Africa, including guided tours, car
-              rentals, and travel packages. <br />
+              discover the beauty of Africa, including guided tours, <Link
+            to="/ugandacarhire"
+            className="linker"
+            aria-label="Find a car to hire for your east african travels."
+            onClick={() => {
+              handleLinkClick();
+            }}
+          >
+            {" "}
+            car rentals
+          </Link>, and <Link
+            to="/eastafricatravelpackages"
+            className="linker"
+            aria-label="Find an affordable travel package for a tour around East Africa."
+            onClick={() => {
+              handleLinkClick();
+            }}
+          >
+            {" "}
+            travel packages
+          </Link>. <br />
               1.2 Guided Tours: <br />
               Our experienced and knowledgeable guides will accompany you on
               your journey, providing you with valuable insights and ensuring
@@ -156,7 +183,16 @@ const NzainoTerms = () => {
               are subject to availability and certain terms and conditions.{" "}
               <br />
               1.4 Travel Packages: <br />
-              Nzaino has curated a selection of travel packages that cater to
+              Nzaino has curated a selection of <Link
+            to="/eastafricatravelpackages"
+            className="linker"
+            aria-label="Find an affordable travel package for a tour around East Africa."
+            onClick={() => {
+              handleLinkClick();
+            }}
+          >
+            travel packages
+          </Link>. that cater to
               different preferences and budgets. We aim to provide you with
               comfort, security, and an unforgettable experience. <br  id="TCinsurance" />
               <br />

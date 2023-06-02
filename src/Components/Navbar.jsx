@@ -98,6 +98,7 @@ const Navbar = () => {
                 <NavLink
                   to={path}
                   aria-label={`Go to ${name} page`}
+                  id={name}
                   className={({ isActive }) => (isActive ? "active-nav" : "")}
                   onClick={() => {
                     setIsNavShowing((prev) => !prev);

@@ -11,7 +11,7 @@ import SEO from "../../Components/SE0";
 
 import FadingHeader from "../../Components/FadingHeader";
 import Immovableitems from "./Immovableitems";
-
+  
 const Kenyan8Places = () => {
   const description = "The Coast of Mombasa"; // Replace with your description
   const seoProps = {
@@ -23,6 +23,9 @@ const Kenyan8Places = () => {
     keywords:
       "Travellers Blog, Travel blog, Popular ugandan travel blog, Travel Services",
   };
+
+ 
+
 
   return (
     <div className="blogContainer">

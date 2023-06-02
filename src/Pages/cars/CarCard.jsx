@@ -3,6 +3,8 @@ import { MdOutlineClose } from "react-icons/md";
 import { inputs } from "../../Components/cars";
 import Carinput from "./Carinput";
 
+import emailjs from 'emailjs-com';
+
 import { BsPersonCircle, BsFillFuelPumpFill } from "react-icons/bs";
 import { TbSettingsAutomation, TbWindmill } from "react-icons/tb";
 import { GiPathDistance } from "react-icons/gi";
@@ -19,10 +21,6 @@ function CarCard(props) {
     withdriver: false, // Updated to include the driver property
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   const onChange = (e) => {
     const { name, value, type } = e.target;
     const newValue = type === "checkbox" ? !values[name] : value;
@@ -31,6 +29,28 @@ function CarCard(props) {
   };
 
   console.log(values);
+
+
+  const sendEmail = () => {
+  
+    emailjs.send('service_ue057nk', 'template_gdb282l', values, 'OjV8v_LlrwE82S4dU')
+      .then((response) => {
+        console.log('Email sent successfully!', response.text);
+        // Perform any additional actions after successful email submission
+        alert('Successful Booking')
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+        // Handle any errors that occur during email submission
+        alert('error submitting the form')
+      });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendEmail();
+  };
+
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -113,7 +133,7 @@ function CarCard(props) {
             />
           ))}
 
-          <button>Complete Booking</button>
+          <button type="submit">Complete Booking</button>
         </form>
       )}
     </div>
