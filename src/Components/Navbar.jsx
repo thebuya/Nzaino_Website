@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav id="navbar">
       <div className="banner">
         <div className="call">
           <p> Call or Whatsapp us directly at:</p>

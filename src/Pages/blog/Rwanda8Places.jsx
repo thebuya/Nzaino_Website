@@ -1,176 +1,175 @@
-import React from 'react'
-import headerimage from '../../Images/packagesHeader.jpg';
-import nai from  '../../Images/mombasa4.jpg'
+import React from "react";
+import headerimage from "../../Images/packagesHeader.jpg";
+import vnp from "../../Images/vnp.jpg";
+import nyungwe from "../../Images/Nyungwe5.jpg";
+import aka from "../../Images/akagera3.jpg";
 
+import FadingHeader from "../../Components/FadingHeader";
+import Immovableitems from "./Immovableitems";
 
-
-import FadingHeader from '../../Components/FadingHeader';
-import Immovableitems from './Immovableitems';
-
-
-import ogimage from '../../Images/seoimages/og-blog.jpg';
-import twitterimage from '../../Images/seoimages/twitter-blog.jpg';
-import SEO from '../../Components/SE0';
-
-
+import ogimage from "../../Images/seoimages/og-blog.jpg";
+import twitterimage from "../../Images/seoimages/twitter-blog.jpg";
+import SEO from "../../Components/SE0";
 
 const Rwanda8Places = () => {
   const seoProps = {
-    title: " 8 Places you must visit While in Rwanda | Nzaino Travel Africa Tips",
-    seodescription: "Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.",
+    title:
+      " 8 Places you must visit While in Rwanda | Nzaino Travel Africa Tips",
+    seodescription:
+      "Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.",
     ogimage: ogimage,
     twitterimage: twitterimage,
-    keywords: 'Travellers Blog, Travel blog, Popular ugandan travel blog, Travel Services'
+    keywords:
+      "Travellers Blog, Rwanda, Amazing landscapes in east afrcia, Travel blog, Popular ugandan travel blog, Travel Services",
   };
-   
-    const description = 'Lodges In Volcanoes National Park'; // Replace with your description
-    return (
-      <div className='blogContainer'>
-           <SEO {...seoProps}/>
-  
-        <div className="moveableitems">
-            <FadingHeader image={headerimage} description={description}/>
-  
-            <div className='textAndTitle'>
-                  <h1 className="blogtitle">8 Places you must visit While in Rwanda </h1>
-  
-                  <div className="textblog">
-                        <p>
-                        If you're looking for a vacation destination that has it all
-                        , look no further than Kenya.Kenya is home to
-                        some of the most diverse and stunning landscapes, wildlife,
-                          and cultures in the world. Whether you want to explore the 
-                          savannah, the mountains, the coast, or the cities, Kenya has
-                          something for everyone. <br /> Here are eight regions you must visit
-                            in Kenya to experience its beauty and richness.
-                            <br />
-                            <br />
-                            <span className="boldblog">1. Nairobi: </span> 
-                            <br />
-                            The capital and largest city of Kenya, <span className="highlight">
-                            Nairobi is a vibrant and cosmopolitan hub that offers a taste of modern Africa.</span> You 
-                            can visit museums, art galleries, markets, restaurants, 
-                              and nightlife venues, or take a short drive to the Nairobi 
-                              National Park, where you can see lions, giraffes, zebras, and more.
-                              <br />
-                              
-                              </p>
-                              <img src={nai} alt="Nairobi East Africa Travel" srcset="" />
-                        <p>
-                          <br />
-                          <span className="boldblog">2. Mombasa: </span> 
-                          <br />
-                            The capital and largest city of Kenya, Nairobi is a
-                            vibrant and cosmopolitan hub that offers a taste of modern Africa.
-                              You can visit museums, art galleries, markets, restaurants, 
-                              and nightlife venues, or take a short drive to the Nairobi 
-                              National Park, where you can see lions, giraffes, zebras, and more.
-                              <br />
-                              
-                        </p>
 
+  const description = "Lodges In Volcanoes National Park"; // Replace with your description
+  return (
+    <div className="blogContainer">
+      <SEO {...seoProps} />
 
+      <div className="moveableitems">
+        <FadingHeader image={headerimage} description={description} />
 
-                        <p> 
-                            <br />
-                            <span className="boldblog">3. Masai Mara: </span> 
-                            <br />
-                                If you want to witness the iconic wildlife of Kenya, Maasai
-                                Mara is a must-visit region. This world-renowned game reserve is famous for
-                                  its annual wildebeest migration, where millions of animals cross the Mara River.
-                                  Embark on a thrilling safari adventure to spot lions, elephants, cheetahs, zebras,
-                                    and other majestic wildlife species roaming freely in their natural habitat.
-                            <br />
-                        </p>
+        <div className="textAndTitle">
+          <h1 className="blogtitle">
+            8 Places you must visit While in Rwanda{" "}
+          </h1>
 
+          <div className="textblog">
+            <p>
+              Rwanda, known as the "Land of a Thousand Hills," is a country that
+              boasts breathtaking landscapes, a vibrant culture, and a rich
+              history. From the lush rainforests to the vibrant capital city,
+              Rwanda offers a wide range of attractions for every traveler.
+              Whether you're an adventure enthusiast, a wildlife lover, or a
+              history buff, here are eight places you must visit while in Rwanda
+              to experience the beauty and diversity of this remarkable country.
+              <br />
+              <br />
+              <span className="boldblog">1. Volcanoes National Park: </span>
+              <br />
+              Prepare to be mesmerized by the captivating beauty of Volcanoes
+              National Park. This park is home to the endangered mountain
+              gorillas, offering a once-in-a-lifetime opportunity to embark on a
+              gorilla trekking adventure. Hike through dense forests, witness
+              these magnificent creatures in their natural habitat, and be awed
+              by the deep connection between humans and gorillas.
+              <br />
+            </p>
+            <img src={vnp} alt="Volcanoes National Park" />
+            <p>
+              <br />
+              <span className="boldblog">2. Nyungwe Forest National Park:</span>
+              <br />
+              Immerse yourself in the lush greenery of Nyungwe Forest National
+              Park, a haven of biodiversity. Trek through ancient rainforests,
+              encounter chimpanzees swinging through the treetops, and listen to
+              the symphony of birdsong. Don't miss the iconic Canopy Walkway, a
+              thrilling experience that offers panoramic views of the forest
+              canopy.
+              <br />
+            </p>
+            <img src={nyungwe} alt="Nyungwe Forest National Park, 10000 years old" />
+            <p>
+              <br />
+              <span className="boldblog">3. Kigali: </span>
+              <br />
+              Explore the vibrant capital city of Kigali, where history and
+              modernity blend seamlessly. Visit the Kigali Genocide Memorial, a
+              poignant tribute to the victims of the 1994 genocide. Discover the
+              city's bustling markets, art galleries, and lively nightlife.
+              Experience the warmth of Rwandan hospitality and savor the
+              delicious local cuisine.
+              <br />
+            </p>
 
-                        <p> 
-                            <br />
-                            <span className="boldblog">4. Amboseli National Park: </span>  
-                            <br />
-                            Nestled at the foothills of Mount Kilimanjaro, Amboseli
-                            National Park offers breathtaking views of Africa's highest peak
-                            . It is known for its large herds of elephants and incredible opportunities
-                              for wildlife photography. Explore the vast savannahs, encounter diverse bird
-                              species, and witness the unique interactions between wildlife and the majestic
-                                backdrop of Mount Kilimanjaro.
-                            <br />
-                         </p>
+            <p>
+              <br />
+              <span className="boldblog">4. Lake Kivu: </span>
+              <br />
+              Escape to the tranquil shores of Lake Kivu, a serene oasis nestled
+              between rolling hills. Relax on sandy beaches, take boat cruises
+              on the shimmering waters, and enjoy water sports such as kayaking
+              and paddleboarding. Indulge in fresh fish from the lake and
+              witness unforgettable sunsets over the horizon.
+              <br />
+            </p>
 
+            <p>
+              <br />
+              <span className="boldblog">5. Akagera National Park:</span>
+              <br />
+              Embark on a safari adventure in Akagera National Park, where
+              wildlife roams freely across vast savannahs and shimmering lakes.
+              Spot majestic elephants, graceful giraffes, and elusive leopards
+              as you explore the park on game drives and boat safaris. Akagera
+              offers a unique opportunity to witness the revival of Rwanda's
+              wildlife conservation efforts.
+              <br />
+            </p>
+            <img src={aka} alt="Aakagera National Park" />
+            <p>
+              <br />
+              <span className="boldblog">6. Musanze Caves: </span>
+              <br />
+              Discover the hidden wonders of Musanze Caves, a network of ancient
+              caves formed by volcanic activity. Take a guided tour deep into
+              the dark chambers, marvel at the intricate rock formations, and
+              learn about the historical and cultural significance of the caves.
+              This unique experience will take you on a journey through Rwanda's
+              geological past.
+              <br />
+            </p>
 
-                         <p> 
-                            <br />
-                            <span className="boldblog">5. Lamu Island: </span> 
-                            <br />
-                            For a tranquil and culturally rich experience, head to 
-                            Lamu Island. This UNESCO World Heritage Site is a hidden 
-                            gem, known for its well-preserved Swahili architecture,
-                            narrow streets, and traditional festivals. Explore the ancient Lamu
-                              Town, relax on pristine beaches, and immerse yourself in the island's 
-                              laid-back atmosphere.
-                              <br />
-                          </p>
+            <p>
+              <br />
+              <span className="boldblog">7. Inema Arts Center:</span>
+              <br />
+              Immerse yourself in Rwanda's vibrant art scene at the Inema Arts
+              Center in Kigali. This creative hub showcases contemporary African
+              art, featuring paintings, sculptures, and installations by local
+              artists. Explore the gallery, attend art workshops, and interact
+              with the talented artists themselves. The Inema Arts Center is a
+              testament to Rwanda's thriving artistic expression.
+              <br />
+            </p>
 
-                          <p> 
-                              <br />
-                              <span className="boldblog">6. Lake Nakuru: </span>
-                              <br />
-                              Located in the Great Rift Valley, Lake Nakuru National 
-                              Park is a paradise for bird lovers. The lake is famous for
-                              its vast flocks of flamingos, creating a mesmerizing pink
-                                spectacle. Besides the vibrant birdlife, you can also spot rhinos,
-                                zebras, giraffes, and other wildlife in the park. Take a boat ride or 
-                                enjoy a hike around the lake for a memorable experience.
-                                <br />
-                          </p>
+            <p>
+              <br />
+              <span className="boldblog">8. Ruhengeri: </span>
+              <br />
+              Experience the charm of Ruhengeri, a picturesque town nestled at
+              the foothills of the Virunga Mountains. This gateway to Volcanoes
+              National Park offers stunning views of the volcanoes, vibrant
+              markets, and cultural encounters. Engage with the local
+              communities, visit traditional villages, and learn about the
+              traditions and rituals of the Rwandan people.
+              <br />
+            </p>
 
-                         <p> 
-                          <br />
-                            <span className="boldblog">7. Tsavo National Parks: </span>
-                            <br />
-                            Tsavo East and Tsavo West National Parks together 
-                            form one of the largest wildlife sanctuaries in the world.
-                            These parks offer diverse landscapes, including open plains, 
-                            volcanic hills, and dense forests. Explore the wildlife-rich areas,
-                              spot elephants, lions, buffaloes, and leopards, and marvel at the stunning 
-                              views of the Chyulu Hills.
-                          <br />
-                         </p>
-
-
-                         <p> 
-                            <br />
-                            <span className="boldblog">8. Samburu National Reserve: </span>
-                            <br />
-                              Located in northern Kenya, Samburu National Reserve 
-                              showcases a unique and arid landscape, home to a variety of
-                              wildlife species. Experience the beauty of the Ewaso Ng'iro River,
-                              spot rare animals like the reticulated giraffe and Grevy's zebra, and
-                              learn about the rich culture of the Samburu people who inhabit the region.
-                            <br />
-                           </p>
-
-                           <hr className='line' />
-                         <p> 
-                            <br />
-                            By visiting these eight regions in Kenya, you'll have the
-                            opportunity to immerse yourself in the country's diverse landscapes,
-                              encounter incredible wildlife, and embrace the vibrant cultures that make
-                              Kenya a truly unforgettable destination for travelers.
-                            <br />
-                         </p>
-                         <br />
-                         <br />
-                       
-                  </div>
-            </div>
+            <hr className="line" />
+            <p>
+              <br />
+              Rwanda is a country of remarkable beauty and rich cultural
+              heritage, offering a diverse range of experiences for every
+              traveler. Whether it's gorilla trekking in Volcanoes National
+              Park, exploring the vibrant city of Kigali, or immersing yourself
+              in the tranquility of Lake Kivu, Rwanda has something for
+              everyone. Prepare to be captivated by the natural wonders, warm
+              hospitality, and fascinating history of this remarkable
+              destination.
+              <br />
+            </p>
+            <br />
+            <br />
+          </div>
         </div>
-
-
-        <Immovableitems/>
-  
       </div>
-    )
-  }
 
-export default Rwanda8Places
+      <Immovableitems />
+    </div>
+  );
+};
+
+export default Rwanda8Places;

@@ -33,6 +33,7 @@ const Destinations = () => {
   // }, []);
   const seoProps = {
     title: "Nzaino | East African Destinations",
+    url:"https://www.nzainotravelafrica.com/eastafricatraveldestinations",
     seodescription:
       "Embark on a thrilling adventure with Nzaino Travel Africa Limited. Browse our exciting tours and experience the beauty of East Africa. Book your tour now and create unforgettable memories!",
     ogimage: ogimage,

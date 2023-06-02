@@ -29,6 +29,7 @@ const About = () => {
   const seoProps = {
     title:
       "About Us | Nzaino - Trusted Tours and Travel Agency in East Africa.",
+      url:"https://www.nzainotravelafrica.com/aboutnzaino" ,
     seodescription:
       "Learn About Nzaino Travels- Your Trusted guide to exploring East Africa. We offer a wide range of comprehensive services to enhance your travel experience. From reliable car rentals and expert trip planning to knowledgeable tour guides, seamless accommodation booking, and efficient document processing assistance, we have got you covered. Explore the beauty and diversity of East Africa with Nzaino as your trusted companion.",
     ogimage: ogimage,

@@ -76,6 +76,7 @@ const Packages = () => {
   }, [selectedFilter]);
   const seoProps = {
     title: "Affordable East African Tour Packages | Nzaino",
+    url:"https://www.nzainotravelafrica.com/eastafricatravelpackages",
     seodescription:
       "Nzaino provides a catalogue of budget-friendly travel packages from some of the best destinations and accommodations East Africa has to offer. Get in touch with us to start your East African adventure. Contact our customer service or use the provided email address for bookings and inquiries.",
     ogimage: ogimage,
@@ -135,7 +136,7 @@ const Packages = () => {
           className={selectedCountry === null ? "active" : ""}
           onClick={() => setSelectedCountry(null)}
         >
-          All Countries
+          All
         </button>
         <button
           className={selectedCountry === "Uganda" ? "active" : ""}
@@ -163,12 +164,13 @@ const Packages = () => {
         </button>
       </div>
       <div className="packagesPagination upper pricepagination">
-        <button
+        {/*<button
           className={selectedFilter === null ? "active" : ""}
           onClick={() => setSelectedFilter(null)}
         >
           All
-        </button>
+      </button>*/}
+
         <button
           className={selectedFilter === 300 ? "active" : ""}
           onClick={() => setSelectedFilter(300)}

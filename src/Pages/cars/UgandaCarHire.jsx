@@ -14,6 +14,7 @@ import BackgroundCar from '../../Images/carback.jpg';
 const Car = () => {
   const seoProps = {
     title: "Car Hiring | Nzaino Travel",
+    url:"https://www.nzainotravelafrica.com/ugandacarhire",
     seodescription: "Are you need of a car for a few days, or even weeks?, Contact Nzaino Travel Africa Limited today for all your travel needs. Our friendly team is ready to assist you with trip bookings, inquiries, and more. Get in touch now!",
     ogimage: ogimage,
     twitterimage: twitterimage,

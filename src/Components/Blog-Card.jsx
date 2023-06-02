@@ -9,6 +9,14 @@ function BlogCard(props) {
     section.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleLinkClick = () => {
+    scrollToTop();
+  };
+
   return (
     <div className='bloghighlights'>
         <div className="bloghighlight-card" key={props.id}>
@@ -25,7 +33,11 @@ function BlogCard(props) {
 
             <div className="call-to-actions">
              
-              <Link to={props.path} aria-label={`Read ${props.heading}`}>
+              <Link to={props.path} 
+              onClick={() => {
+                handleLinkClick();
+              }} 
+              aria-label={`Read ${props.heading}`}>
                  <button className="readblog">Read Blog</button>
               </Link>
               <button className="booktrip" onClick={scrollToSection}>Book Trip <TiArrowRight/> </button>

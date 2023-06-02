@@ -52,6 +52,7 @@ const Blog = () => {
   };
   const seoProps = {
     title: "Nzaino Travellers Blog | East African Tours and Travel Tips",
+    url:"https://www.nzainotravelafrica.com/ugandatravelblog" ,
     seodescription:
       "Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.",
     ogimage: ogimage,

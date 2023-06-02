@@ -21,6 +21,7 @@ import HomeCarSlide from "../../Components/HomeCarSlide";
 const Home = () => {
   const seoProps = {
     title: "Nzaino Travel Africa Limited - Home",
+    url:"https://www.nzainotravelafrica.com/",
     seodescription:
       "Welcome to Nzaino Travel Africa Limited, your guide to discovering the wonders of East Africa. We offer trips, and car hires along a wide range of services for an unforgettable African adventure.",
     ogimage: ogimage,

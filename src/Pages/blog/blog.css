@@ -24,7 +24,7 @@
     width: 80%;
 }
 
-.blogContainer .textAndTitle .boldblog {
+.blogContainer .textAndTitle .boldblog , .boldblog{
     font-weight: bolder;
 }
 

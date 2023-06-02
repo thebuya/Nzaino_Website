@@ -1,177 +1,195 @@
-import React  from 'react'
+import React from "react";
 
-import headerimage from '../../Images/tanzaniahead.jpg';
-import nai from  '../../Images/mombasa4.jpg'
+//Images Used
+import headerimage from "../../Images/tanzaniahead.jpg";
+import kilimt from "../../Images/kilimanjaro5.jpg";
+import tarangire from "../../Images/tarangire3.jpg";
+import zanzstone from "../../Images/zanzibar5.jpg";
+//import kilimt from "../../Images/kilimanjaro5.jpg";
+//import kilimt from "../../Images/kilimanjaro5.jpg";
+//import kilimt from "../../Images/kilimanjaro5.jpg";
+//import kilimt from "../../Images/kilimanjaro5.jpg";
+
+//SEO: Components + Images
+import ogimage from "../../Images/seoimages/og-blog.jpg";
+import twitterimage from "../../Images/seoimages/twitter-blog.jpg";
+import SEO from "../../Components/SE0";
+
+//Secondary Components Needed
+import FadingHeader from "../../Components/FadingHeader";
+import Immovableitems from "./Immovableitems";
 
 
 
-import ogimage from '../../Images/seoimages/og-blog.jpg';
-import twitterimage from '../../Images/seoimages/twitter-blog.jpg';
-import SEO from '../../Components/SE0';
 
 
-import FadingHeader from '../../Components/FadingHeader';
-import Immovableitems from './Immovableitems';
+
+
+
+
+
 
 
 
 const Tanzania8Places = () => {
   const seoProps = {
     title: "8 Places you must visit in Tanzania | Nzaino Travel Africa Tips ",
-    seodescription: "Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.",
+    seodescription:
+      "Discover the best travel tips, insider insights, and captivating stories on our Travellers Blog. Explore East Africas hidden gems, plan your next adventure, and get inspired. Contact our customer service or use the provided email address for bookings and inquiries.",
     ogimage: ogimage,
     twitterimage: twitterimage,
-    keywords: 'Travellers Blog, Travel blog, Popular ugandan travel blog, Travel Services'
+    keywords:
+      "Travellers Blog, Travel blog, Popular ugandan travel blog, Travel Services",
   };
-    const description = 'Serengeti National Park, The Great Migration.'; // Replace with your description
-    return (
-      <div className='blogContainer'>
-         <SEO {...seoProps}/>
-  
-        <div className="moveableitems">
+  const description = "Serengeti National Park, The Great Migration."; // Replace with your description
+  return (
+    <div className="blogContainer">
+      <SEO {...seoProps} />
 
-            <FadingHeader image={headerimage} description={description}/>
-  
-            <div className='textAndTitle'>
-                  <h1 className="blogtitle">8 Places you must visit in Tanzania. </h1>
-  
-                  <div className="textblog">
-                        <p>
-                        If you're looking for a vacation destination that has it all
-                        , look no further than Kenya.Kenya is home to
-                        some of the most diverse and stunning landscapes, wildlife,
-                          and cultures in the world. Whether you want to explore the 
-                          savannah, the mountains, the coast, or the cities, Kenya has
-                          something for everyone. <br /> Here are eight regions you must visit
-                            in Kenya to experience its beauty and richness.
-                            <br />
-                            <br />
-                            <span className="boldblog">1. Nairobi: </span> 
-                            <br />
-                            The capital and largest city of Kenya, <span className="highlight">
-                            Nairobi is a vibrant and cosmopolitan hub that offers a taste of modern Africa.</span> You 
-                            can visit museums, art galleries, markets, restaurants, 
-                              and nightlife venues, or take a short drive to the Nairobi 
-                              National Park, where you can see lions, giraffes, zebras, and more.
-                              <br />
-                              
-                              </p>
-                              <img src={nai} alt="Nairobi East Africa Travel" srcset="" />
-                        <p>
-                          <br />
-                          <span className="boldblog">2. Mombasa: </span> 
-                          <br />
-                            The capital and largest city of Kenya, Nairobi is a
-                            vibrant and cosmopolitan hub that offers a taste of modern Africa.
-                              You can visit museums, art galleries, markets, restaurants, 
-                              and nightlife venues, or take a short drive to the Nairobi 
-                              National Park, where you can see lions, giraffes, zebras, and more.
-                              <br />
-                              
-                        </p>
+      <div className="moveableitems">
+        <FadingHeader image={headerimage} description={description} />
 
+        <div className="textAndTitle">
+          <h1 className="blogtitle">8 Places you must visit in Tanzania. </h1>
 
+          <div className="textblog">
+            <p>
+              Tanzania beckons you to uncover its hidden treasures and embrace
+              the diverse tapestry of experiences it holds. Allow yourself to be
+             {" "}mesmerized by the rhythmic
+              dance of flaming sunsets over the
+              Serengeti, a sight that paints the sky with hues of fiery
+              passion. Here are eight places you must visit in Tanzania to
+              uncover the magic and diversity of this captivating country.
+              <br />
+              <br />
+              <span className="boldblog">1. Serengeti National Park: </span>
+              <br />
+              Embark on a safari adventure in the world-famous Serengeti
+              National Park, where the Great Migration unfolds. Witness vast
+              herds of wildebeest, zebras, and gazelles as they migrate across
+              the savannah, accompanied by predators in search of their next
+              meal. The Serengeti offers an unparalleled wildlife spectacle that
+              will leave you in awe. Also, did you hear, you can{" "}
+               <span className="highlight">ride in a hot-air balloon</span>.
+              <br />
+            </p>
+            
+            <p>
+              <br />
+              <span className="boldblog">2. Mount Kilimanjaro:</span>
+              <br />
+              Challenge yourself and{" "}<span className="highlight">conquer Africa's highest peak</span>, Mount
+              Kilimanjaro. Embark on an epic trek through diverse landscapes,
+              from lush rainforests to rugged alpine zones. Reach the summit and
+              savor the breathtaking views as the sun rises above the clouds.
+              Climbing Kilimanjaro is an experience that will test your limits
+              and reward you with a sense of accomplishment.
+              <br />
+            </p>
+            <img src={kilimt} alt="Mountain Kilimanjaro in Tanzania " />
+            
+            
+            <p>
+              <br />
+              <span className="boldblog">3. Zanzibar Archipelago:</span>
+              <br />
+              Wouldn't be fair to talk about Tanzania without highlighting Zanzibar. <br />
+              Indulge in the idyllic beauty of the Zanzibar Archipelago, a
+              tropical paradise off the coast of Tanzania. Explore the historic
+              Stone Town, a UNESCO World Heritage Site, with its narrow streets
+              and charming architecture. Relax on pristine beaches, dive into
+              turquoise waters teeming with marine life, and immerse yourself in
+              the vibrant Swahili culture.
+              <br />
+            </p>
+            <img src={zanzstone} alt="Stone Town in Zanzibar, Tanzania " />
+            <p>
+              <br />
+              <span className="boldblog">
+                4. Ngorongoro Conservation Area:{" "}
+              </span>
+              <br />
+              Visit the Ngorongoro Conservation Area, a UNESCO World Heritage
+              Site and one of Africa's natural wonders. Explore the vast
+              Ngorongoro Crater, a haven for wildlife, including lions,
+              elephants, rhinos, and a variety of bird species. Witness the
+              incredible interactions between animals in this unique and
+              protected ecosystem.
+              <br />
+            </p>
 
-                        <p> 
-                            <br />
-                            <span className="boldblog">3. Masai Mara: </span> 
-                            <br />
-                                If you want to witness the iconic wildlife of Kenya, Maasai
-                                Mara is a must-visit region. This world-renowned game reserve is famous for
-                                  its annual wildebeest migration, where millions of animals cross the Mara River.
-                                  Embark on a thrilling safari adventure to spot lions, elephants, cheetahs, zebras,
-                                    and other majestic wildlife species roaming freely in their natural habitat.
-                            <br />
-                        </p>
+            <p>
+              <br />
+              <span className="boldblog">5. Tarangire National Park: </span>
+              <br />
+              Discover the hidden gem of Tarangire National Park, known for its
+              massive elephant herds and iconic baobab trees. Embark on game
+              drives and witness a diverse array of wildlife, including lions,
+              leopards, giraffes, and countless bird species. The untouched
+              wilderness and stunning landscapes of Tarangire will leave a
+              lasting impression.
+              <br />
+            </p>
+            <img src={tarangire} alt="Tarangire National Park In Tanzania" />
+            <p>
+              <br />
+              <span className="boldblog">6. Lake Manyara National Park:</span>
+              <br />
+              Experience the beauty of Lake Manyara National Park, a serene
+              haven nestled at the foot of the Great Rift Valley. Take a boat
+              safari on the lake, spot flamingos and other water birds, and
+              marvel at the resident hippos. Explore the lush forests and
+              encounter diverse wildlife, including tree-climbing lions unique
+              to this region.
+              <br />
+            </p>
 
+            <p>
+              <br />
+              <span className="boldblog">7. Selous Game Reserve:</span>
+              <br />
+              Venture off the beaten path to the Selous Game Reserve, one of
+              Africa's largest protected areas. Embark on thrilling boat safaris
+              along the Rufiji River, observing crocodiles, hippos, and
+              elephants along the riverbanks. Enjoy game drives in this remote
+              wilderness, known for its high concentration of lions and
+              endangered African wild dogs.
+              <br />
+            </p>
 
-                        <p> 
-                            <br />
-                            <span className="boldblog">4. Amboseli National Park: </span>  
-                            <br />
-                            Nestled at the foothills of Mount Kilimanjaro, Amboseli
-                            National Park offers breathtaking views of Africa's highest peak
-                            . It is known for its large herds of elephants and incredible opportunities
-                              for wildlife photography. Explore the vast savannahs, encounter diverse bird
-                              species, and witness the unique interactions between wildlife and the majestic
-                                backdrop of Mount Kilimanjaro.
-                            <br />
-                         </p>
+            <p>
+              <br />
+              <span className="boldblog">8. Mikumi National Park:</span>
+              <br />
+              Discover the beauty of Mikumi National Park, a wildlife paradise
+              located close to Dar es Salaam. Embark on game drives and
+              encounter elephants, zebras, giraffes, and wildebeest roaming the
+              savannah. The park's proximity to the city makes it an accessible
+              option for a day or weekend safari.
+              <br />
+            </p>
 
-
-                         <p> 
-                            <br />
-                            <span className="boldblog">5. Lamu Island: </span> 
-                            <br />
-                            For a tranquil and culturally rich experience, head to 
-                            Lamu Island. This UNESCO World Heritage Site is a hidden 
-                            gem, known for its well-preserved Swahili architecture,
-                            narrow streets, and traditional festivals. Explore the ancient Lamu
-                              Town, relax on pristine beaches, and immerse yourself in the island's 
-                              laid-back atmosphere.
-                              <br />
-                          </p>
-
-                          <p> 
-                              <br />
-                              <span className="boldblog">6. Lake Nakuru: </span>
-                              <br />
-                              Located in the Great Rift Valley, Lake Nakuru National 
-                              Park is a paradise for bird lovers. The lake is famous for
-                              its vast flocks of flamingos, creating a mesmerizing pink
-                                spectacle. Besides the vibrant birdlife, you can also spot rhinos,
-                                zebras, giraffes, and other wildlife in the park. Take a boat ride or 
-                                enjoy a hike around the lake for a memorable experience.
-                                <br />
-                          </p>
-
-                         <p> 
-                          <br />
-                            <span className="boldblog">7. Tsavo National Parks: </span>
-                            <br />
-                            Tsavo East and Tsavo West National Parks together 
-                            form one of the largest wildlife sanctuaries in the world.
-                            These parks offer diverse landscapes, including open plains, 
-                            volcanic hills, and dense forests. Explore the wildlife-rich areas,
-                              spot elephants, lions, buffaloes, and leopards, and marvel at the stunning 
-                              views of the Chyulu Hills.
-                          <br />
-                         </p>
-
-
-                         <p> 
-                            <br />
-                            <span className="boldblog">8. Samburu National Reserve: </span>
-                            <br />
-                              Located in northern Kenya, Samburu National Reserve 
-                              showcases a unique and arid landscape, home to a variety of
-                              wildlife species. Experience the beauty of the Ewaso Ng'iro River,
-                              spot rare animals like the reticulated giraffe and Grevy's zebra, and
-                              learn about the rich culture of the Samburu people who inhabit the region.
-                            <br />
-                           </p>
-
-                           <hr className='line' />
-                         <p> 
-                            <br />
-                            By visiting these eight regions in Kenya, you'll have the
-                            opportunity to immerse yourself in the country's diverse landscapes,
-                              encounter incredible wildlife, and embrace the vibrant cultures that make
-                              Kenya a truly unforgettable destination for travelers.
-                            <br />
-                         </p>
-                         <br />
-                         <br />
-                       
-                  </div>
-            </div>
+            <hr className="line" />
+            <p>
+              <br />
+              Tanzania is a land of wonder, offering a
+              multitude of extraordinary experiences for travelers. Whether it's
+              witnessing the Great Migration in the Serengeti, relaxing on the
+              pristine beaches of Zanzibar, or conquering Mount Kilimanjaro,
+              Tanzania will captivate your senses and create unforgettable
+              memories.
+              <br />
+            </p>
+            <br />
+            <br />
+          </div>
         </div>
-
-
-        <Immovableitems/>
-  
       </div>
-    )
-  }
 
-export default Tanzania8Places
+      <Immovableitems />
+    </div>
+  );
+};
+
+export default Tanzania8Places;

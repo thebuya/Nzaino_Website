@@ -160,8 +160,8 @@ const Kenyan8Places = () => {
             </p>
             <br />
             <br />
-          </div>
-        </div>
+            </div>
+            </div>
       </div>
 
       <Immovableitems />

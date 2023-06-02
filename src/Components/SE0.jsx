@@ -6,6 +6,7 @@ function SEO(props) {
     <Helmet>
             <title>{props.title}</title>
             <meta name="description" content={props.seodescription} />
+            <link rel="canonical" href={props.url}/>
             {/* Open Graph meta tags */}
             <meta property="og:title" content={props.title} />
             <meta property="og:description" content={props.seodescription} />
