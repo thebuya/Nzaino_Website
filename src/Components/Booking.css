@@ -259,7 +259,6 @@
 
 
 
-
 @media screen and (max-width: 900px) {
     .bookingSection h1 {
         font-size: 75px;
@@ -277,14 +276,14 @@
   
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .bookingSection  .imageBehindCard.mobilesOnly{
         width: -webkit-fill-available;
         position: absolute;
         z-index: -1;
         top: 1rem;
         mix-blend-mode: darken;
-        display: block;
+        display: none;
     }
   
 }
@@ -347,5 +346,6 @@
     }
     .bookingSection  .imageBehindCard.mobilesOnly{
         top: 3.5rem;
+        display: block;
     }
 }

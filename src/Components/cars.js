@@ -108,7 +108,8 @@ export const inputs=[
         errorMessage:"Please space out your names",
         helpfulInfo:"",
         label:"Full Name",
-        pattern:"^[A-Za-z]+ [A-Za-z]+$",
+        //pattern:"^[A-Za-z]+ [A-Za-z]+$",
+        pattern: "^(?:[A-Za-z]+(?:\\s+|$)){2,}$",
         required:true,
     },
     {

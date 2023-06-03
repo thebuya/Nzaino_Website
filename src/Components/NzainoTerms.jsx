@@ -176,7 +176,13 @@ const NzainoTerms = () => {
               Our experienced and knowledgeable guides will accompany you on
               your journey, providing you with valuable insights and ensuring
               your safety and enjoyment. <br />
-              1.3 Car Rentals: <br />
+              1.3 <Link
+                    to="/ugandacarhire"
+                    className="linker"
+                    aria-label="Find a car to hire for your east african travels."
+                    onClick={() => {
+                      handleLinkClick();
+                    }} > {" "} Car Rentals: </Link><br />
               Nzaino offers a variety of vehicles for hire, ranging from
               8-seaters to more cozy 4-seaters. You may choose to have a
               designated driver or drive yourself. Please note that car rentals
@@ -230,7 +236,26 @@ const NzainoTerms = () => {
               Nzaino will not be held responsible for any consequences resulting
               from your failure to comply with these requirements. <br />
               4.3 While Nzaino takes all reasonable precautions to ensure your safety
-              during tours and car rentals, you acknowledge that travel involves
+              during <Link
+            to="/eastafricatraveldestinations"
+            className="linker"
+            aria-label="Find a destination to visit in East Africa."
+            onClick={() => {
+              handleLinkClick();
+            }}
+          >
+            tours
+          </Link> and <Link
+            to="/ugandacarhire"
+            className="linker"
+            aria-label="Find a car to hire for your east african travels."
+            onClick={() => {
+              handleLinkClick();
+            }}
+          >
+            {" "}
+            car rentals
+          </Link>, you acknowledge that travel involves
               inherent risks. You agree to release Nzaino from any liability for
               any personal injury, property damage, or loss arising from your
               participation in our services. <br  id="TCpricing" /> <br />
@@ -242,7 +267,17 @@ const NzainoTerms = () => {
               booking is confirmed, the agreed price will be honored, unless
               there are exceptional circumstances beyond Nzaino's control. <br />
               5.2 Please note that after making a booking, you may negotiate certain
-              aspects of the trip or car rental with Nzaino. These negotiations
+              aspects of the trip or <Link
+            to="/ugandacarhire"
+            className="linker"
+            aria-label="Find a car to hire for your east african travels."
+            onClick={() => {
+              handleLinkClick();
+            }}
+          >
+            {" "}
+            car rental
+          </Link> with Nzaino. These negotiations
               are subject to the availability of resources and Nzaino's
               discretion. <br  id="TCproperty"  /> <br />
               <span className="boldblog"> 6. Intellectual Property </span>
@@ -250,16 +285,18 @@ const NzainoTerms = () => {
               6. Intellectual Property <br />
               6.1 All intellectual property rights, including but not limited to logos, trademarks, and
               content, associated with Nzaino and its services, are the property
-              of Nzaino Travel Africa Limited and protected by applicable laws.
+              of Nzaino Travel Africa Limited and protected by applicable laws. 
+              All except some of the imagery on the website.
+              The images are available on the internet, and as such are available for anyone.
               You may not use, reproduce, or distribute any intellectual
               property owned by Nzaino without prior written consent. <br  id="TClaw"  /> <br />
               <span className="boldblog">  7. Governing Law and Jurisdiction  </span>
               <br />
-             <br />
+             {/*<br />
               7.1 This Agreement shall be governed by and construed in accordance with the laws of Uganda. Any disputes arising from or relating to
               this Agreement shall be subject to the exclusive jurisdiction of
               the courts of Uganda.
-              <br />
+              <br /> */}
               <br />
             </p>
 
